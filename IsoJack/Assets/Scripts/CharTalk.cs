@@ -10,6 +10,11 @@ public class CharTalk : MonoBehaviour
     public string dialogue;
     public bool dialogueActive;
     public bool talked;
+<<<<<<< HEAD
+=======
+    public bool hehere;
+    public string dio2;
+>>>>>>> sammy
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +37,21 @@ public class CharTalk : MonoBehaviour
                 diotext.text = dialogue;
             }
         }
+<<<<<<< HEAD
+=======
+        else if(Input.GetKeyDown(KeyCode.Space)&&dialogueActive&&hehere)
+        {
+            if (DialogueBox.activeInHierarchy)
+            {
+                DialogueBox.SetActive(false);
+            }
+            else
+            {
+                DialogueBox.SetActive(true);
+                diotext.text = dio2;
+            }
+        }
+>>>>>>> sammy
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -40,6 +60,13 @@ public class CharTalk : MonoBehaviour
         {
             dialogueActive = true;
         }
+<<<<<<< HEAD
+=======
+        if(other.CompareTag("Mikhael"))
+        {
+            hehere = true;
+        }
+>>>>>>> sammy
     }
 
     private void OnTriggerExit2D(Collider2D other)

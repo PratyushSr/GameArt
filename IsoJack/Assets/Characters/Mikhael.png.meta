@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: cd4b64c2cbd293541bbd5d1e22b0f32c
+=======
+guid: 65fde68eee8fc5649bd14385c9fe4c9e
+>>>>>>> sammy
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
