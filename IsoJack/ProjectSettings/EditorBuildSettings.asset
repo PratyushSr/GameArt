@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/HUDinProgress/HUD.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/HUDinProgress/Map.unity
+    guid: 4c0a02cc365b7a7429a97ca824ee3fdb
+  - enabled: 1
+    path: Assets/Scenes/HUDinProgress/Settings.unity
+    guid: 0cb5376854acba9409443ee9e9fca90d
+  - enabled: 1
+    path: Assets/Scenes/Examples/IsoJack_OverWorld.unity
+    guid: 092574b58ebb13a4283ebba9a93df23a
   m_configObjects: {}
