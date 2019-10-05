@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Examples/Scene_Biome_Temple.unity
+=======
+- path: Assets/Scenes/HUDinProgress/HUD.unity
+>>>>>>> Programming
   isLoaded: 1
   isActive: 1
   isSubScene: 0
