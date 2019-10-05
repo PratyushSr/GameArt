@@ -1,9 +1,13 @@
 sceneSetups:
 <<<<<<< HEAD
+<<<<<<< HEAD
 - path: Assets/Scenes/Examples/Scene_Biome_Temple.unity
 =======
 - path: Assets/Scenes/HUDinProgress/HUD.unity
 >>>>>>> Programming
+=======
+- path: Assets/Scenes/NpcInteractScene/Npc Interact.unity
+>>>>>>> Dev
   isLoaded: 1
   isActive: 1
   isSubScene: 0
