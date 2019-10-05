@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Examples/Scene_Biome_Desert.unity
+- path: Assets/Scenes/Examples/IsoJack_OverWorld.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
