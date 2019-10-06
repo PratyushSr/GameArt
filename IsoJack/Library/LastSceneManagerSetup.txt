@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/NpcInteractScene/Npc Interact.unity
+- path: Assets/Scenes/David_HUD/HUD.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
