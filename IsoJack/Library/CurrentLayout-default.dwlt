@@ -47,7 +47,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 494}
   m_MaxSize: {x: 14004, y: 14044}
   vertical: 0
-  controlID: 37
+  controlID: 113
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -218,7 +218,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 494}
   m_MaxSize: {x: 10002, y: 14044}
   vertical: 1
-  controlID: 38
+  controlID: 114
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -243,7 +243,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 222}
   m_MaxSize: {x: 8006, y: 4022}
   vertical: 0
-  controlID: 39
+  controlID: 115
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -337,21 +337,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\22iro\Desktop\Fall 2019\Cosc 4348 Introduction to Game
     Art and Animation\IsoJackRepo\GameArt\IsoJack
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 13}
-    m_SelectedIDs: 7a310000
-    m_LastClickedID: 12666
-    m_ExpandedIDs: 000000003e300000c63000007a310000403400003c3c000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: b22f0000
+    m_LastClickedID: 12210
+    m_ExpandedIDs: 00000000b22f00003a300000ee300000b4330000ae3b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -379,7 +379,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000003e300000c63000007a310000403400003c3c0000
+    m_ExpandedIDs: 00000000b22f00003a300000ee300000b4330000ae3b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -502,9 +502,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 12440000
       m_LastClickedID: 0
-      m_ExpandedIDs: 5277ffff6a7affff7082ffff5485ffffca89ffff568cffff1a96ffff8096ffff1897ffff5c99ffff3e9cffffa69fffff82a2ffffeca5ffffb2a8ffff92abffff7eaeffffe4c6ffffe8c6ffff00c7ffffeac9ffffa2ccffffd2cfffff88d2ffff38d6fffff6d8ffffd6dcffff6ce0ffff54e3ffff66e6ffff3ae9ffff6eecfffff8eeffffdcf1ffff66f4fffffaf6ffff4afaffffe6470000964c0000204e00004e52000032530000645300009a570000285900003e5a0000c45b00004e5d0000645e00002c600000e06600003a670000cc670000ba680000326900006a6900000e740000ae740000947b00001a7d00003e7d0000c07d0000707f0000e47f0000de860000f6870000da880000ea8800002a890000348900004c8b0000708b0000f28b0000388e0000428e00004c99000070990000f2990000549c0000
+      m_ExpandedIDs: 6afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -564,9 +564,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -6.2469597, y: 9.062725, z: -0.9296875}
+    m_Target: {x: -13.652849, y: 9.559018, z: -629.5879}
     speed: 2
-    m_Value: {x: -6.2469597, y: 9.062725, z: -0.9296875}
+    m_Value: {x: -13.652849, y: 9.559018, z: -629.5879}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -599,9 +599,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 19.864239
+    m_Target: 14.752585
     speed: 2
-    m_Value: 18.224072
+    m_Value: 19.864239
   m_Ortho:
     m_Target: 1
     speed: 2
