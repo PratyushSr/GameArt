@@ -10,8 +10,8 @@ public class CharTalk : MonoBehaviour
     public string dialogue;
     public bool dialogueActive;
     public bool talked;
-    public bool hehere;
-    public string dio2;
+    public string dialogue2;
+    public int cost;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +22,7 @@ public class CharTalk : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space)&&dialogueActive)
+        if(Input.GetKeyDown(KeyCode.Space)&&dialogueActive&&GameManager.instance.coin>=cost)
         {
             if (DialogueBox.activeInHierarchy)
             {
@@ -31,10 +31,12 @@ public class CharTalk : MonoBehaviour
             else
             {
                 DialogueBox.SetActive(true);
+                GameManager.instance.updateCount(GameManager.instance.coinCount, ref GameManager.instance.coin, (cost * -1));
+                GameManager.instance.updateDays();
                 diotext.text = dialogue;
             }
         }
-        else if(Input.GetKeyDown(KeyCode.Space)&&dialogueActive&&hehere)
+        else if(Input.GetKeyDown(KeyCode.Space)&&dialogueActive&&GameManager.instance.coin<cost&&dialogue2!="")
         {
             if (DialogueBox.activeInHierarchy)
             {
@@ -43,7 +45,7 @@ public class CharTalk : MonoBehaviour
             else
             {
                 DialogueBox.SetActive(true);
-                diotext.text = dio2;
+                diotext.text = dialogue2;
             }
         }
     }
@@ -53,10 +55,6 @@ public class CharTalk : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             dialogueActive = true;
-        }
-        if(other.CompareTag("Mikhael"))
-        {
-            hehere = true;
         }
     }
 
