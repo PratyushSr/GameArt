@@ -31,8 +31,11 @@ public class CharTalk : MonoBehaviour
             else
             {
                 DialogueBox.SetActive(true);
-                GameManager.instance.updateCount(GameManager.instance.coinCount, ref GameManager.instance.coin, (cost * -1));
-                GameManager.instance.updateDays();
+                if (cost != 0)
+                {
+                    GameManager.instance.updateCount(GameManager.instance.coinCount, ref GameManager.instance.coin, (cost * -1));
+                    GameManager.instance.updateDays();
+                }
                 diotext.text = dialogue;
             }
         }

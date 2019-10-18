@@ -114,7 +114,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 494}
   m_MaxSize: {x: 14004, y: 14044}
   vertical: 0
-  controlID: 6357
+  controlID: 3132
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 494}
   m_MaxSize: {x: 10002, y: 14044}
   vertical: 1
-  controlID: 6363
+  controlID: 3133
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 222}
   m_MaxSize: {x: 8006, y: 4022}
   vertical: 0
-  controlID: 6364
+  controlID: 3134
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -383,10 +383,10 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 16}
-      m_SelectedIDs: ce410000
-      m_LastClickedID: 16846
-      m_ExpandedIDs: 1cfbffff6afbffffd6410000e24100003a4200006642000090420000e6420000
+      scrollPos: {x: 0, y: 40}
+      m_SelectedIDs: b2420000
+      m_LastClickedID: 17074
+      m_ExpandedIDs: f4f4ffff68fbffff6afbffffe24100003a4200006642000090420000e64200000c430000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -446,9 +446,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 22.251432, y: -27.561749, z: -0.5089302}
+    m_Target: {x: -9.156864, y: -0.48870203, z: -5637.979}
     speed: 2
-    m_Value: {x: 22.251432, y: -27.561749, z: -0.5089302}
+    m_Value: {x: -9.156864, y: -0.48870203, z: -5637.979}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -473,17 +473,17 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
     zGrid:
-      m_Target: 0
+      m_Target: 1
       speed: 2
-      m_Value: 0
+      m_Value: 1
   m_Rotation:
     m_Target: {x: 0, y: 0, z: 0, w: 1}
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 4.061034
+    m_Target: 4.092868
     speed: 2
-    m_Value: 4.061034
+    m_Value: 4.092868
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -638,19 +638,19 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Characters
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Characters
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\smmt\Desktop\GameArt2\IsoJack
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 61.984127}
-    m_SelectedIDs: c6300000
-    m_LastClickedID: 12486
+    m_SelectedIDs: 8e310000
+    m_LastClickedID: 12686
     m_ExpandedIDs: 00000000b62f00003e300000c630000068390000323c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
