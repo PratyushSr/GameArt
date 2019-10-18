@@ -7,9 +7,17 @@ public class CharTalk : MonoBehaviour
 {
     public GameObject DialogueBox;
     public Text diotext;
+    public string npcName;
+    public Text npcLabel;
     public string dialogue;
     public bool dialogueActive;
     public bool talked;
+    public Image npcPortrait;
+    public Sprite portrait;
+
+    public GameObject inventoryBar;
+    public GameObject hp;
+    public GameObject dialougeView;
 
     // Start is called before the first frame update
     void Start()
@@ -25,11 +33,15 @@ public class CharTalk : MonoBehaviour
             if (DialogueBox.activeInHierarchy)
             {
                 DialogueBox.SetActive(false);
+                exitDialougeView();
             }
             else
             {
+                enterDialougeView();
                 DialogueBox.SetActive(true);
+                npcLabel.text = npcName;
                 diotext.text = dialogue;
+                npcPortrait.sprite = portrait;
             }
         }
     }
@@ -48,6 +60,22 @@ public class CharTalk : MonoBehaviour
         {
             dialogueActive = false;
         }
+    }
+
+
+    public void enterDialougeView()
+    {
+        dialougeView.SetActive(true);
+        inventoryBar.SetActive(false);
+        hp.SetActive(false);
+    }
+
+    public void exitDialougeView()
+    {
+        dialougeView.SetActive(false);
+
+        inventoryBar.SetActive(true);
+        hp.SetActive(true);
     }
 }
 

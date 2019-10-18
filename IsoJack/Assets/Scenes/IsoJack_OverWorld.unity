@@ -23745,8 +23745,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -480.80005, y: -269.2}
-  m_SizeDelta: {x: 230.6, y: 52.7}
+  m_AnchoredPosition: {x: 50.049973, y: -266.63}
+  m_SizeDelta: {x: 1292.2, y: 47.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &837438546
 GameObject:
@@ -58125,9 +58125,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueBox: {fileID: 2040315639}
   diotext: {fileID: 0}
+  npcName: 
+  npcLabel: {fileID: 0}
   dialogue: Oh no! Professor Donatelli is late! Can you go find him?
   dialogueActive: 0
   talked: 0
+  npcPortrait: {fileID: 0}
+  portrait: {fileID: 0}
+  inventoryBar: {fileID: 0}
+  hp: {fileID: 0}
+  dialougeView: {fileID: 0}
 --- !u!1 &1327853233 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7683452084394070198, guid: 3b0788909d2477247a43cb4f4ceb765d,
@@ -66807,11 +66814,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62de6396384ba644bb0ddb96523f353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialogueBox: {fileID: 2126123074}
-  diotext: {fileID: 24540354}
+  DialogueBox: {fileID: 953815280}
+  diotext: {fileID: 807063797}
+  npcName: Prof. Vincent Michah'el Donatelli
+  npcLabel: {fileID: 832857731}
   dialogue: Take me to class!
   dialogueActive: 0
   talked: 0
+  npcPortrait: {fileID: 1334922144}
+  portrait: {fileID: 0}
+  inventoryBar: {fileID: 1222128430}
+  hp: {fileID: 1432006711}
+  dialougeView: {fileID: 1939259097}
 --- !u!61 &1791212224
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -92289,9 +92303,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueBox: {fileID: 0}
   diotext: {fileID: 0}
+  npcName: 
+  npcLabel: {fileID: 0}
   dialogue: Take me to class!
   dialogueActive: 0
   talked: 0
+  npcPortrait: {fileID: 0}
+  portrait: {fileID: 0}
+  inventoryBar: {fileID: 0}
+  hp: {fileID: 0}
+  dialougeView: {fileID: 0}
 --- !u!1 &1965465027
 GameObject:
   m_ObjectHideFlags: 0
@@ -92731,11 +92752,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62de6396384ba644bb0ddb96523f353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialogueBox: {fileID: 2126123074}
-  diotext: {fileID: 24540354}
+  DialogueBox: {fileID: 953815280}
+  diotext: {fileID: 807063797}
+  npcName: Dr. Chang Yun
+  npcLabel: {fileID: 832857731}
   dialogue: Oh no! Professor Donatelli is late! Can you go find him?
   dialogueActive: 0
   talked: 0
+  npcPortrait: {fileID: 1334922144}
+  portrait: {fileID: 21300000, guid: 071b47252b738ae4baae44a23590a1f9, type: 3}
+  inventoryBar: {fileID: 1222128430}
+  hp: {fileID: 1432006711}
+  dialougeView: {fileID: 1939259097}
 --- !u!61 &2036290492
 BoxCollider2D:
   m_ObjectHideFlags: 0
