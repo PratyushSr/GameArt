@@ -14,6 +14,8 @@ public class DialougeView : MonoBehaviour
 
     public Canvas choices;
 
+    public GameObject ObjectWithScript = null;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,9 +41,8 @@ public class DialougeView : MonoBehaviour
         dialougeBox.transform.position = new Vector3(boxPos.x, boxPos.y + 200, boxPos.z);
         npcLabel.transform.position = new Vector3(namePos.x, namePos.y + 200, namePos.z);
         dialouge.transform.position = new Vector3(dialougePos.x, dialougePos.y + 200, dialougePos.z);
-
+        
         npcLabel.text = "Tavern Maid";
-        dialouge.text = "Please select a dialogue choice.";
     }
 
     public void moveBack()
