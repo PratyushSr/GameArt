@@ -14,8 +14,6 @@ public class DialougeView : MonoBehaviour
 
     public Canvas choices;
 
-    public GameObject ObjectWithScript = null;
-
     // Start is called before the first frame update
     void Start()
     {

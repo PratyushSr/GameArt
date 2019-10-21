@@ -60260,11 +60260,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textPosition: 0
-  dialogType: 000000000000000000000000
+  dialogueType: 000000000000000000000000
   dialogueText:
   - First Text
   - Second Text
   - Third Text
+  NPCName:
+  - CoolCat
+  - AwesomeDog
+  - 
 --- !u!1 &1664070302
 GameObject:
   m_ObjectHideFlags: 0
