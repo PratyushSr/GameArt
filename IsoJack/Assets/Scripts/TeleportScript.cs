@@ -6,6 +6,7 @@ public class TeleportScript : MonoBehaviour
 {
     public float x;
     public float y;
+    public GameObject screens;
     public GameObject Player;
     public GameObject destination;
     private bool teleported;
@@ -28,8 +29,15 @@ public class TeleportScript : MonoBehaviour
 
     IEnumerator Teleport()
     {
+        if(screens==null)
+        {
+
+        }
         teleported = true;
+        screens.SetActive(true);
         yield return new WaitForSeconds(0.1f);
         Player.transform.position = new Vector2(x,y);
+        yield return new WaitForSeconds(0.5f);
+        screens.SetActive(false);
     }
 }
