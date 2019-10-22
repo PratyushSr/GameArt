@@ -60260,7 +60260,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textPosition: 0
-  dialogueType: 000000000000000000000000
+  dialogueType: 000000000100000000000000
   dialogueText:
   - First Text
   - Second Text
@@ -92199,7 +92199,6 @@ MonoBehaviour:
   npcLabel: {fileID: 832857731}
   dialouge: {fileID: 807063797}
   choices: {fileID: 1511775814}
-  ObjectWithScript: {fileID: 0}
 --- !u!114 &1939259099
 MonoBehaviour:
   m_ObjectHideFlags: 0
