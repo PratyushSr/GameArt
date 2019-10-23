@@ -60266,13 +60266,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textPosition: 0
   dialogueType: 000000000100000000000000
+  NPCName:
+  - CoolCat
+  - AwesomeDog
+  - 
   dialogueText:
   - First Text
   - Second Text;A choice; Second Choice; A Third Choice! Woo!
   - Third Text
-  NPCName:
-  - CoolCat
-  - AwesomeDog
+  ChoiceWarps:
+  - 
+  - 0;1;2
   - 
 --- !u!1 &1664070302
 GameObject:
@@ -92207,8 +92211,6 @@ MonoBehaviour:
   dialougeBox: {fileID: 953815281}
   npcLabel: {fileID: 832857731}
   dialouge: {fileID: 807063797}
-  choiceButtons: {fileID: 89085320}
-  overlay: {fileID: 1288973907}
 --- !u!114 &1939259099
 MonoBehaviour:
   m_ObjectHideFlags: 0

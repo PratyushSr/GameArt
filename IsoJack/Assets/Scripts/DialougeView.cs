@@ -16,6 +16,8 @@ public class DialougeView : MonoBehaviour
     //public Canvas choices;
     //public GameObject overlay;
 
+    private int choiceSelected;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -70,6 +72,22 @@ public class DialougeView : MonoBehaviour
     public void choicePressed(string choiceNum)
     {
         //dialouge.text = "You pressed dialogue choice " + choiceNum + ".";
+        if (choiceNum == "one")
+            choiceSelected = 1;
+        else if (choiceNum == "two")
+            choiceSelected = 2;
+        else if (choiceNum == "three")
+            choiceSelected = 3;
+        else if (choiceNum == "four")
+            choiceSelected = 4;
         moveBack();
+    }
+
+    public int getChoicePressed()
+    {
+        //Returns an integer (0-4) if a choice has been pressed. This will reset the choice back to 0 upon activation
+        int returnVal = choiceSelected;
+        choiceSelected = 0;
+        return returnVal;
     }
 }

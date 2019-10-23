@@ -10,66 +10,81 @@ public class SetConversationTree : MonoBehaviour
      * 1 = 4 - way Choice
      * 2 = Exit
      */
-    public List<string> dialogueText;
     public List<string> NPCName;
+    public List<string> dialogueText;
+    public List<string> ChoiceWarps; //Only for Dialogue Options Warp1;Warp2;Warp3;Warp4
 
     private int tp; //Text Position
-    private GameObject choicesCanvas;
+    private GameObject ConversationView;
+    private GameObject DialogueTextObject;
+    private GameObject NPCNameObject;
+    private GameObject ChoicesCanvas;
     private GameObject Dia1;
     private GameObject Dia2;
     private GameObject Dia3;
     private GameObject Dia4;
 
+    private bool loadDialogue;
+
     // Start is called before the first frame update
     void Start()
     {
-        choicesCanvas = GameObject.Find("ConversationView/choicesCanvas");
-        Dia1 = GameObject.Find("ConversationView/choicesCanvas/DialogueOptionOne");
-        Dia2 = GameObject.Find("ConversationView/choicesCanvas/DialogueOptionTwo");
-        Dia3 = GameObject.Find("ConversationView/choicesCanvas/DialogueOptionThree");
-        Dia4 = GameObject.Find("ConversationView/choicesCanvas/DialogueOptionFour");
-        choicesCanvas.SetActive(false);
     }
 
     void OnEnable()
     {
+        ConversationView = GameObject.Find("ConversationView");
+        DialogueTextObject = GameObject.Find("ConversationView/DialogueText");
+        NPCNameObject = GameObject.Find("ConversationView/NPCNameTag");
+        ChoicesCanvas = GameObject.Find("ConversationView/choicesCanvas");
+        Dia1 = GameObject.Find("ConversationView/choicesCanvas/DialogueOptionOne");
+        Dia2 = GameObject.Find("ConversationView/choicesCanvas/DialogueOptionTwo");
+        Dia3 = GameObject.Find("ConversationView/choicesCanvas/DialogueOptionThree");
+        Dia4 = GameObject.Find("ConversationView/choicesCanvas/DialogueOptionFour");
         Debug.Log("Started Conversation");
         tp = textPosition;
-        GameObject.Find("ConversationView/DialogueText").GetComponent<UnityEngine.UI.Text>().text = dialogueText[tp];
-        GameObject.Find("ConversationView/NPCNameTag").GetComponent<UnityEngine.UI.Text>().text = NPCName[tp];
+        loadDialogue = true;
     }
 
     // Update is called once per frame
     void Update()
     {
+        
         if (Input.GetMouseButtonDown(0) && dialogueType[tp] == 0)
         {
             tp += 1;
+            loadDialogue = true;
+        }
+        
+        if (loadDialogue)
+        {
+            Debug.Log(tp);
+            loadDialogue = false;      
             if (tp >= dialogueText.Count || dialogueType[tp] == 2)
             {
                 Debug.Log("Ended Conversation");
                 gameObject.GetComponent<SetConversationTree>().enabled = false;
-                choicesCanvas.SetActive(true);
+                ChoicesCanvas.SetActive(true);
                 Dia1.SetActive(true);
                 Dia2.SetActive(true);
                 Dia3.SetActive(true);
                 Dia4.SetActive(true);
-                GameObject.Find("ConversationView").SetActive(false);
+                ConversationView.SetActive(false);
             }
             else
             {
+          
                 if (dialogueType[tp] == 0)
                 {
-                    choicesCanvas.SetActive(false);
-                    GameObject.Find("ConversationView/DialogueText").GetComponent<UnityEngine.UI.Text>().text = dialogueText[tp];
+                    ChoicesCanvas.SetActive(false);
+                    DialogueTextObject.GetComponent<UnityEngine.UI.Text>().text = dialogueText[tp];
                 }
                 else if (dialogueType[tp] == 1)
                 {
-                    GameObject.Find("ConversationView/DialogueText").GetComponent<UnityEngine.UI.Text>().text = GetSection(dialogueText[tp], 0);
-                    GameObject.Find("ConversationView").GetComponent<DialougeView>().showDialougeChoices();
-                    choicesCanvas.SetActive(true);
+                    DialogueTextObject.GetComponent<UnityEngine.UI.Text>().text = GetSection(dialogueText[tp], 0);
+                    ConversationView.GetComponent<DialougeView>().showDialougeChoices();
+                    ChoicesCanvas.SetActive(true);
                     int c = CountSections(dialogueText[tp]);
-                    Debug.Log(c);
                     Dia1.SetActive(false);
                     Dia2.SetActive(false);
                     Dia3.SetActive(false);
@@ -96,10 +111,18 @@ public class SetConversationTree : MonoBehaviour
                         Dia4.transform.GetChild(0).gameObject.GetComponent<UnityEngine.UI.Text>().text = GetSection(dialogueText[tp], 4);
                     }
                 }
-                if (NPCName[tp] != "") GameObject.Find("ConversationView/NPCNameTag").GetComponent<UnityEngine.UI.Text>().text = NPCName[tp];
+                if (NPCName[tp] != "") NPCNameObject.GetComponent<UnityEngine.UI.Text>().text = NPCName[tp];
             }
         }
-        //GameObject.Find("ConversationView/DialogueText").GetComponent<UnityEngine.UI.Text>().text = dialogueText[textPosition];
+        if (dialogueType[tp] == 1)
+        {
+            int choice = ConversationView.GetComponent<DialougeView>().getChoicePressed();
+            if (choice != 0)
+            {
+                tp = int.Parse(GetSection(ChoiceWarps[tp], choice - 1));
+                loadDialogue = true;
+            }
+        }
     }
 
     string GetSection(string text, int section)
