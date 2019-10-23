@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
     public Sprite[] timeOfDay;
     public Image timeIndicator;
     public bool isDay;
+    public bool inConversation;
 
 
     void Awake()
@@ -54,6 +55,16 @@ public class GameManager : MonoBehaviour
             locationPopIn();
         if (Input.GetKeyDown(KeyCode.C))
             changeIndicator();
+        if(inConversation == true)
+        {
+            Time.timeScale = 0f;
+            isPaused = true;
+        }
+        else
+        {
+            Time.timeScale = 1f;
+            isPaused = false;
+        }
 
     }
 

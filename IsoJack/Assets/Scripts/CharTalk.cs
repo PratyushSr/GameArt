@@ -12,8 +12,13 @@ public class CharTalk : MonoBehaviour
     public string dialogue;
     public bool dialogueActive;
     public bool talked;
+    public bool hasChoices;
     public Image npcPortrait;
     public Sprite portrait;
+
+    public bool hasQuest;
+    public bool acceptedQuest;
+    public int numofChoices;
 
     public GameObject inventoryBar;
     public GameObject hp;
@@ -32,13 +37,19 @@ public class CharTalk : MonoBehaviour
         {
             if (DialogueBox.activeInHierarchy)
             {
-                DialogueBox.SetActive(false);
-                exitDialougeView();
+                if (hasChoices)
+                {
+                    DialougeView.converstationInstance.showDialougeChoices();
+                    hasChoices = !hasChoices;
+                }
+                //DialogueBox.SetActive(false);
+                else
+                    exitDialougeView();
             }
             else
             {
                 enterDialougeView();
-                DialogueBox.SetActive(true);
+                //DialogueBox.SetActive(true);
                 npcLabel.text = npcName;
                 diotext.text = dialogue;
                 npcPortrait.sprite = portrait;
@@ -65,6 +76,7 @@ public class CharTalk : MonoBehaviour
 
     public void enterDialougeView()
     {
+        GameManager.instance.inConversation = true;
         dialougeView.SetActive(true);
         inventoryBar.SetActive(false);
         hp.SetActive(false);
@@ -72,8 +84,8 @@ public class CharTalk : MonoBehaviour
 
     public void exitDialougeView()
     {
+        GameManager.instance.inConversation = false;
         dialougeView.SetActive(false);
-
         inventoryBar.SetActive(true);
         hp.SetActive(true);
     }
