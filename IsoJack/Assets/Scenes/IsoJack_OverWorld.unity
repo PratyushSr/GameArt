@@ -8591,6 +8591,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 535b90050478f4547ab04e9d8c645674, type: 3}
   timeIndicator: {fileID: 1305876873}
   isDay: 1
+  inConversation: 0
 --- !u!1001 &658305518
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -58130,8 +58131,12 @@ MonoBehaviour:
   dialogue: Oh no! Professor Donatelli is late! Can you go find him?
   dialogueActive: 0
   talked: 0
+  hasChoices: 0
   npcPortrait: {fileID: 0}
   portrait: {fileID: 0}
+  hasQuest: 0
+  acceptedQuest: 0
+  numofChoices: 0
   inventoryBar: {fileID: 0}
   hp: {fileID: 0}
   dialougeView: {fileID: 0}
@@ -59173,7 +59178,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!223 &1511775814
 Canvas:
   m_ObjectHideFlags: 0
@@ -60263,7 +60268,7 @@ MonoBehaviour:
   dialogueType: 000000000100000000000000
   dialogueText:
   - First Text
-  - Second Text
+  - Second Text;A choice; Second Choice; A Third Choice! Woo!
   - Third Text
   NPCName:
   - CoolCat
@@ -66855,8 +66860,12 @@ MonoBehaviour:
   dialogue: Take me to class!
   dialogueActive: 0
   talked: 0
+  hasChoices: 0
   npcPortrait: {fileID: 1334922144}
   portrait: {fileID: 0}
+  hasQuest: 0
+  acceptedQuest: 0
+  numofChoices: 0
   inventoryBar: {fileID: 1222128430}
   hp: {fileID: 1432006711}
   dialougeView: {fileID: 1939259097}
@@ -92198,7 +92207,8 @@ MonoBehaviour:
   dialougeBox: {fileID: 953815281}
   npcLabel: {fileID: 832857731}
   dialouge: {fileID: 807063797}
-  choices: {fileID: 1511775814}
+  choiceButtons: {fileID: 89085320}
+  overlay: {fileID: 1288973907}
 --- !u!114 &1939259099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92342,8 +92352,12 @@ MonoBehaviour:
   dialogue: Take me to class!
   dialogueActive: 0
   talked: 0
+  hasChoices: 0
   npcPortrait: {fileID: 0}
   portrait: {fileID: 0}
+  hasQuest: 0
+  acceptedQuest: 0
+  numofChoices: 0
   inventoryBar: {fileID: 0}
   hp: {fileID: 0}
   dialougeView: {fileID: 0}
@@ -92793,8 +92807,12 @@ MonoBehaviour:
   dialogue: Oh no! Professor Donatelli is late! Can you go find him?
   dialogueActive: 0
   talked: 0
+  hasChoices: 0
   npcPortrait: {fileID: 1334922144}
   portrait: {fileID: 21300000, guid: 071b47252b738ae4baae44a23590a1f9, type: 3}
+  hasQuest: 0
+  acceptedQuest: 0
+  numofChoices: 0
   inventoryBar: {fileID: 1222128430}
   hp: {fileID: 1432006711}
   dialougeView: {fileID: 1939259097}
