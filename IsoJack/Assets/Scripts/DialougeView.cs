@@ -13,8 +13,12 @@ public class DialougeView : MonoBehaviour
     public Text npcLabel;
     public Text dialouge;
 
-    //public Canvas choices;
-    //public GameObject overlay;
+    private GameObject choices;
+    private GameObject optionOne;
+    private GameObject optionTwo;
+    private GameObject optionThree;
+    private GameObject optionFour;
+
 
     private int choiceSelected;
 
@@ -24,6 +28,15 @@ public class DialougeView : MonoBehaviour
         if (converstationInstance == null) converstationInstance = this;
         else if (converstationInstance != this) Destroy(gameObject);
         DontDestroyOnLoad(gameObject);
+
+        choices = GameObject.Find("ConversationView/choicesCanvas");
+        optionOne = GameObject.Find("ConversationView/choicesCanvas/DialogueOptionOne");
+        optionTwo = GameObject.Find("ConversationView/choicesCanvas/DialogueOptionTwo");
+        optionThree = GameObject.Find("ConversationView/choicesCanvas/DialogueOptionThree");
+        optionFour = GameObject.Find("ConversationView/choicesCanvas/DialogueOptionFour");
+        Debug.Log("Started Conversation");
+        choices.SetActive(false);
+
     }
 
     // Update is called once per frame
@@ -34,9 +47,8 @@ public class DialougeView : MonoBehaviour
 
     public void showDialougeChoices()
     {
-        //if(choiceButtons.activeInHierarchy == false)
-        //{
-        //choiceButtons.SetActive(true);
+        if (choices.activeInHierarchy == false)
+            choices.SetActive(true);
         Vector3 playerPhotoPos = playerPhoto.transform.position;
         Vector3 npcPhotoPos = npcPhoto.transform.position;
         Vector3 boxPos = dialougeBox.transform.position;
@@ -66,7 +78,32 @@ public class DialougeView : MonoBehaviour
         dialougeBox.transform.position = new Vector3(boxPos.x, boxPos.y - 200, boxPos.z);
         npcLabel.transform.position = new Vector3(namePos.x, namePos.y - 200, namePos.z);
         dialouge.transform.position = new Vector3(dialougePos.x, dialougePos.y - 200, dialougePos.z);
-        //choiceButtons.SetActive(false);
+        choices.SetActive(false);
+    }
+
+    public void questChoice()
+    {
+        showDialougeChoices();
+        optionThree.SetActive(false);
+        optionFour.SetActive(false);
+    }
+
+    public void numOfChoices(int number)
+    {
+        if(number >= 1)
+        {
+            optionOne.SetActive(true);
+            if(number >= 2)
+            {
+                optionTwo.SetActive(true);
+                if(number >= 3)
+                {
+                    optionThree.SetActive(true);
+                    if (number >= 4)
+                        optionFour.SetActive(true);
+                }
+            }
+        }
     }
 
     public void choicePressed(string choiceNum)

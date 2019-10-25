@@ -17,12 +17,14 @@ public class CharTalk : MonoBehaviour
     public Sprite portrait;
 
     public bool hasQuest;
-    public bool acceptedQuest;
+    private bool acceptedQuest;
     public int numofChoices;
 
     public GameObject inventoryBar;
     public GameObject hp;
     public GameObject dialougeView;
+
+    private bool deniedQuest = false;
 
     // Start is called before the first frame update
     void Start()
@@ -37,24 +39,46 @@ public class CharTalk : MonoBehaviour
         {
             if (DialogueBox.activeInHierarchy)
             {
-                if (hasChoices)
+                if (deniedQuest == true)
+                {
+                    deniedQuest = false;
+                    exitDialougeView();
+                }
+                if (hasChoices == true)
                 {
                     DialougeView.converstationInstance.showDialougeChoices();
+                    DialougeView.converstationInstance.numOfChoices(numofChoices);
                     hasChoices = !hasChoices;
                 }
-                //DialogueBox.SetActive(false);
+                else if (hasQuest == true && acceptedQuest == false)
+                    DialougeView.converstationInstance.questChoice();
                 else
                     exitDialougeView();
             }
             else
             {
                 enterDialougeView();
-                //DialogueBox.SetActive(true);
                 npcLabel.text = npcName;
                 diotext.text = dialogue;
                 npcPortrait.sprite = portrait;
             }
         }
+        if(hasQuest == true)
+        {
+            int selected = DialougeView.converstationInstance.getChoicePressed();
+            if (selected == 1 && hasQuest == true)
+            {
+                acceptedQuest = true;
+                hasQuest = false;
+                diotext.text = "Great you accpted the quest!";
+            }
+            else if (selected == 2 && hasQuest == true)
+            {
+                diotext.text = "Oh. OK then.";
+                deniedQuest = true;
+            }
+        }
+       
     }
 
     private void OnTriggerEnter2D(Collider2D other)
