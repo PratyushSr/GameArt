@@ -12,18 +12,17 @@ public class CharTalk : MonoBehaviour
 
     public string npcName;
     public string dialogue;
-    public bool dialogueActive;
-    public bool talked;
-    public bool hasChoices;
     public Sprite portrait;
-
+    private bool dialogueActive;
+    private bool talked;
+    public int numofChoices;
+    public bool hasChoices;
     public bool hasQuest;
     private bool acceptedQuest;
-    public int numofChoices;
 
-    public GameObject inventoryBar;
-    public GameObject hp;
-    public GameObject dialougeView;
+    private GameObject inventoryBar;
+    private GameObject hp;
+    private GameObject dialougeView;
 
     private bool deniedQuest;
     private bool checkforQuest = false;
@@ -36,8 +35,12 @@ public class CharTalk : MonoBehaviour
         diotext = GameObject.Find("ConversationView/DialogueText");
         npcLabel = GameObject.Find("ConversationView/NPCNameTag");
         npcPortrait = GameObject.Find("ConverstationView/npcPortrait");
+        inventoryBar = GameObject.Find("HUDCanvas/Inventory");
+        hp = GameObject.Find("HUDCanvas/HPIndicator");
+        dialougeView = GameObject.Find("HUDCanvas/ConversationView");
 
-}
+
+    }
 
     // Update is called once per frame
     void Update()
@@ -116,6 +119,8 @@ public class CharTalk : MonoBehaviour
     public void enterDialougeView()
     {
         GameManager.instance.inConversation = true;
+        if (DialougeView.converstationInstance.choices.activeSelf)
+            DialougeView.converstationInstance.moveBack();
         dialougeView.SetActive(true);
         inventoryBar.SetActive(false);
         hp.SetActive(false);

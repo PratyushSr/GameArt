@@ -734,15 +734,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npcName: Blacksmith
   dialogue: Hey, I got a quest for ya. Wanna take it?
-  dialogueActive: 0
-  talked: 0
-  hasChoices: 0
   portrait: {fileID: 21300000, guid: b7ddbe303b91f954d8ec881b73d1571e, type: 3}
-  hasQuest: 1
   numofChoices: 2
-  inventoryBar: {fileID: 1222128430}
-  hp: {fileID: 1432006711}
-  dialougeView: {fileID: 1939259097}
+  hasChoices: 0
+  hasQuest: 1
 --- !u!61 &148674749
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25714,15 +25709,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npcName: Blacksmith
   dialogue: Hi there, lovely day isn't it?
-  dialogueActive: 0
-  talked: 0
-  hasChoices: 0
   portrait: {fileID: 21300000, guid: b7ddbe303b91f954d8ec881b73d1571e, type: 3}
-  hasQuest: 0
   numofChoices: 0
-  inventoryBar: {fileID: 1222128430}
-  hp: {fileID: 1432006711}
-  dialougeView: {fileID: 1939259097}
+  hasChoices: 0
+  hasQuest: 0
 --- !u!61 &1042385248
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -57546,16 +57536,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   npcName: Blacksmith
-  dialogue: Hi there, answer me can you answer this Question?
-  dialogueActive: 0
-  talked: 0
-  hasChoices: 1
+  dialogue: Hi there, can you answer this Question?
   portrait: {fileID: 21300000, guid: b7ddbe303b91f954d8ec881b73d1571e, type: 3}
-  hasQuest: 0
   numofChoices: 4
-  inventoryBar: {fileID: 1222128430}
-  hp: {fileID: 1432006711}
-  dialougeView: {fileID: 1939259097}
+  hasChoices: 1
+  hasQuest: 0
 --- !u!61 &1206463135
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -58533,15 +58518,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npcName: 
   dialogue: Oh no! Professor Donatelli is late! Can you go find him?
-  dialogueActive: 0
-  talked: 0
-  hasChoices: 0
   portrait: {fileID: 0}
-  hasQuest: 0
   numofChoices: 0
-  inventoryBar: {fileID: 0}
-  hp: {fileID: 0}
-  dialougeView: {fileID: 0}
+  hasChoices: 0
+  hasQuest: 0
 --- !u!1 &1327853233 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7683452084394070198, guid: 3b0788909d2477247a43cb4f4ceb765d,
@@ -67244,15 +67224,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npcName: Prof. Vincent Michah'el Donatelli
   dialogue: Take me to class!
-  dialogueActive: 0
-  talked: 0
-  hasChoices: 0
   portrait: {fileID: 0}
-  hasQuest: 0
   numofChoices: 2
-  inventoryBar: {fileID: 1222128430}
-  hp: {fileID: 1432006711}
-  dialougeView: {fileID: 1939259097}
+  hasChoices: 0
+  hasQuest: 0
 --- !u!61 &1791212224
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -92591,6 +92566,7 @@ MonoBehaviour:
   dialougeBox: {fileID: 953815281}
   npcLabel: {fileID: 832857731}
   dialouge: {fileID: 807063797}
+  choices: {fileID: 0}
 --- !u!114 &1939259099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92729,15 +92705,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npcName: 
   dialogue: Take me to class!
-  dialogueActive: 0
-  talked: 0
-  hasChoices: 0
   portrait: {fileID: 0}
-  hasQuest: 0
   numofChoices: 4
-  inventoryBar: {fileID: 0}
-  hp: {fileID: 0}
-  dialougeView: {fileID: 0}
+  hasChoices: 0
+  hasQuest: 0
 --- !u!1 &1965465027
 GameObject:
   m_ObjectHideFlags: 0

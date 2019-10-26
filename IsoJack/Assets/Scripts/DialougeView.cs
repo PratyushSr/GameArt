@@ -13,7 +13,7 @@ public class DialougeView : MonoBehaviour
     public Text npcLabel;
     public Text dialouge;
 
-    private GameObject choices;
+    public GameObject choices;
     private GameObject optionOne;
     private GameObject optionTwo;
     private GameObject optionThree;
