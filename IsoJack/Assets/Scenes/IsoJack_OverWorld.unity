@@ -60266,13 +60266,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textPosition: 0
   dialogueType: 000000000100000000000000
+  NPCSprite:
+  - {fileID: 21300000, guid: 071b47252b738ae4baae44a23590a1f9, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: b8e9b90296d4029459b989e3257b43ae, type: 3}
+  PlayerSprite:
+  - {fileID: 21300000, guid: f7c2e0921fe6b5a42b2966a11c126d7e, type: 3}
+  - {fileID: 21300000, guid: b7ddbe303b91f954d8ec881b73d1571e, type: 3}
+  - {fileID: 0}
   NPCName:
   - CoolCat
   - AwesomeDog
   - 
   dialogueText:
   - First Text
-  - Second Text;A choice; Second Choice; A Third Choice! Woo!
+  - Second Text;Take me back to "First Text";Reload THIS text;I'm done, go forward
+    to third text
   - Third Text
   ChoiceWarps:
   - 
