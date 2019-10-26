@@ -195,6 +195,87 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5922198}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &19852893
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 19852894}
+  - component: {fileID: 19852895}
+  m_Layer: 0
+  m_Name: BasicConvoTest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &19852894
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 19852893}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -13.49, y: -4.24, z: 31.25}
+  m_LocalScale: {x: 0.564564, y: 0.49926835, z: 0.308}
+  m_Children:
+  - {fileID: 1042385246}
+  m_Father: {fileID: 503347060}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &19852895
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 19852893}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 2130146985
+  m_SortingLayer: 1
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: f7c2e0921fe6b5a42b2966a11c126d7e, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.73, y: 0.84}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &24540353
 GameObject:
   m_ObjectHideFlags: 0
@@ -651,15 +732,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62de6396384ba644bb0ddb96523f353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialogueBox: {fileID: 953815280}
-  diotext: {fileID: 807063797}
   npcName: Blacksmith
-  npcLabel: {fileID: 832857731}
   dialogue: Hey, I got a quest for ya. Wanna take it?
   dialogueActive: 0
   talked: 0
   hasChoices: 0
-  npcPortrait: {fileID: 1334922144}
   portrait: {fileID: 21300000, guid: b7ddbe303b91f954d8ec881b73d1571e, type: 3}
   hasQuest: 1
   numofChoices: 2
@@ -2343,7 +2420,7 @@ Transform:
   m_LocalPosition: {x: 9.711769, y: 1.2447271, z: -30.888672}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 598355799}
+  - {fileID: 19852894}
   - {fileID: 1664070303}
   - {fileID: 1852155978}
   - {fileID: 1109452373}
@@ -8319,87 +8396,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0351af0e3d731ca4ab7c72b47fda7daf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &598355798
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 598355799}
-  - component: {fileID: 598355800}
-  m_Layer: 0
-  m_Name: yun
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &598355799
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 598355798}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.391769, y: -5.6047273, z: 31.25}
-  m_LocalScale: {x: 1.833, y: 1.6210011, z: 1}
-  m_Children:
-  - {fileID: 2036290490}
-  m_Father: {fileID: 503347060}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &598355800
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 598355798}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 2130146985
-  m_SortingLayer: 1
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b8e9b90296d4029459b989e3257b43ae, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.73, y: 0.84}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1001 &599813091
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23478,7 +23474,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &782509668
 RectTransform:
   m_ObjectHideFlags: 0
@@ -25672,6 +25668,87 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1021657974}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1042385245
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1042385246}
+  - component: {fileID: 1042385248}
+  - component: {fileID: 1042385247}
+  m_Layer: 0
+  m_Name: dialogueZone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1042385246
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042385245}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.3, z: 0}
+  m_LocalScale: {x: 1, y: 2, z: 1}
+  m_Children: []
+  m_Father: {fileID: 19852894}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1042385247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042385245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d62de6396384ba644bb0ddb96523f353, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcName: Blacksmith
+  dialogue: Hi there, lovely day isn't it?
+  dialogueActive: 0
+  talked: 0
+  hasChoices: 0
+  portrait: {fileID: 21300000, guid: b7ddbe303b91f954d8ec881b73d1571e, type: 3}
+  hasQuest: 0
+  numofChoices: 0
+  inventoryBar: {fileID: 1222128430}
+  hp: {fileID: 1432006711}
+  dialougeView: {fileID: 1939259097}
+--- !u!61 &1042385248
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042385245}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.55, y: 1.51}
+  m_EdgeRadius: 0
 --- !u!1001 &1069562928
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57468,15 +57545,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62de6396384ba644bb0ddb96523f353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialogueBox: {fileID: 953815280}
-  diotext: {fileID: 807063797}
   npcName: Blacksmith
-  npcLabel: {fileID: 832857731}
   dialogue: Hi there, answer me can you answer this Question?
   dialogueActive: 0
   talked: 0
   hasChoices: 1
-  npcPortrait: {fileID: 1334922144}
   portrait: {fileID: 21300000, guid: b7ddbe303b91f954d8ec881b73d1571e, type: 3}
   hasQuest: 0
   numofChoices: 4
@@ -57893,7 +57966,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1254440923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58458,15 +58531,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62de6396384ba644bb0ddb96523f353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialogueBox: {fileID: 2040315639}
-  diotext: {fileID: 0}
   npcName: 
-  npcLabel: {fileID: 0}
   dialogue: Oh no! Professor Donatelli is late! Can you go find him?
   dialogueActive: 0
   talked: 0
   hasChoices: 0
-  npcPortrait: {fileID: 0}
   portrait: {fileID: 0}
   hasQuest: 0
   numofChoices: 0
@@ -60430,7 +60499,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1634927664
 RectTransform:
   m_ObjectHideFlags: 0
@@ -60586,30 +60655,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3c50e64342ec144eaf83045612f1e45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ConversationView: {fileID: 1939259097}
+  ConversationView: {fileID: 0}
   textPosition: 0
-  dialogueType: 000000000100000000000000
-  NPCSprite:
-  - {fileID: 21300000, guid: 071b47252b738ae4baae44a23590a1f9, type: 3}
-  - {fileID: 0}
-  - {fileID: 21300000, guid: b8e9b90296d4029459b989e3257b43ae, type: 3}
-  PlayerSprite:
-  - {fileID: 21300000, guid: f7c2e0921fe6b5a42b2966a11c126d7e, type: 3}
-  - {fileID: 21300000, guid: b7ddbe303b91f954d8ec881b73d1571e, type: 3}
-  - {fileID: 0}
-  NPCName:
-  - CoolCat
-  - AwesomeDog
-  - 
-  dialogueText:
-  - First Text
-  - Second Text;Take me back to "First Text";Reload THIS text;I'm done, go forward
-    to third text
-  - Third Text
-  ChoiceWarps:
-  - 
-  - 0;1;2
-  - 
+  dialogueType: 
+  NPCSprite: []
+  PlayerSprite: []
+  NPCName: []
+  dialogueText: []
+  ChoiceWarps: []
 --- !u!1 &1664070302
 GameObject:
   m_ObjectHideFlags: 0
@@ -67189,17 +67242,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62de6396384ba644bb0ddb96523f353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialogueBox: {fileID: 953815280}
-  diotext: {fileID: 807063797}
   npcName: Prof. Vincent Michah'el Donatelli
-  npcLabel: {fileID: 832857731}
   dialogue: Take me to class!
   dialogueActive: 0
   talked: 0
   hasChoices: 0
-  npcPortrait: {fileID: 1334922144}
   portrait: {fileID: 0}
-  hasQuest: 1
+  hasQuest: 0
   numofChoices: 2
   inventoryBar: {fileID: 1222128430}
   hp: {fileID: 1432006711}
@@ -92678,15 +92727,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d62de6396384ba644bb0ddb96523f353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialogueBox: {fileID: 0}
-  diotext: {fileID: 0}
   npcName: 
-  npcLabel: {fileID: 0}
   dialogue: Take me to class!
   dialogueActive: 0
   talked: 0
   hasChoices: 0
-  npcPortrait: {fileID: 0}
   portrait: {fileID: 0}
   hasQuest: 0
   numofChoices: 4
@@ -93088,91 +93133,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2016826806}
   m_CullTransparentMesh: 0
---- !u!1 &2036290489
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2036290490}
-  - component: {fileID: 2036290492}
-  - component: {fileID: 2036290491}
-  m_Layer: 0
-  m_Name: dialogueZone
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2036290490
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2036290489}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 598355799}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2036290491
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2036290489}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d62de6396384ba644bb0ddb96523f353, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DialogueBox: {fileID: 953815280}
-  diotext: {fileID: 807063797}
-  npcName: Dr. Chang Yun
-  npcLabel: {fileID: 832857731}
-  dialogue: Oh no! Professor Donatelli is late! Can you go find him?
-  dialogueActive: 0
-  talked: 0
-  hasChoices: 0
-  npcPortrait: {fileID: 1334922144}
-  portrait: {fileID: 21300000, guid: 071b47252b738ae4baae44a23590a1f9, type: 3}
-  hasQuest: 0
-  numofChoices: 0
-  inventoryBar: {fileID: 1222128430}
-  hp: {fileID: 1432006711}
-  dialougeView: {fileID: 1939259097}
---- !u!61 &2036290492
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2036290489}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.55, y: 1.51}
-  m_EdgeRadius: 0
 --- !u!1 &2040315639
 GameObject:
   m_ObjectHideFlags: 0

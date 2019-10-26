@@ -3,15 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+///*
 public class SetConversationTree : MonoBehaviour
 {
+    
     public GameObject ConversationView;
     public int textPosition = 0;
     public List<int> dialogueType;
-    /* 0 = Normal
-     * 1 = 4 - way Choice
-     * 2 = Exit
-     */
+     //0 = Normal
+     //1 = 4 - way Choice
+     //2 = Exit
+     
     public List<Sprite> NPCSprite;
     public List<Sprite> PlayerSprite;
     public List<string> NPCName;
@@ -32,7 +35,7 @@ public class SetConversationTree : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        bool ConvIsInactive = (ConversationView.active == false);
+        bool ConvIsInactive = ConversationView.activeSelf;
         if (ConvIsInactive) ConversationView.SetActive(true);
         DialogueTextObject = GameObject.Find("ConversationView/DialogueText");
         NPCPortrait = GameObject.Find("ConversationView/npcPortrait");
@@ -161,4 +164,6 @@ public class SetConversationTree : MonoBehaviour
         }
         return count;
     }
+    
 }
+//*/

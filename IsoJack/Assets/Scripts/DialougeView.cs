@@ -21,6 +21,18 @@ public class DialougeView : MonoBehaviour
 
     private int choiceSelected;
 
+    private Vector3 playerPhotoPos;
+    private Vector3 npcPhotoPos;
+    private Vector3 boxPos;
+    private Vector3 namePos;
+    private Vector3 dialougePos;
+
+    private Vector3 pPP;
+    private Vector3 nPP;
+    private Vector3 bP;
+    private Vector3 nP;
+    private Vector3 dP;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,9 +47,20 @@ public class DialougeView : MonoBehaviour
         optionFour  = GameObject.Find("ConversationView/choicesCanvas/DialogueOptionFour");
         //Debug.Log("Started Conversation");
         choices.SetActive(false);
-
         gameObject.SetActive(false);
-    }
+
+        playerPhotoPos = playerPhoto.transform.position;
+        npcPhotoPos = npcPhoto.transform.position;
+        boxPos = dialougeBox.transform.position;
+        namePos = npcLabel.transform.position;
+        dialougePos = dialouge.transform.position;
+
+        pPP = playerPhotoPos;
+        nPP = npcPhotoPos;
+        bP = boxPos;
+        nP = namePos;
+        dP = dialougePos;
+}
 
     // Update is called once per frame
     void Update()
@@ -47,15 +70,11 @@ public class DialougeView : MonoBehaviour
 
     public void showDialougeChoices()
     {
+        ///*
         Debug.Log("ShowDialogue");
-        //if (choices.activeInHierarchy == false)
-            //choices.SetActive(true);
-        Vector3 playerPhotoPos = playerPhoto.transform.position;
-        Vector3 npcPhotoPos = npcPhoto.transform.position;
-        Vector3 boxPos = dialougeBox.transform.position;
-        Vector3 namePos = npcLabel.transform.position;
-        Vector3 dialougePos = dialouge.transform.position;
-        
+        if (choices.activeInHierarchy == false)
+            choices.SetActive(true);
+       
         playerPhoto.transform.position = new Vector3(playerPhotoPos.x, playerPhotoPos.y + 200, playerPhotoPos.z);
         npcPhoto.transform.position = new Vector3(npcPhotoPos.x, npcPhotoPos.y + 200, npcPhotoPos.z);
         dialougeBox.transform.position = new Vector3(boxPos.x, boxPos.y + 200, boxPos.z);
@@ -63,24 +82,21 @@ public class DialougeView : MonoBehaviour
         dialouge.transform.position = new Vector3(dialougePos.x, dialougePos.y + 200, dialougePos.z);
         //dialouge.text = "Please select a dialogue choice.";
         //}
+        //*/
     }
         
 
     public void moveBack()
     {
+        ///*
         Debug.Log("Move Back");
-        Vector3 playerPhotoPos = playerPhoto.transform.position;
-        Vector3 npcPhotoPos = npcPhoto.transform.position;
-        Vector3 boxPos = dialougeBox.transform.position;
-        Vector3 namePos = npcLabel.transform.position;
-        Vector3 dialougePos = dialouge.transform.position;
-
-        playerPhoto.transform.position = new Vector3(playerPhotoPos.x, playerPhotoPos.y - 200, playerPhotoPos.z);
-        npcPhoto.transform.position = new Vector3(npcPhotoPos.x, npcPhotoPos.y - 200, npcPhotoPos.z);
-        dialougeBox.transform.position = new Vector3(boxPos.x, boxPos.y - 200, boxPos.z);
-        npcLabel.transform.position = new Vector3(namePos.x, namePos.y - 200, namePos.z);
-        dialouge.transform.position = new Vector3(dialougePos.x, dialougePos.y - 200, dialougePos.z);
-        //choices.SetActive(false);
+        playerPhoto.transform.position = pPP;
+        npcPhoto.transform.position = nPP;
+        dialougeBox.transform.position = bP;
+        npcLabel.transform.position = nP;
+        dialouge.transform.position = dP;
+        choices.SetActive(false);
+        //*/
     }
 
     public void questChoice()
