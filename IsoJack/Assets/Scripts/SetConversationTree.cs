@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class SetConversationTree : MonoBehaviour
 {
+    public GameObject ConversationView;
     public int textPosition = 0;
     public List<int> dialogueType;
     /* 0 = Normal
@@ -18,7 +19,6 @@ public class SetConversationTree : MonoBehaviour
     public List<string> ChoiceWarps; //Only for Dialogue Options Warp1;Warp2;Warp3;Warp4
 
     private int tp; //Text Position
-    private GameObject ConversationView;
     private GameObject DialogueTextObject;
     private GameObject NPCPortrait;
     private GameObject PlayerPortrait;
@@ -32,11 +32,8 @@ public class SetConversationTree : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-    }
-
-    void OnEnable()
-    {
-        ConversationView = GameObject.Find("ConversationView");
+        bool ConvIsInactive = (ConversationView.active == false);
+        if (ConvIsInactive) ConversationView.SetActive(true);
         DialogueTextObject = GameObject.Find("ConversationView/DialogueText");
         NPCPortrait = GameObject.Find("ConversationView/npcPortrait");
         PlayerPortrait = GameObject.Find("ConversationView/playerPortrait");
@@ -46,6 +43,16 @@ public class SetConversationTree : MonoBehaviour
         Dia2 = GameObject.Find("ConversationView/choicesCanvas/DialogueOptionTwo");
         Dia3 = GameObject.Find("ConversationView/choicesCanvas/DialogueOptionThree");
         Dia4 = GameObject.Find("ConversationView/choicesCanvas/DialogueOptionFour");
+        if (ConvIsInactive) ConversationView.SetActive(false);
+    }
+
+    void OnEnable()
+    {
+        
+    }
+
+    public void StartConversation()
+    {
         Debug.Log("Started Conversation");
         tp = textPosition;
         loadDialogue();
