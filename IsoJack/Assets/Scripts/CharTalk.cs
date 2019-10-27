@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class CharTalk : MonoBehaviour
 {
+    public static CharTalk charInstance = null;
     private GameObject DialogueBox;
     private GameObject diotext;
     private GameObject npcLabel;

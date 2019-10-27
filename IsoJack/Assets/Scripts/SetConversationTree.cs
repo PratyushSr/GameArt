@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class SetConversationTree : MonoBehaviour
 {
     
-    public GameObject ConversationView;
+    //public GameObject ConversationView;
     public int textPosition = 0;
     public List<int> dialogueType;
      //0 = Normal
@@ -26,7 +26,7 @@ public class SetConversationTree : MonoBehaviour
     private GameObject NPCPortrait;
     private GameObject PlayerPortrait;
     private GameObject NPCNameObject;
-    private GameObject ChoicesCanvas;
+    public GameObject ChoicesCanvas;
     private GameObject Dia1;
     private GameObject Dia2;
     private GameObject Dia3;
@@ -35,18 +35,18 @@ public class SetConversationTree : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        bool ConvIsInactive = ConversationView.activeSelf;
-        if (ConvIsInactive) ConversationView.SetActive(true);
+        //bool ConvIsInactive = ConversationView.activeSelf;
+        //if (ConvIsInactive) ConversationView.SetActive(true);
         DialogueTextObject = GameObject.Find("ConversationView/DialogueText");
         NPCPortrait = GameObject.Find("ConversationView/npcPortrait");
         PlayerPortrait = GameObject.Find("ConversationView/playerPortrait");
         NPCNameObject = GameObject.Find("ConversationView/NPCNameTag");
-        ChoicesCanvas = GameObject.Find("ConversationView/choicesCanvas");
+        //ChoicesCanvas = GameObject.Find("ConversationView/choicesCanvas");
         Dia1 = GameObject.Find("ConversationView/choicesCanvas/DialogueOptionOne");
         Dia2 = GameObject.Find("ConversationView/choicesCanvas/DialogueOptionTwo");
         Dia3 = GameObject.Find("ConversationView/choicesCanvas/DialogueOptionThree");
         Dia4 = GameObject.Find("ConversationView/choicesCanvas/DialogueOptionFour");
-        if (ConvIsInactive) ConversationView.SetActive(false);
+        //if (ConvIsInactive) ConversationView.SetActive(false);
     }
 
     void OnEnable()
@@ -71,14 +71,19 @@ public class SetConversationTree : MonoBehaviour
             loadDialogue();
         }
         
-        if (dialogueType[tp] == 1)
+        if (Input.GetMouseButtonDown(0) && dialogueType[tp] == 1)
         {
-            int choice = ConversationView.GetComponent<DialougeView>().getChoicePressed();
+            int choice = DialougeView.converstationInstance.getChoicePressed();
             if (choice != 0)
             {
                 tp = int.Parse(GetSection(ChoiceWarps[tp], choice - 1));
                 loadDialogue();
             }
+            tp += 1;
+        }
+        if (Input.GetMouseButtonDown(0) && dialogueType[tp] == 2)
+        {
+            CharTalk.charInstance.exitDialougeView();
         }
     }
 
@@ -94,20 +99,20 @@ public class SetConversationTree : MonoBehaviour
             Dia2.SetActive(true);
             Dia3.SetActive(true);
             Dia4.SetActive(true);
-            ConversationView.SetActive(false);
+            CharTalk.charInstance.exitDialougeView();
         }
         else
         {
-
             if (dialogueType[tp] == 0)
-            {
+            { 
                 ChoicesCanvas.SetActive(false);
                 DialogueTextObject.GetComponent<UnityEngine.UI.Text>().text = dialogueText[tp];
             }
             else if (dialogueType[tp] == 1)
             {
+                ChoicesCanvas.SetActive(true);
                 DialogueTextObject.GetComponent<UnityEngine.UI.Text>().text = GetSection(dialogueText[tp], 0);
-                ConversationView.GetComponent<DialougeView>().showDialougeChoices();
+                DialougeView.converstationInstance.showDialougeChoices();
                 ChoicesCanvas.SetActive(true);
                 int c = CountSections(dialogueText[tp]);
                 Dia1.SetActive(false);

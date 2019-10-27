@@ -60479,7 +60479,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1634927664
 RectTransform:
   m_ObjectHideFlags: 0
@@ -60635,14 +60635,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3c50e64342ec144eaf83045612f1e45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ConversationView: {fileID: 0}
   textPosition: 0
-  dialogueType: 
-  NPCSprite: []
-  PlayerSprite: []
-  NPCName: []
-  dialogueText: []
-  ChoiceWarps: []
+  dialogueType: 01000000
+  NPCSprite:
+  - {fileID: 21300000, guid: 02db179742dc9dc4fac55043b31e17ba, type: 3}
+  PlayerSprite:
+  - {fileID: 21300000, guid: b7ddbe303b91f954d8ec881b73d1571e, type: 3}
+  NPCName:
+  - Blacksmith
+  dialogueText:
+  - What came first? The chicken or the egg?;Chicken;Egg;How should I know?!
+  - Oh. so you think the Chicken came first huh?
+  - Oh. so you think the Egg came first huh?
+  - Well, I thought it was worth asking...
+  ChoiceWarps:
+  - 1
+  - 2
+  - 3
+  ChoicesCanvas: {fileID: 1511775813}
 --- !u!1 &1664070302
 GameObject:
   m_ObjectHideFlags: 0
@@ -92566,7 +92576,7 @@ MonoBehaviour:
   dialougeBox: {fileID: 953815281}
   npcLabel: {fileID: 832857731}
   dialouge: {fileID: 807063797}
-  choices: {fileID: 0}
+  choices: {fileID: 1511775813}
 --- !u!114 &1939259099
 MonoBehaviour:
   m_ObjectHideFlags: 0
