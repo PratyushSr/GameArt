@@ -60636,12 +60636,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textPosition: 0
-  dialogueType: 01000000
+  dialogueType: 01000000020000000200000002000000
   NPCSprite:
+  - {fileID: 21300000, guid: 02db179742dc9dc4fac55043b31e17ba, type: 3}
+  - {fileID: 21300000, guid: 02db179742dc9dc4fac55043b31e17ba, type: 3}
+  - {fileID: 21300000, guid: 02db179742dc9dc4fac55043b31e17ba, type: 3}
   - {fileID: 21300000, guid: 02db179742dc9dc4fac55043b31e17ba, type: 3}
   PlayerSprite:
   - {fileID: 21300000, guid: b7ddbe303b91f954d8ec881b73d1571e, type: 3}
+  - {fileID: 21300000, guid: b7ddbe303b91f954d8ec881b73d1571e, type: 3}
+  - {fileID: 21300000, guid: b7ddbe303b91f954d8ec881b73d1571e, type: 3}
+  - {fileID: 21300000, guid: b7ddbe303b91f954d8ec881b73d1571e, type: 3}
   NPCName:
+  - Blacksmith
+  - Blacksmith
+  - Blacksmith
   - Blacksmith
   dialogueText:
   - What came first? The chicken or the egg?;Chicken;Egg;How should I know?!
@@ -60649,9 +60658,10 @@ MonoBehaviour:
   - Oh. so you think the Egg came first huh?
   - Well, I thought it was worth asking...
   ChoiceWarps:
-  - 1
-  - 2
-  - 3
+  - 1;2;3
+  - 
+  - 
+  - 
   ChoicesCanvas: {fileID: 1511775813}
 --- !u!1 &1664070302
 GameObject:

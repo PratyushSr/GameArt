@@ -13,7 +13,7 @@ public class SetConversationTree : MonoBehaviour
     public List<int> dialogueType;
      //0 = Normal
      //1 = 4 - way Choice
-     //2 = Exit
+     //2 = Exit on next click
      
     public List<Sprite> NPCSprite;
     public List<Sprite> PlayerSprite;
@@ -71,7 +71,7 @@ public class SetConversationTree : MonoBehaviour
             loadDialogue();
         }
         
-        if (Input.GetMouseButtonDown(0) && dialogueType[tp] == 1)
+        if (dialogueType[tp] == 1)
         {
             int choice = DialougeView.converstationInstance.getChoicePressed();
             if (choice != 0)
@@ -79,18 +79,8 @@ public class SetConversationTree : MonoBehaviour
                 tp = int.Parse(GetSection(ChoiceWarps[tp], choice - 1));
                 loadDialogue();
             }
-            tp += 1;
         }
-        if (Input.GetMouseButtonDown(0) && dialogueType[tp] == 2)
-        {
-            CharTalk.charInstance.exitDialougeView();
-        }
-    }
-
-    void loadDialogue()
-    {
-        Debug.Log(tp);
-        if (tp >= dialogueText.Count || dialogueType[tp] == 2)
+        if (Input.GetMouseButtonDown(0) && (dialogueType[tp] == 2 || tp+1 >= dialogueText.Count))
         {
             Debug.Log("Ended Conversation");
             gameObject.GetComponent<SetConversationTree>().enabled = false;
@@ -99,55 +89,57 @@ public class SetConversationTree : MonoBehaviour
             Dia2.SetActive(true);
             Dia3.SetActive(true);
             Dia4.SetActive(true);
-            CharTalk.charInstance.exitDialougeView();
+            //CharTalk.charInstance.exitDialougeView();
         }
-        else
-        {
-            if (dialogueType[tp] == 0)
-            { 
-                ChoicesCanvas.SetActive(false);
-                DialogueTextObject.GetComponent<UnityEngine.UI.Text>().text = dialogueText[tp];
-            }
-            else if (dialogueType[tp] == 1)
-            {
-                ChoicesCanvas.SetActive(true);
-                DialogueTextObject.GetComponent<UnityEngine.UI.Text>().text = GetSection(dialogueText[tp], 0);
-                DialougeView.converstationInstance.showDialougeChoices();
-                ChoicesCanvas.SetActive(true);
-                int c = CountSections(dialogueText[tp]);
-                Dia1.SetActive(false);
-                Dia2.SetActive(false);
-                Dia3.SetActive(false);
-                Dia4.SetActive(false);
+    }
 
-                if (c > 1)
-                {
-                    Dia1.SetActive(true);
-                    Dia1.transform.GetChild(0).gameObject.GetComponent<UnityEngine.UI.Text>().text = GetSection(dialogueText[tp], 1);
-                }
-                if (c > 2)
-                {
-                    Dia2.SetActive(true);
-                    Dia2.transform.GetChild(0).gameObject.GetComponent<UnityEngine.UI.Text>().text = GetSection(dialogueText[tp], 2);
-                }
-                if (c > 3)
-                {
-                    Dia3.SetActive(true);
-                    Dia3.transform.GetChild(0).gameObject.GetComponent<UnityEngine.UI.Text>().text = GetSection(dialogueText[tp], 3);
-                }
-                if (c > 4)
-                {
-                    Dia4.SetActive(true);
-                    Dia4.transform.GetChild(0).gameObject.GetComponent<UnityEngine.UI.Text>().text = GetSection(dialogueText[tp], 4);
-                }
-            }
-            //Update Name
-            if (NPCName[tp] != "") NPCNameObject.GetComponent<UnityEngine.UI.Text>().text = NPCName[tp];
-            //Update NPC Sprite
-            if (NPCSprite[tp] != null) NPCPortrait.GetComponent<UnityEngine.UI.Image>().sprite = NPCSprite[tp];
-            //Update Player Sprite
-            if (PlayerSprite[tp] != null) PlayerPortrait.GetComponent<UnityEngine.UI.Image>().sprite = PlayerSprite[tp];
+    void loadDialogue()
+    {
+        Debug.Log("Conversation Section: " + tp.ToString());
+        if (dialogueType[tp] == 0 || dialogueType[tp] == 2)
+        { 
+            ChoicesCanvas.SetActive(false);
+            DialogueTextObject.GetComponent<UnityEngine.UI.Text>().text = dialogueText[tp];
         }
+        else if (dialogueType[tp] == 1)
+        {
+            ChoicesCanvas.SetActive(true);
+            DialogueTextObject.GetComponent<UnityEngine.UI.Text>().text = GetSection(dialogueText[tp], 0);
+            DialougeView.converstationInstance.showDialougeChoices();
+            ChoicesCanvas.SetActive(true);
+            int c = CountSections(dialogueText[tp]);
+            Dia1.SetActive(false);
+            Dia2.SetActive(false);
+            Dia3.SetActive(false);
+            Dia4.SetActive(false);
+
+            if (c > 1)
+            {
+                Dia1.SetActive(true);
+                Dia1.transform.GetChild(0).gameObject.GetComponent<UnityEngine.UI.Text>().text = GetSection(dialogueText[tp], 1);
+            }
+            if (c > 2)
+            {
+                Dia2.SetActive(true);
+                Dia2.transform.GetChild(0).gameObject.GetComponent<UnityEngine.UI.Text>().text = GetSection(dialogueText[tp], 2);
+            }
+            if (c > 3)
+            {
+                Dia3.SetActive(true);
+                Dia3.transform.GetChild(0).gameObject.GetComponent<UnityEngine.UI.Text>().text = GetSection(dialogueText[tp], 3);
+            }
+            if (c > 4)
+            {
+                Dia4.SetActive(true);
+                Dia4.transform.GetChild(0).gameObject.GetComponent<UnityEngine.UI.Text>().text = GetSection(dialogueText[tp], 4);
+            }
+        }
+        //Update Name
+        if (NPCName[tp] != "") NPCNameObject.GetComponent<UnityEngine.UI.Text>().text = NPCName[tp];
+        //Update NPC Sprite
+        if (NPCSprite[tp] != null) NPCPortrait.GetComponent<UnityEngine.UI.Image>().sprite = NPCSprite[tp];
+        //Update Player Sprite
+        if (PlayerSprite[tp] != null) PlayerPortrait.GetComponent<UnityEngine.UI.Image>().sprite = PlayerSprite[tp];
     }
 
     string GetSection(string text, int section)
