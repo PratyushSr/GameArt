@@ -20,6 +20,6 @@ public class Settings : MonoBehaviour
     public void LoadMain()
     {
         //Time.timeScale = 1f;
-        SceneManager.LoadScene("HUD");
+        SceneManager.LoadScene("IsoJack_OverWorld");
     }
 }

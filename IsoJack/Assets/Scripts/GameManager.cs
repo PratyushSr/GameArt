@@ -10,18 +10,19 @@ public class GameManager : MonoBehaviour
     public int wood;
     public int coin;
     public int days;
+    public int hp;
     public Text woodCount;
     public Text coinCount;
     public Text daysRemain;
-
+    public Text locationTxt;
     public static bool isPaused = false;
     public GameObject pauseMenuUI;
-
     public Animator locationAni;
-    public Text locationTxt;
-
     public Animator adventureLogAni;
-
+    public Sprite[] timeOfDay;
+    public Image timeIndicator;
+    public bool isDay;
+    public bool inConversation;
 
 
     void Awake()
@@ -33,6 +34,9 @@ public class GameManager : MonoBehaviour
         woodCount.text = wood.ToString();
         coinCount.text = coin.ToString();
         daysRemain.text = days.ToString() + " Days Remain";
+        timeIndicator.sprite = timeOfDay[0];
+        isDay = true;
+        hp = 100;
 
     }
 
@@ -45,6 +49,21 @@ public class GameManager : MonoBehaviour
                 Resume();
             else
                 Pause();
+        }
+
+        if (Input.GetKeyDown(KeyCode.L))
+            locationPopIn();
+        if (Input.GetKeyDown(KeyCode.C))
+            changeIndicator();
+        if(inConversation == true)
+        {
+            Time.timeScale = 0f;
+            isPaused = true;
+        }
+        else
+        {
+            Time.timeScale = 1f;
+            isPaused = false;
         }
 
     }
@@ -100,6 +119,20 @@ public class GameManager : MonoBehaviour
     {
         //Time.timeScale = 1f;
         SceneManager.LoadScene("Map");
+    }
+
+    public void changeIndicator() // 0 is day and 1 is night
+    {
+        if(isDay)
+        {
+            timeIndicator.sprite = timeOfDay[1];
+            isDay = false;
+        }
+        else
+        {
+            timeIndicator.sprite = timeOfDay[0];
+            isDay = true;
+        }
     }
 
     public void QuitGame()
