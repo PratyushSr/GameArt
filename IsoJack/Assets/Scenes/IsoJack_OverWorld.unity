@@ -1034,7 +1034,7 @@ Transform:
   m_Children:
   - {fileID: 148674747}
   m_Father: {fileID: 503347060}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &190018498
 SpriteRenderer:
@@ -2417,9 +2417,9 @@ Transform:
   m_Children:
   - {fileID: 19852894}
   - {fileID: 1664070303}
-  - {fileID: 1852155978}
   - {fileID: 1109452373}
   - {fileID: 190018497}
+  - {fileID: 1852155978}
   m_Father: {fileID: 2015984013}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -25674,6 +25674,7 @@ GameObject:
   - component: {fileID: 1042385246}
   - component: {fileID: 1042385248}
   - component: {fileID: 1042385247}
+  - component: {fileID: 1042385249}
   m_Layer: 0
   m_Name: dialogueZone
   m_TagString: Untagged
@@ -25702,7 +25703,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1042385245}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d62de6396384ba644bb0ddb96523f353, type: 3}
   m_Name: 
@@ -25739,6 +25740,31 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.55, y: 1.51}
   m_EdgeRadius: 0
+--- !u!114 &1042385249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042385245}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3c50e64342ec144eaf83045612f1e45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ConversationView: {fileID: 0}
+  textPosition: 0
+  dialogueType: 01000000
+  NPCSprite:
+  - {fileID: 21300000, guid: 02db179742dc9dc4fac55043b31e17ba, type: 3}
+  PlayerSprite:
+  - {fileID: 21300000, guid: b7ddbe303b91f954d8ec881b73d1571e, type: 3}
+  NPCName:
+  - Blacksmith
+  dialogueText:
+  - Lovely day today, isn't it?
+  ChoiceWarps: []
+  ChoicesCanvas: {fileID: 1511775813}
 --- !u!1001 &1069562928
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27257,7 +27283,7 @@ Transform:
   m_Children:
   - {fileID: 1206463133}
   m_Father: {fileID: 503347060}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1109452374
 SpriteRenderer:
@@ -60635,6 +60661,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3c50e64342ec144eaf83045612f1e45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ConversationView: {fileID: 1939259097}
   textPosition: 0
   dialogueType: 01000000020000000200000002000000
   NPCSprite:
@@ -67693,7 +67720,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 503347060}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1852155979
 MonoBehaviour:

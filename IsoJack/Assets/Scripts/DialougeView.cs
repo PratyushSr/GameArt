@@ -145,4 +145,6 @@ public class DialougeView : MonoBehaviour
         choiceSelected = 0;
         return returnVal;
     }
+
+  
 }

@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class SetConversationTree : MonoBehaviour
 {
     
-    //public GameObject ConversationView;
+    public GameObject ConversationView;
     public int textPosition = 0;
     public List<int> dialogueType;
      //0 = Normal
@@ -32,6 +32,8 @@ public class SetConversationTree : MonoBehaviour
     private GameObject Dia3;
     private GameObject Dia4;
 
+    private GameObject hp;
+    private GameObject inventory;
     // Start is called before the first frame update
     void Start()
     {
@@ -47,6 +49,8 @@ public class SetConversationTree : MonoBehaviour
         Dia3 = GameObject.Find("ConversationView/choicesCanvas/DialogueOptionThree");
         Dia4 = GameObject.Find("ConversationView/choicesCanvas/DialogueOptionFour");
         //if (ConvIsInactive) ConversationView.SetActive(false);
+        hp = GameObject.Find("HUDCanvas/HPIndicator");
+        inventory = GameObject.Find("HUDCanvas/Inventory");
     }
 
     void OnEnable()
@@ -83,7 +87,10 @@ public class SetConversationTree : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && (dialogueType[tp] == 2 || tp+1 >= dialogueText.Count))
         {
             Debug.Log("Ended Conversation");
-            gameObject.GetComponent<SetConversationTree>().enabled = false;
+            ConversationView.SetActive(false);
+            GameManager.instance.inConversation = false;
+            hp.SetActive(true);
+            inventory.SetActive(true);
             ChoicesCanvas.SetActive(true);
             Dia1.SetActive(true);
             Dia2.SetActive(true);
@@ -95,6 +102,7 @@ public class SetConversationTree : MonoBehaviour
 
     void loadDialogue()
     {
+        GameManager.instance.inConversation = true;
         Debug.Log("Conversation Section: " + tp.ToString());
         if (dialogueType[tp] == 0 || dialogueType[tp] == 2)
         { 
