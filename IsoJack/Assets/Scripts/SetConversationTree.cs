@@ -34,6 +34,8 @@ public class SetConversationTree : MonoBehaviour
 
     private GameObject hp;
     private GameObject inventory;
+
+    private bool dialogueActive;
     // Start is called before the first frame update
     void Start()
     {
@@ -61,6 +63,10 @@ public class SetConversationTree : MonoBehaviour
     public void StartConversation()
     {
         Debug.Log("Started Conversation");
+        GameManager.instance.inConversation = true;
+        hp.SetActive(false);
+        inventory.SetActive(false);
+        ConversationView.SetActive(true);
         tp = textPosition;
         loadDialogue();
     }
@@ -68,13 +74,31 @@ public class SetConversationTree : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        if (Input.GetMouseButtonDown(0) && dialogueType[tp] == 0)
+        if ((Input.GetKeyDown(KeyCode.Space)|| Input.GetMouseButtonDown(0)) && dialogueActive)
         {
-            tp += 1;
-            loadDialogue();
+            if(ConversationView.activeInHierarchy == false)
+                StartConversation();
+
+            if ((Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space)) && dialogueType[tp] == 0)
+            {
+                tp += 1;
+                loadDialogue();
+            }
+            if ((Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space)) && (dialogueType[tp] == 2 || tp + 1 >= dialogueText.Count))
+            {
+                Debug.Log("Ended Conversation");
+                ConversationView.SetActive(false);
+                GameManager.instance.inConversation = false;
+                hp.SetActive(true);
+                inventory.SetActive(true);
+                ChoicesCanvas.SetActive(true);
+                Dia1.SetActive(true);
+                Dia2.SetActive(true);
+                Dia3.SetActive(true);
+                Dia4.SetActive(true);
+                //CharTalk.charInstance.exitDialougeView();
+            }
         }
-        
         if (dialogueType[tp] == 1)
         {
             int choice = DialougeView.converstationInstance.getChoicePressed();
@@ -84,25 +108,12 @@ public class SetConversationTree : MonoBehaviour
                 loadDialogue();
             }
         }
-        if (Input.GetMouseButtonDown(0) && (dialogueType[tp] == 2 || tp+1 >= dialogueText.Count))
-        {
-            Debug.Log("Ended Conversation");
-            ConversationView.SetActive(false);
-            GameManager.instance.inConversation = false;
-            hp.SetActive(true);
-            inventory.SetActive(true);
-            ChoicesCanvas.SetActive(true);
-            Dia1.SetActive(true);
-            Dia2.SetActive(true);
-            Dia3.SetActive(true);
-            Dia4.SetActive(true);
-            //CharTalk.charInstance.exitDialougeView();
-        }
+
     }
 
     void loadDialogue()
     {
-        GameManager.instance.inConversation = true;
+        
         Debug.Log("Conversation Section: " + tp.ToString());
         if (dialogueType[tp] == 0 || dialogueType[tp] == 2)
         { 
@@ -169,6 +180,21 @@ public class SetConversationTree : MonoBehaviour
         }
         return count;
     }
-    
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            Debug.Log("Can talk!!");
+            dialogueActive = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            dialogueActive = false;
+        }
+    }
 }
 //*/
