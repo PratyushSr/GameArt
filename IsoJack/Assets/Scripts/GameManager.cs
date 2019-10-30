@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
 
 public class GameManager : MonoBehaviour
 {
+
     public static GameManager instance = null;
     public int wood;
     public int coin;
@@ -38,6 +40,7 @@ public class GameManager : MonoBehaviour
         isDay = true;
         hp = 100;
 
+        
     }
 
     // Update is called once per frame
@@ -83,9 +86,16 @@ public class GameManager : MonoBehaviour
 
     public void locationPopIn()
     {
-        locationTxt.text = "Arrived in Location"; 
+        locationTxt.text = "Iso Village"; 
         locationAni.SetTrigger("Active");
     }
+
+    public void locationPopIn(string location)
+    {
+        locationTxt.text = location;
+        locationAni.SetTrigger("Active");
+    }
+
 
     public void adventureLogPopIn()
     {
@@ -141,4 +151,13 @@ public class GameManager : MonoBehaviour
         Application.Quit();
     }
 
+    void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene arg0, LoadSceneMode arg1)
+    {
+        locationPopIn();
+    }
 }

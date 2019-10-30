@@ -79,12 +79,12 @@ public class SetConversationTree : MonoBehaviour
             if(ConversationView.activeInHierarchy == false)
                 StartConversation();
 
-            if ((Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space)) && dialogueType[tp] == 0)
+            if (dialogueType[tp] == 0)
             {
                 tp += 1;
                 loadDialogue();
             }
-            if ((Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space)) && (dialogueType[tp] == 2 || tp + 1 >= dialogueText.Count))
+            if ((dialogueType[tp] == 2 || tp + 1 >= dialogueText.Count))
             {
                 Debug.Log("Ended Conversation");
                 ConversationView.SetActive(false);
