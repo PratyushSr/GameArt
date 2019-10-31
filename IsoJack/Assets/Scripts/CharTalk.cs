@@ -47,7 +47,7 @@ public class CharTalk : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space)&&dialogueActive)
         {
-            if (DialogueBox.activeInHierarchy)
+            if (dialougeView.activeInHierarchy)
             {
                 
                 if (deniedQuest == true)

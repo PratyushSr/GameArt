@@ -17,7 +17,6 @@ public class ButtonTests : MonoBehaviour
 
     public Button locationPopin;
 
-
     // Start is called before the first frame update
     void Start()
     { 
