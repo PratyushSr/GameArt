@@ -1,0 +1,466 @@
+fileFormatVersion: 2
+guid: 45257a2de21907f44930e68d550ad45f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9184112285371080368
+    second: Sabear-Attack-Sprite-Sheet_0
+  - first:
+      213: -3978123961276643738
+    second: Sabear-Attack-Sprite-Sheet_1
+  - first:
+      213: 4928923455490033948
+    second: Sabear-Attack-Sprite-Sheet_2
+  - first:
+      213: 4949390406290283685
+    second: Sabear-Attack-Sprite-Sheet_3
+  - first:
+      213: 3829463726415770631
+    second: Sabear-Attack-Sprite-Sheet_4
+  - first:
+      213: -4534045556624918920
+    second: Sabear-Attack-Sprite-Sheet_5
+  - first:
+      213: 3407589216651574532
+    second: Sabear-Attack-Sprite-Sheet_6
+  - first:
+      213: 39169215638057420
+    second: Sabear-Attack-Sprite-Sheet_7
+  - first:
+      213: 8800006759552972471
+    second: Sabear-Attack-Sprite-Sheet_8
+  - first:
+      213: -8700869794467874769
+    second: Sabear-Attack-Sprite-Sheet_10
+  - first:
+      213: 671610143541752865
+    second: Sabear-Attack-Sprite-Sheet_11
+  - first:
+      213: 6259214572355284980
+    second: Sabear-Attack-Sprite-Sheet_12
+  - first:
+      213: -4460640998933410621
+    second: Sabear-Attack-Sprite-Sheet_13
+  - first:
+      213: 5495306055203782004
+    second: Sabear-Attack-Sprite-Sheet_15
+  - first:
+      213: 5837101751295388069
+    second: Sabear-Attack-Sprite-Sheet_17
+  - first:
+      213: -1317386434561216268
+    second: Sabear-Attack-Sprite-Sheet_19
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sabear-Attack-Sprite-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 618
+        width: 139
+        height: 242
+      alignment: 9
+      pivot: {x: 0.4098293, y: 0.50099975}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b9891e2e0a22f74f8d5f9cd5cb29267
+      internalID: 9184112285371080368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Attack-Sprite-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 618
+        width: 193
+        height: 242
+      alignment: 9
+      pivot: {x: 0.30915618, y: 0.4899814}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cda7bd62f8ccc5b46a9e806b32f89ca4
+      internalID: -3978123961276643738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Attack-Sprite-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 617
+        width: 240
+        height: 243
+      alignment: 9
+      pivot: {x: 0.24371414, y: 0.48531112}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e9ffdee9dcbd264997e19724f39a1a8
+      internalID: 4928923455490033948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Attack-Sprite-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 615
+        width: 253
+        height: 243
+      alignment: 9
+      pivot: {x: 0.24038926, y: 0.48376137}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d49c4764be5b3d4e9ea631eb7f3359f
+      internalID: 4949390406290283685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Attack-Sprite-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 619
+        width: 213
+        height: 278
+      alignment: 9
+      pivot: {x: 0.26108834, y: 0.41205448}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0cf051e69398ef43ab37e03462a7b58
+      internalID: 3829463726415770631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Attack-Sprite-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 319
+        width: 221
+        height: 241
+      alignment: 9
+      pivot: {x: 0.26810145, y: 0.47637218}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38a4ea9e484060b4593a2766fc9b8b37
+      internalID: -4534045556624918920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Attack-Sprite-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 314
+        width: 179
+        height: 249
+      alignment: 9
+      pivot: {x: 0.34093863, y: 0.50762326}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77314cb7ce3a6674e89c73c9b74388fd
+      internalID: 39169215638057420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Attack-Sprite-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 319
+        width: 150
+        height: 236
+      alignment: 9
+      pivot: {x: 0.36813354, y: 0.48161975}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f6e6648f5d167d4b8adf774a4a87d63
+      internalID: 8800006759552972471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Attack-Sprite-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 314
+        width: 147
+        height: 237
+      alignment: 9
+      pivot: {x: 0.43021107, y: 0.4832864}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e2572768703d414780d35bf8adbaaa0
+      internalID: -8700869794467874769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Attack-Sprite-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 314
+        width: 147
+        height: 237
+      alignment: 9
+      pivot: {x: 0.44312355, y: 0.5218062}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2efde60ba4f401147b845902f969097a
+      internalID: 671610143541752865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Attack-Sprite-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 16
+        width: 147
+        height: 237
+      alignment: 9
+      pivot: {x: 0.4612626, y: 0.5000008}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f961b15914114e449a1e35b83202855
+      internalID: 6259214572355284980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Attack-Sprite-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 13
+        width: 196
+        height: 243
+      alignment: 9
+      pivot: {x: 0.30631304, y: 0.47656652}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bf06abdfa03cd3469c39a24cec54701
+      internalID: -4460640998933410621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Attack-Sprite-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 15
+        width: 196
+        height: 241
+      alignment: 9
+      pivot: {x: 0.32568172, y: 0.4684957}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a05f7545003c2be43b7c0c800b6c270c
+      internalID: 5495306055203782004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Attack-Sprite-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 14
+        width: 144
+        height: 248
+      alignment: 9
+      pivot: {x: 0.42091116, y: 0.4770391}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28843951659e49b498acce0de94f0bcb
+      internalID: 5837101751295388069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Attack-Sprite-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 1235
+        y: 16
+        width: 144
+        height: 248
+      alignment: 9
+      pivot: {x: 0.41397774, y: 0.4508306}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b4ef381951a3584fb5d68cb2da02c39
+      internalID: -1317386434561216268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
