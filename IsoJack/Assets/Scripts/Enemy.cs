@@ -22,11 +22,13 @@ public class Enemy : MonoBehaviour
     public float attackRange;
     public float damage;
 
-    
+    private Animator anim;
+
 
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -44,6 +46,7 @@ public class Enemy : MonoBehaviour
                 for (int i = 0; i < enemiesToDamage.Length; i++)
                 {
                     enemiesToDamage[i].GetComponent<PlayerAttack>().TakeDamage(damage);
+                    anim.SetTrigger("attack");
                 }
 
                 attackCd = attackTimer;
