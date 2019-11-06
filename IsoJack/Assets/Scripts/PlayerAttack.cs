@@ -10,7 +10,9 @@ public class PlayerAttack : MonoBehaviour
     public Transform attackPos;
     public LayerMask whatIsEnemies;
     public float attackRange;
-    public int damage;
+    public float damage;
+
+    public float health;
 
 
     void Update()
@@ -24,10 +26,12 @@ public class PlayerAttack : MonoBehaviour
                 Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
                 for (int i = 0; i < enemiesToDamage.Length; i++)
                 {
-                    enemiesToDamage[i].GetComponent<Enemy>().TakeDamage(damage);
+                    enemiesToDamage[i].GetComponent<Enemy>().EnemyTakeDamage(damage);
+                  
+
+
                 }
-
-
+                   
             }
             attackCd = attackTimer;
 
@@ -38,7 +42,14 @@ public class PlayerAttack : MonoBehaviour
             attackCd -= Time.deltaTime;
         }
 
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+
+        }
+
     }
+
 
 
 
@@ -46,6 +57,15 @@ public class PlayerAttack : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(attackPos.position, attackRange);
+
+    }
+
+
+    public void TakeDamage(float damage)
+    {
+
+        health -= damage;
+        Debug.Log("Player takes damage!!!");
 
     }
 
