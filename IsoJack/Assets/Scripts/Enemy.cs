@@ -24,11 +24,13 @@ public class Enemy : MonoBehaviour
 
     private Animator anim;
 
+    private float maxHealth;
 
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         anim = GetComponent<Animator>();
+        maxHealth = health;
     }
 
     void Update()
@@ -66,7 +68,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    
+
 
 
     void OnDrawGizmosSelected()
@@ -76,14 +78,29 @@ public class Enemy : MonoBehaviour
 
     }
 
-   
+
 
     public void EnemyTakeDamage(float damage)
     {
 
-        health -= damage;
+
         Debug.Log("Enemy takes damage!!!");
 
         aggressive = true;
+
+        if (health <= (float)(maxHealth * .5))
+        {
+            health -= (float)(damage - damage * .2);
+        }
+        else
+        {
+            health -= damage;
+
+            Vector2 difference = transform.position - target.transform.position;
+            transform.position = new Vector2(transform.position.x + difference.x, transform.position.y + difference.y);
+        }
+
     }
+
+
 }
