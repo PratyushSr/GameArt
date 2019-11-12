@@ -9,7 +9,7 @@ public class SetConversationTree : MonoBehaviour
 {
     
     public GameObject ConversationView;
-    public int textPosition = 0;
+    private int textPosition = 0;
     public List<int> dialogueType;
      //0 = Normal
      //1 = 4 - way Choice
@@ -31,6 +31,7 @@ public class SetConversationTree : MonoBehaviour
     private GameObject Dia2;
     private GameObject Dia3;
     private GameObject Dia4;
+    private GameObject AdvLog;
 
     private GameObject hp;
     private GameObject inventory;
@@ -50,6 +51,7 @@ public class SetConversationTree : MonoBehaviour
         Dia2 = GameObject.Find("ConversationView/choicesCanvas/DialogueOptionTwo");
         Dia3 = GameObject.Find("ConversationView/choicesCanvas/DialogueOptionThree");
         Dia4 = GameObject.Find("ConversationView/choicesCanvas/DialogueOptionFour");
+        AdvLog = GameObject.Find("AdventureLogPanel/AdventureLogBox");
         //if (ConvIsInactive) ConversationView.SetActive(false);
         hp = GameObject.Find("HUDCanvas/HPIndicator");
         inventory = GameObject.Find("HUDCanvas/Inventory");
@@ -67,6 +69,8 @@ public class SetConversationTree : MonoBehaviour
         hp.SetActive(false);
         inventory.SetActive(false);
         ConversationView.SetActive(true);
+        if (Adventureog.advLogInstance.isOpen == true)
+            Adventureog.advLogInstance.closeLog();
         tp = textPosition;
         loadDialogue();
     }
@@ -74,7 +78,7 @@ public class SetConversationTree : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ((Input.GetKeyDown(KeyCode.Space)|| Input.GetMouseButtonDown(0)) && dialogueActive)
+        if (Input.GetKeyDown(KeyCode.Space) && dialogueActive)
         {
             if(ConversationView.activeInHierarchy == false)
                 StartConversation();
@@ -96,6 +100,15 @@ public class SetConversationTree : MonoBehaviour
                 Dia2.SetActive(true);
                 Dia3.SetActive(true);
                 Dia4.SetActive(true);
+
+
+                if (NPCSprite[tp + 1] != null)
+                {
+                    Debug.Log("Augmenting tp!");
+                    textPosition = tp+1;
+                }
+                else
+                    Debug.Log("Did not augment tp!");
                 //CharTalk.charInstance.exitDialougeView();
             }
         }
@@ -115,6 +128,7 @@ public class SetConversationTree : MonoBehaviour
     {
         
         Debug.Log("Conversation Section: " + tp.ToString());
+        addQuestHandler(tp, NPCName[tp]);
         if (dialogueType[tp] == 0 || dialogueType[tp] == 2)
         { 
             ChoicesCanvas.SetActive(false);
@@ -194,6 +208,37 @@ public class SetConversationTree : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             dialogueActive = false;
+        }
+    }
+
+    public void addQuestHandler(int num, string name)
+    {
+        if(num == 1 && name == "Tavern Queen")
+        {
+            if (Adventureog.advLogInstance.questOne.qButton.activeInHierarchy == true)
+            {
+                textPosition = 4;
+                tp = 4;
+            }
+        }
+        if(num == 4 && name == "Tavern Queen")
+        {
+            if (Adventureog.advLogInstance.questOne.qButton.activeInHierarchy == false)
+            {
+                textPosition = 0;
+                tp = 1;
+            }
+        }
+
+        if(num == 7 && name == "Chief")
+        {
+            Adventureog.advLogInstance.questOne.qButton.SetActive(true);
+            Adventureog.advLogInstance.questOne.questInfo = "•There is a war looming! Go talk to the Tavern Queen to start preparing.";
+        }
+
+        if(num == 8 && name == "Tavern Queen")
+        {
+            Adventureog.advLogInstance.questOne.questInfo += "\n•Go to the forest and slay 5 bears.";
         }
     }
 }
