@@ -39,7 +39,16 @@ public class Enemy : MonoBehaviour
         {
 
             if (Vector2.Distance(transform.position, target.position) < 5 && Vector2.Distance(transform.position, target.position) > 1)
+            {
                 transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
+                anim.SetTrigger("walk");
+            }
+            else
+            {
+                anim.SetTrigger("idle");
+
+            }
+
 
             if (attackCd <= 0)
             {
@@ -63,7 +72,13 @@ public class Enemy : MonoBehaviour
 
         if (health <= 0)
         {
-            Destroy(gameObject);
+         
+            moveSpeed = 0;
+            anim.SetTrigger("dead");
+           
+
+           Destroy(gameObject, 5);
+
 
         }
     }
@@ -98,6 +113,7 @@ public class Enemy : MonoBehaviour
 
             Vector2 difference = transform.position - target.transform.position;
             transform.position = new Vector2(transform.position.x + difference.x, transform.position.y + difference.y);
+            
         }
 
     }

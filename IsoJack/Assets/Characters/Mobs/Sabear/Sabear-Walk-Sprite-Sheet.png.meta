@@ -1,7 +1,43 @@
 fileFormatVersion: 2
 guid: 06c3e0ec533635d4fb97324867496d4d
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -2610955342809065905
+    second: Sabear-Walk-Sprite-Sheet_0
+  - first:
+      213: 7957750104941537617
+    second: Sabear-Walk-Sprite-Sheet_1
+  - first:
+      213: -1315867198602416118
+    second: Sabear-Walk-Sprite-Sheet_2
+  - first:
+      213: 1049072819481005635
+    second: Sabear-Walk-Sprite-Sheet_3
+  - first:
+      213: -1191596343783268846
+    second: Sabear-Walk-Sprite-Sheet_4
+  - first:
+      213: 8706241158290572275
+    second: Sabear-Walk-Sprite-Sheet_5
+  - first:
+      213: -2512854960895685649
+    second: Sabear-Walk-Sprite-Sheet_6
+  - first:
+      213: -2267821439246556413
+    second: Sabear-Walk-Sprite-Sheet_7
+  - first:
+      213: 8636436156122207063
+    second: Sabear-Walk-Sprite-Sheet_8
+  - first:
+      213: 9084298547865868863
+    second: Sabear-Walk-Sprite-Sheet_9
+  - first:
+      213: 4156246143878063534
+    second: Sabear-Walk-Sprite-Sheet_10
+  - first:
+      213: 3604533506185162047
+    second: Sabear-Walk-Sprite-Sheet_11
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +76,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,9 +106,273 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Sabear-Walk-Sprite-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 617
+        width: 139
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9632f31a1ba76c479982d9b610ec9cc
+      internalID: -2610955342809065905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Walk-Sprite-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 617
+        width: 148
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a461ef239044871418e0eda2afa83a18
+      internalID: 7957750104941537617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Walk-Sprite-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 616
+        width: 150
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 237a4c240e228b94fb7e4974ff9ec927
+      internalID: -1315867198602416118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Walk-Sprite-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 614
+        width: 156
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1625594e6e64e2e4fbf7c04ae5167314
+      internalID: 1049072819481005635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Walk-Sprite-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 316
+        width: 150
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae639bf22e9535445a9ac455d9e15d5a
+      internalID: -1191596343783268846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Walk-Sprite-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 317
+        width: 148
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95bc58502c8d90b47a2bac2c96752830
+      internalID: 8706241158290572275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Walk-Sprite-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 317
+        width: 139
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4b267a950de9d548a37c922c634693f
+      internalID: -2512854960895685649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Walk-Sprite-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 317
+        width: 148
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81f86a60318c2794b8365f11190174a4
+      internalID: -2267821439246556413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Walk-Sprite-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 16
+        width: 150
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd97cb4a1a525bd458ea3f3d77bf69db
+      internalID: 8636436156122207063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Walk-Sprite-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 14
+        width: 156
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af15336ccb7b7a141b262ee3941bf0b4
+      internalID: 9084298547865868863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Walk-Sprite-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 16
+        width: 150
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edaf01594e9d70c4f9439a78516787f0
+      internalID: 4156246143878063534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Walk-Sprite-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 17
+        width: 148
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c82054aec8938a48a62216257d492c5
+      internalID: 3604533506185162047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
