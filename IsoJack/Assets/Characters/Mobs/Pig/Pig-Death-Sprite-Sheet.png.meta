@@ -1,7 +1,52 @@
 fileFormatVersion: 2
 guid: a820dcb172e485541b03b155da3fbaf7
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 4212263405343359913
+    second: Pig-Death-Sprite-Sheet_0
+  - first:
+      213: -8183753238045920280
+    second: Pig-Death-Sprite-Sheet_1
+  - first:
+      213: 6431378931451638744
+    second: Pig-Death-Sprite-Sheet_2
+  - first:
+      213: -1648162110298470642
+    second: Pig-Death-Sprite-Sheet_3
+  - first:
+      213: 6569346778667247241
+    second: Pig-Death-Sprite-Sheet_4
+  - first:
+      213: -9079678573914966266
+    second: Pig-Death-Sprite-Sheet_5
+  - first:
+      213: 1935499071563208627
+    second: Pig-Death-Sprite-Sheet_6
+  - first:
+      213: -8904223698525511238
+    second: Pig-Death-Sprite-Sheet_7
+  - first:
+      213: 2953899220202577651
+    second: Pig-Death-Sprite-Sheet_8
+  - first:
+      213: 8215543263342062205
+    second: Pig-Death-Sprite-Sheet_9
+  - first:
+      213: 5068166418367298113
+    second: Pig-Death-Sprite-Sheet_10
+  - first:
+      213: -6737771701656613097
+    second: Pig-Death-Sprite-Sheet_11
+  - first:
+      213: -5489286513139535639
+    second: Pig-Death-Sprite-Sheet_12
+  - first:
+      213: -305298335972281573
+    second: Pig-Death-Sprite-Sheet_13
+  - first:
+      213: 701773597964102661
+    second: Pig-Death-Sprite-Sheet_14
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +85,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,9 +115,336 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Pig-Death-Sprite-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 632
+        width: 154
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb604aa953fab2148a4b0ad43c3baaf4
+      internalID: 4212263405343359913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pig-Death-Sprite-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 632
+        width: 154
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 577e15c2498fbde4da61c9dcc07a5b69
+      internalID: -8183753238045920280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pig-Death-Sprite-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 632
+        width: 154
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6cb23217ff124e4b8f04ba9e16dd05c
+      internalID: 6431378931451638744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pig-Death-Sprite-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 632
+        width: 154
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23b90ed75bc32d94c804d8bf7ce19145
+      internalID: -1648162110298470642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pig-Death-Sprite-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 432
+        width: 154
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da64c6f2d8a322141ae2b1cada7cb532
+      internalID: 6569346778667247241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pig-Death-Sprite-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 432
+        width: 154
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3ad7b0f6d8ddbd44bc78ab7eae55e06
+      internalID: -9079678573914966266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pig-Death-Sprite-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 432
+        width: 154
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eff5bc68a04f7040a766637ebde1b70
+      internalID: 1935499071563208627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pig-Death-Sprite-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 432
+        width: 154
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d05bfd7b0e4eed40b94716e0734fbfb
+      internalID: -8904223698525511238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pig-Death-Sprite-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 232
+        width: 154
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1c8278a72e81014eb68e09c71483192
+      internalID: 2953899220202577651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pig-Death-Sprite-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 232
+        width: 154
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1dfad5ce1868b84194e923f9c083205
+      internalID: 8215543263342062205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pig-Death-Sprite-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 232
+        width: 154
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1508c91938ab8d249848ac0ab1c4c964
+      internalID: 5068166418367298113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pig-Death-Sprite-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 232
+        width: 154
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 440853e7c8f9f2c4b8180945f938df5b
+      internalID: -6737771701656613097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pig-Death-Sprite-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 32
+        width: 154
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 937d20223630e6948837a5d98c0413ad
+      internalID: -5489286513139535639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pig-Death-Sprite-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 32
+        width: 154
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfe10c8d4424e57478a60e0c05695324
+      internalID: -305298335972281573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pig-Death-Sprite-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 32
+        width: 154
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee4596414b33bc54b965418f11dbec47
+      internalID: 701773597964102661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

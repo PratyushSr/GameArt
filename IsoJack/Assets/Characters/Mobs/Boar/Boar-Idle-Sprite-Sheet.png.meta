@@ -1,0 +1,487 @@
+fileFormatVersion: 2
+guid: 960f2c6f8edc08c4eb075dee9878e973
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2952486910716050763
+    second: Boar-Idle-Sprite-Sheet_0
+  - first:
+      213: -6942190789811236224
+    second: Boar-Idle-Sprite-Sheet_1
+  - first:
+      213: -4257756306476703331
+    second: Boar-Idle-Sprite-Sheet_2
+  - first:
+      213: 3399800113823064105
+    second: Boar-Idle-Sprite-Sheet_3
+  - first:
+      213: -2132565250077004067
+    second: Boar-Idle-Sprite-Sheet_4
+  - first:
+      213: 7217969942029886329
+    second: Boar-Idle-Sprite-Sheet_5
+  - first:
+      213: -3085004280630635370
+    second: Boar-Idle-Sprite-Sheet_6
+  - first:
+      213: 7490773512802336808
+    second: Boar-Idle-Sprite-Sheet_7
+  - first:
+      213: -8847115761124843767
+    second: Boar-Idle-Sprite-Sheet_8
+  - first:
+      213: 5970923205412682241
+    second: Boar-Idle-Sprite-Sheet_9
+  - first:
+      213: 1497112148376791469
+    second: Boar-Idle-Sprite-Sheet_10
+  - first:
+      213: -804188105473266362
+    second: Boar-Idle-Sprite-Sheet_11
+  - first:
+      213: -4958882522730732560
+    second: Boar-Idle-Sprite-Sheet_12
+  - first:
+      213: -1552952257355518948
+    second: Boar-Idle-Sprite-Sheet_13
+  - first:
+      213: 8271357455898530508
+    second: Boar-Idle-Sprite-Sheet_14
+  - first:
+      213: -3492029270131752786
+    second: Boar-Idle-Sprite-Sheet_15
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Boar-Idle-Sprite-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 634
+        width: 153
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7646eba35a91fc4cb8ce13dfbc1d30c
+      internalID: 2952486910716050763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Idle-Sprite-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 634
+        width: 153
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d33ce605f12431145a3b5b73bf9f3daa
+      internalID: -6942190789811236224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Idle-Sprite-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 634
+        width: 153
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f05f07859b6ee044eb19ca114efbce72
+      internalID: -4257756306476703331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Idle-Sprite-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 634
+        width: 153
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d521206f49c422146a30c58ce6a2c744
+      internalID: 3399800113823064105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Idle-Sprite-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 434
+        width: 153
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e945d7d7990577408197b2bee30da00
+      internalID: -2132565250077004067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Idle-Sprite-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 434
+        width: 153
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83d38f13c6d6e744daf4e2267ca1e0aa
+      internalID: 7217969942029886329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Idle-Sprite-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 434
+        width: 153
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d9323f6eb07a3048817c1fb446efd6f
+      internalID: -3085004280630635370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Idle-Sprite-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 434
+        width: 153
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d16436f19694704aa2101fd130d08bc
+      internalID: 7490773512802336808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Idle-Sprite-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 233
+        width: 153
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b69e424c2f5e09d429028bf21cfe26b3
+      internalID: -8847115761124843767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Idle-Sprite-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 233
+        width: 153
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3f53c9055b885e4a96b088188216d72
+      internalID: 5970923205412682241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Idle-Sprite-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 233
+        width: 153
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d33c46981b2b16a45beede2010b64494
+      internalID: 1497112148376791469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Idle-Sprite-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 233
+        width: 153
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75576d4be2085f646832c338b5fb2985
+      internalID: -804188105473266362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Idle-Sprite-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 33
+        width: 153
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ba1552757a61804281ca5afecfdf8b2
+      internalID: -4958882522730732560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Idle-Sprite-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 33
+        width: 153
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36f9df4749ab3f8448379c92352330d7
+      internalID: -1552952257355518948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Idle-Sprite-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 33
+        width: 153
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 200ea6f097f19ad41b1045e056972759
+      internalID: 8271357455898530508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Idle-Sprite-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 33
+        width: 153
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d70b9cad188170e4b9de6317aef742fc
+      internalID: -3492029270131752786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

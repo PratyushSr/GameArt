@@ -1,0 +1,463 @@
+fileFormatVersion: 2
+guid: 450c1d75769b32440bf58ead8c961171
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8019837079714526743
+    second: Boar-Death-Sprite-Sheet_0
+  - first:
+      213: -3465160332307889557
+    second: Boar-Death-Sprite-Sheet_1
+  - first:
+      213: -3180388692738409498
+    second: Boar-Death-Sprite-Sheet_2
+  - first:
+      213: -5283235444299412827
+    second: Boar-Death-Sprite-Sheet_3
+  - first:
+      213: 8443062793409944818
+    second: Boar-Death-Sprite-Sheet_4
+  - first:
+      213: 760665320653191631
+    second: Boar-Death-Sprite-Sheet_5
+  - first:
+      213: -7230210375827086197
+    second: Boar-Death-Sprite-Sheet_6
+  - first:
+      213: 6596996190075368721
+    second: Boar-Death-Sprite-Sheet_7
+  - first:
+      213: 1178561855714382864
+    second: Boar-Death-Sprite-Sheet_8
+  - first:
+      213: -127105350392178957
+    second: Boar-Death-Sprite-Sheet_9
+  - first:
+      213: 1408763871394961225
+    second: Boar-Death-Sprite-Sheet_10
+  - first:
+      213: -3255856582092767435
+    second: Boar-Death-Sprite-Sheet_11
+  - first:
+      213: 2525052601200441260
+    second: Boar-Death-Sprite-Sheet_12
+  - first:
+      213: -8448549982918868367
+    second: Boar-Death-Sprite-Sheet_13
+  - first:
+      213: 8790744180420832805
+    second: Boar-Death-Sprite-Sheet_14
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Boar-Death-Sprite-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 634
+        width: 153
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 788a189b53671aa44aae7fc05533c382
+      internalID: 8019837079714526743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Death-Sprite-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 634
+        width: 153
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 157458f7431ffb34abb1c04ba030debe
+      internalID: -3465160332307889557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Death-Sprite-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 634
+        width: 153
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f043e87e536307408b6350416650dd0
+      internalID: -3180388692738409498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Death-Sprite-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 634
+        width: 153
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6dc09a7bf98afb468e3c2d80bb4e7bf
+      internalID: -5283235444299412827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Death-Sprite-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 434
+        width: 153
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0fa99202b0490443b5352e2eacca13a
+      internalID: 8443062793409944818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Death-Sprite-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 434
+        width: 153
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2d3b1f00805ce948ba93f37b2113a01
+      internalID: 760665320653191631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Death-Sprite-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 434
+        width: 153
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c55272b1efa92c34fb2249e76afadc3b
+      internalID: -7230210375827086197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Death-Sprite-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 434
+        width: 153
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c558afcfe90a074d9f7110f4d0cbce1
+      internalID: 6596996190075368721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Death-Sprite-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 234
+        width: 153
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efb6bf17f18c13a47bd5b826853dd1c8
+      internalID: 1178561855714382864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Death-Sprite-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 234
+        width: 153
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 229c67fa77ab7a0439fa834a21265a20
+      internalID: -127105350392178957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Death-Sprite-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 234
+        width: 153
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1413ce321fd15ba4fbe71ec5d3ccad3d
+      internalID: 1408763871394961225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Death-Sprite-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 234
+        width: 153
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61cb0a26304861042b6b80016f81edff
+      internalID: -3255856582092767435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Death-Sprite-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 34
+        width: 153
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 443aba35633a6af418aa6f3876379d00
+      internalID: 2525052601200441260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Death-Sprite-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 34
+        width: 153
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 095f94013ab89cc42856998cb8622460
+      internalID: -8448549982918868367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Death-Sprite-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 34
+        width: 153
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac2d82f2391b0624e9a2c9d5889576d9
+      internalID: 8790744180420832805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
