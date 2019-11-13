@@ -1,7 +1,52 @@
 fileFormatVersion: 2
 guid: 2d1841dd7094ba448921c199dff43813
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -6883161262072840586
+    second: Sabear-Death-Sprite-Sheet_0
+  - first:
+      213: 6669791120134644398
+    second: Sabear-Death-Sprite-Sheet_1
+  - first:
+      213: 987275881941897176
+    second: Sabear-Death-Sprite-Sheet_2
+  - first:
+      213: -4350398028808113422
+    second: Sabear-Death-Sprite-Sheet_3
+  - first:
+      213: 1355124675903312170
+    second: Sabear-Death-Sprite-Sheet_4
+  - first:
+      213: -4252375617539853091
+    second: Sabear-Death-Sprite-Sheet_5
+  - first:
+      213: 2336808129096744479
+    second: Sabear-Death-Sprite-Sheet_6
+  - first:
+      213: 2246878678212905445
+    second: Sabear-Death-Sprite-Sheet_7
+  - first:
+      213: 1242924251793257758
+    second: Sabear-Death-Sprite-Sheet_8
+  - first:
+      213: -994011403912774458
+    second: Sabear-Death-Sprite-Sheet_9
+  - first:
+      213: -7463741081489444235
+    second: Sabear-Death-Sprite-Sheet_10
+  - first:
+      213: -6819022273980068897
+    second: Sabear-Death-Sprite-Sheet_11
+  - first:
+      213: -7145832728876857633
+    second: Sabear-Death-Sprite-Sheet_12
+  - first:
+      213: -4713651365858016893
+    second: Sabear-Death-Sprite-Sheet_13
+  - first:
+      213: -4888092471000399278
+    second: Sabear-Death-Sprite-Sheet_14
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +85,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,9 +115,336 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Sabear-Death-Sprite-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 928
+        width: 140
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a498e1a8e0d2fbe459352d6a45f2c68e
+      internalID: -6883161262072840586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Death-Sprite-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 928
+        width: 140
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fbe2799a0cd9e349a6ebdf411f3f5ff
+      internalID: 6669791120134644398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Death-Sprite-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 928
+        width: 140
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c2bf973bf055a94eacc17211b9d9c89
+      internalID: 987275881941897176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Death-Sprite-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 928
+        width: 140
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 625f32fec292c3049aa90339d5d758b8
+      internalID: -4350398028808113422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Death-Sprite-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 628
+        width: 140
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b5d5c6005a0fa145862d73ad4006260
+      internalID: 1355124675903312170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Death-Sprite-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 628
+        width: 140
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 563d0f26754cbcb4e8b6b5746ed620e2
+      internalID: -4252375617539853091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Death-Sprite-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 628
+        width: 140
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b46bfa2d0197694a9a0d9bbb24ad62d
+      internalID: 2336808129096744479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Death-Sprite-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 628
+        width: 140
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f80953f8e612ff342bc83d62df04c970
+      internalID: 2246878678212905445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Death-Sprite-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 328
+        width: 140
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 415f51027f55fe245847f1b323f187e2
+      internalID: 1242924251793257758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Death-Sprite-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 328
+        width: 140
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6edc6c24779df34db94fd040a64471e
+      internalID: -994011403912774458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Death-Sprite-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 328
+        width: 140
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faae21cbd4931234c9374105347f44bc
+      internalID: -7463741081489444235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Death-Sprite-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 328
+        width: 140
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3e387d184afc9f48b9163ce0fa998bc
+      internalID: -6819022273980068897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Death-Sprite-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 28
+        width: 140
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a93c2b455abd904db24dc67763f0652
+      internalID: -7145832728876857633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Death-Sprite-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 28
+        width: 140
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c38014bf9984c57498bd3bf45a8bcf19
+      internalID: -4713651365858016893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Death-Sprite-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 28
+        width: 140
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90479697768e8af41af4742029c621d1
+      internalID: -4888092471000399278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

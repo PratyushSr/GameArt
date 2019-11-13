@@ -1,7 +1,55 @@
 fileFormatVersion: 2
 guid: 9fd79819b2507584ca011c2ebb94f742
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -600859042328792370
+    second: Sabear-Idle-Sprite-Sheet_0
+  - first:
+      213: -7713631486413576871
+    second: Sabear-Idle-Sprite-Sheet_1
+  - first:
+      213: 8079855177540487226
+    second: Sabear-Idle-Sprite-Sheet_2
+  - first:
+      213: 6204887051555420697
+    second: Sabear-Idle-Sprite-Sheet_3
+  - first:
+      213: 4528173939363069290
+    second: Sabear-Idle-Sprite-Sheet_4
+  - first:
+      213: -4845716743582621768
+    second: Sabear-Idle-Sprite-Sheet_5
+  - first:
+      213: 6383372202739770941
+    second: Sabear-Idle-Sprite-Sheet_6
+  - first:
+      213: -5443133970231296457
+    second: Sabear-Idle-Sprite-Sheet_7
+  - first:
+      213: 414461627762307561
+    second: Sabear-Idle-Sprite-Sheet_8
+  - first:
+      213: 7289791612255458713
+    second: Sabear-Idle-Sprite-Sheet_9
+  - first:
+      213: -1112323554855615237
+    second: Sabear-Idle-Sprite-Sheet_10
+  - first:
+      213: -8414328348803091468
+    second: Sabear-Idle-Sprite-Sheet_11
+  - first:
+      213: -2733160485788268617
+    second: Sabear-Idle-Sprite-Sheet_12
+  - first:
+      213: -4994632773202542223
+    second: Sabear-Idle-Sprite-Sheet_13
+  - first:
+      213: 6684830610770171684
+    second: Sabear-Idle-Sprite-Sheet_14
+  - first:
+      213: -2599829653013774512
+    second: Sabear-Idle-Sprite-Sheet_15
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +88,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,9 +118,357 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Sabear-Idle-Sprite-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 928
+        width: 140
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cae752b91fc5814086536a13f88dee0
+      internalID: -600859042328792370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Idle-Sprite-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 928
+        width: 143
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9135046982e07274bbe0ebe51ea6a3c7
+      internalID: -7713631486413576871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Idle-Sprite-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 928
+        width: 148
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8466f39378790de4dba738da2f2c7ffe
+      internalID: 8079855177540487226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Idle-Sprite-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 928
+        width: 153
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a901902ea0287154ca4472d3eb0bfc26
+      internalID: 6204887051555420697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Idle-Sprite-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 628
+        width: 154
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9faf5f6bdb15fa468e2dc0aa093ff20
+      internalID: 4528173939363069290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Idle-Sprite-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 628
+        width: 153
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cb8cf5a446bde1479c067af32f3916c
+      internalID: -4845716743582621768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Idle-Sprite-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 628
+        width: 148
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14acdd88d4ce8d144943a69482c7f9cb
+      internalID: 6383372202739770941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Idle-Sprite-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 628
+        width: 143
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89c5177faadc0c647af44dc1c3b93516
+      internalID: -5443133970231296457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Idle-Sprite-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 328
+        width: 140
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7070460a5e01c2e4e8dd2761a9d2b290
+      internalID: 414461627762307561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Idle-Sprite-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 328
+        width: 143
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90e91a69410a6b84ba6d20b90ca370ec
+      internalID: 7289791612255458713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Idle-Sprite-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 328
+        width: 148
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c435c06360f99814e92fa6fbcddc159d
+      internalID: -1112323554855615237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Idle-Sprite-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 328
+        width: 153
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99aeb143b5e25474d98f9bd6f8aa3675
+      internalID: -8414328348803091468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Idle-Sprite-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 28
+        width: 154
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d811adb5391696488813ec7d0902a6e
+      internalID: -2733160485788268617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Idle-Sprite-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 28
+        width: 153
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29b4004fa4e558042af20e4f73f1d42f
+      internalID: -4994632773202542223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Idle-Sprite-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 28
+        width: 148
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72f4509092489ee4cadc1b3b97af0b2d
+      internalID: 6684830610770171684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sabear-Idle-Sprite-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 28
+        width: 143
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b91cb385fa872174dbe5425712365e88
+      internalID: -2599829653013774512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
