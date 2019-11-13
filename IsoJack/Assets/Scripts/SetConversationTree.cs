@@ -26,14 +26,14 @@ public class SetConversationTree : MonoBehaviour
     private GameObject NPCPortrait;
     private GameObject PlayerPortrait;
     private GameObject NPCNameObject;
-    public GameObject ChoicesCanvas;
+    private GameObject ChoicesCanvas;
     private GameObject Dia1;
     private GameObject Dia2;
     private GameObject Dia3;
     private GameObject Dia4;
 
     private GameObject hp;
-    private GameObject inventory;
+    //private GameObject inventory;
 
     private bool dialogueActive;
     // Start is called before the first frame update
@@ -45,14 +45,15 @@ public class SetConversationTree : MonoBehaviour
         NPCPortrait = GameObject.Find("ConversationView/npcPortrait");
         PlayerPortrait = GameObject.Find("ConversationView/playerPortrait");
         NPCNameObject = GameObject.Find("ConversationView/NPCNameTag");
-        //ChoicesCanvas = GameObject.Find("ConversationView/choicesCanvas");
+        ChoicesCanvas = GameObject.Find("ConversationView/choicesCanvas");
         Dia1 = GameObject.Find("ConversationView/choicesCanvas/DialogueOptionOne");
         Dia2 = GameObject.Find("ConversationView/choicesCanvas/DialogueOptionTwo");
         Dia3 = GameObject.Find("ConversationView/choicesCanvas/DialogueOptionThree");
         Dia4 = GameObject.Find("ConversationView/choicesCanvas/DialogueOptionFour");
         //if (ConvIsInactive) ConversationView.SetActive(false);
         hp = GameObject.Find("HUDCanvas/HPIndicator");
-        inventory = GameObject.Find("HUDCanvas/Inventory");
+        //inventory = GameObject.Find("HUDCanvas/Inventory");
+        dialogueActive = true;
     }
 
     void OnEnable()
@@ -65,7 +66,7 @@ public class SetConversationTree : MonoBehaviour
         Debug.Log("Started Conversation");
         GameManager.instance.inConversation = true;
         hp.SetActive(false);
-        inventory.SetActive(false);
+        //inventory.SetActive(false);
         ConversationView.SetActive(true);
         tp = textPosition;
         loadDialogue();
@@ -90,7 +91,7 @@ public class SetConversationTree : MonoBehaviour
                 ConversationView.SetActive(false);
                 GameManager.instance.inConversation = false;
                 hp.SetActive(true);
-                inventory.SetActive(true);
+                //inventory.SetActive(true);
                 ChoicesCanvas.SetActive(true);
                 Dia1.SetActive(true);
                 Dia2.SetActive(true);
