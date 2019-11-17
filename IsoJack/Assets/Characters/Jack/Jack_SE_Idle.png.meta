@@ -95,10 +95,10 @@ TextureImporter:
       name: Jack_SE_Idle_0
       rect:
         serializedVersion: 2
-        x: 150
-        y: 395
-        width: 135
-        height: 288
+        x: 32
+        y: 31
+        width: 140
+        height: 289
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -106,7 +106,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbaeeffb0fde77e489e026b2ea19abd0
+      spriteID: 8ad322cb68772344894aa53512e6c89e
       internalID: 3464534460394775744
       vertices: []
       indices: 
@@ -116,10 +116,10 @@ TextureImporter:
       name: Jack_SE_Idle_1
       rect:
         serializedVersion: 2
-        x: 150
-        y: 55
-        width: 135
-        height: 285
+        x: 266
+        y: 31
+        width: 140
+        height: 286
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,7 +127,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8403bd0c27931d4c9496b69c2dc5b23
+      spriteID: 796cf6226452b334f935730620f5653b
       internalID: -2606788319322486317
       vertices: []
       indices: 
