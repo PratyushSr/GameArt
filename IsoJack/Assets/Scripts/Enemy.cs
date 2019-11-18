@@ -24,13 +24,11 @@ public class Enemy : MonoBehaviour
 
     private Animator anim;
 
-    private float maxHealth;
 
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         anim = GetComponent<Animator>();
-        maxHealth = health;
     }
 
     void Update()
@@ -39,16 +37,7 @@ public class Enemy : MonoBehaviour
         {
 
             if (Vector2.Distance(transform.position, target.position) < 5 && Vector2.Distance(transform.position, target.position) > 1)
-            {
                 transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
-                anim.SetTrigger("walk");
-            }
-            else
-            {
-                anim.SetTrigger("idle");
-
-            }
-
 
             if (attackCd <= 0)
             {
@@ -72,18 +61,12 @@ public class Enemy : MonoBehaviour
 
         if (health <= 0)
         {
-         
-            moveSpeed = 0;
-            anim.SetTrigger("dead");
-           
-
-           Destroy(gameObject, 5);
-
+            Destroy(gameObject);
 
         }
     }
 
-
+    
 
 
     void OnDrawGizmosSelected()
@@ -93,30 +76,14 @@ public class Enemy : MonoBehaviour
 
     }
 
-
+   
 
     public void EnemyTakeDamage(float damage)
     {
 
-
+        health -= damage;
         Debug.Log("Enemy takes damage!!!");
 
         aggressive = true;
-
-        if (health <= (float)(maxHealth * .5))
-        {
-            health -= (float)(damage - damage * .2);
-        }
-        else
-        {
-            health -= damage;
-
-            Vector2 difference = transform.position - target.transform.position;
-            transform.position = new Vector2(transform.position.x + difference.x, transform.position.y + difference.y);
-            
-        }
-
     }
-
-
 }

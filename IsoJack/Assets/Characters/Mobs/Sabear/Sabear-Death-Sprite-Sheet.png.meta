@@ -134,10 +134,10 @@ TextureImporter:
       name: Sabear-Death-Sprite-Sheet_0
       rect:
         serializedVersion: 2
-        x: 79
-        y: 928
-        width: 140
-        height: 243
+        x: 0
+        y: 900
+        width: 300
+        height: 300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,7 +145,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a498e1a8e0d2fbe459352d6a45f2c68e
+      spriteID: d55ba3eea9897f74e89f2d718e08a755
       internalID: -6883161262072840586
       vertices: []
       indices: 
@@ -155,10 +155,10 @@ TextureImporter:
       name: Sabear-Death-Sprite-Sheet_1
       rect:
         serializedVersion: 2
-        x: 379
-        y: 928
-        width: 140
-        height: 243
+        x: 300
+        y: 900
+        width: 300
+        height: 300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,7 +166,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8fbe2799a0cd9e349a6ebdf411f3f5ff
+      spriteID: 5512dbe2cba934e4481459456aa0e274
       internalID: 6669791120134644398
       vertices: []
       indices: 
@@ -176,10 +176,10 @@ TextureImporter:
       name: Sabear-Death-Sprite-Sheet_2
       rect:
         serializedVersion: 2
-        x: 679
-        y: 928
-        width: 140
-        height: 243
+        x: 600
+        y: 900
+        width: 300
+        height: 300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,7 +187,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c2bf973bf055a94eacc17211b9d9c89
+      spriteID: 08f1cec2f37aee54289da7f10468fe87
       internalID: 987275881941897176
       vertices: []
       indices: 
@@ -197,10 +197,10 @@ TextureImporter:
       name: Sabear-Death-Sprite-Sheet_3
       rect:
         serializedVersion: 2
-        x: 979
-        y: 928
-        width: 140
-        height: 243
+        x: 900
+        y: 900
+        width: 300
+        height: 300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,7 +208,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 625f32fec292c3049aa90339d5d758b8
+      spriteID: 029a802b6e2580c468f8aabf5de562a5
       internalID: -4350398028808113422
       vertices: []
       indices: 
@@ -218,10 +218,10 @@ TextureImporter:
       name: Sabear-Death-Sprite-Sheet_4
       rect:
         serializedVersion: 2
-        x: 79
-        y: 628
-        width: 140
-        height: 243
+        x: 0
+        y: 600
+        width: 300
+        height: 300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,7 +229,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b5d5c6005a0fa145862d73ad4006260
+      spriteID: e9794fd9cddce924897e2dcad9929d97
       internalID: 1355124675903312170
       vertices: []
       indices: 
@@ -239,10 +239,10 @@ TextureImporter:
       name: Sabear-Death-Sprite-Sheet_5
       rect:
         serializedVersion: 2
-        x: 379
-        y: 628
-        width: 140
-        height: 243
+        x: 300
+        y: 600
+        width: 300
+        height: 300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,7 +250,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 563d0f26754cbcb4e8b6b5746ed620e2
+      spriteID: b917873808b6cb44e8639f5d766022c0
       internalID: -4252375617539853091
       vertices: []
       indices: 
@@ -260,10 +260,10 @@ TextureImporter:
       name: Sabear-Death-Sprite-Sheet_6
       rect:
         serializedVersion: 2
-        x: 679
-        y: 628
-        width: 140
-        height: 243
+        x: 600
+        y: 600
+        width: 300
+        height: 300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,7 +271,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b46bfa2d0197694a9a0d9bbb24ad62d
+      spriteID: 1999528355ed9dc4487b0c358013bb34
       internalID: 2336808129096744479
       vertices: []
       indices: 
@@ -281,10 +281,10 @@ TextureImporter:
       name: Sabear-Death-Sprite-Sheet_7
       rect:
         serializedVersion: 2
-        x: 979
-        y: 628
-        width: 140
-        height: 243
+        x: 900
+        y: 600
+        width: 300
+        height: 300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -292,7 +292,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f80953f8e612ff342bc83d62df04c970
+      spriteID: e0128d5fcc93f2a40b92809d34f433c1
       internalID: 2246878678212905445
       vertices: []
       indices: 
@@ -302,10 +302,10 @@ TextureImporter:
       name: Sabear-Death-Sprite-Sheet_8
       rect:
         serializedVersion: 2
-        x: 79
-        y: 328
-        width: 140
-        height: 243
+        x: 0
+        y: 300
+        width: 300
+        height: 300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -313,7 +313,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 415f51027f55fe245847f1b323f187e2
+      spriteID: 001e047bf4fcda3469cd7eba90a788ba
       internalID: 1242924251793257758
       vertices: []
       indices: 
@@ -323,10 +323,10 @@ TextureImporter:
       name: Sabear-Death-Sprite-Sheet_9
       rect:
         serializedVersion: 2
-        x: 379
-        y: 328
-        width: 140
-        height: 243
+        x: 300
+        y: 300
+        width: 300
+        height: 300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -334,7 +334,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6edc6c24779df34db94fd040a64471e
+      spriteID: b963675aa5b65db43b85df358cacc58c
       internalID: -994011403912774458
       vertices: []
       indices: 
@@ -344,10 +344,10 @@ TextureImporter:
       name: Sabear-Death-Sprite-Sheet_10
       rect:
         serializedVersion: 2
-        x: 679
-        y: 328
-        width: 140
-        height: 243
+        x: 600
+        y: 300
+        width: 300
+        height: 300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -355,7 +355,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: faae21cbd4931234c9374105347f44bc
+      spriteID: 7dd462276d2700c498ef750da853f298
       internalID: -7463741081489444235
       vertices: []
       indices: 
@@ -365,10 +365,10 @@ TextureImporter:
       name: Sabear-Death-Sprite-Sheet_11
       rect:
         serializedVersion: 2
-        x: 979
-        y: 328
-        width: 140
-        height: 243
+        x: 900
+        y: 300
+        width: 300
+        height: 300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,7 +376,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3e387d184afc9f48b9163ce0fa998bc
+      spriteID: 226d455c99863324aa34aa9104653d57
       internalID: -6819022273980068897
       vertices: []
       indices: 
@@ -386,10 +386,10 @@ TextureImporter:
       name: Sabear-Death-Sprite-Sheet_12
       rect:
         serializedVersion: 2
-        x: 79
-        y: 28
-        width: 140
-        height: 243
+        x: 0
+        y: 0
+        width: 300
+        height: 300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -397,7 +397,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a93c2b455abd904db24dc67763f0652
+      spriteID: 312bde3a1187ead4e9592f51d94525d1
       internalID: -7145832728876857633
       vertices: []
       indices: 
@@ -407,10 +407,10 @@ TextureImporter:
       name: Sabear-Death-Sprite-Sheet_13
       rect:
         serializedVersion: 2
-        x: 379
-        y: 28
-        width: 140
-        height: 243
+        x: 300
+        y: 0
+        width: 300
+        height: 300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -418,7 +418,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c38014bf9984c57498bd3bf45a8bcf19
+      spriteID: 643e696805504084f951f7e6d586739c
       internalID: -4713651365858016893
       vertices: []
       indices: 
@@ -428,10 +428,10 @@ TextureImporter:
       name: Sabear-Death-Sprite-Sheet_14
       rect:
         serializedVersion: 2
-        x: 679
-        y: 28
-        width: 140
-        height: 243
+        x: 600
+        y: 0
+        width: 300
+        height: 300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -439,7 +439,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90479697768e8af41af4742029c621d1
+      spriteID: fe40ce2427061114c8ce5a5e61eb7f68
       internalID: -4888092471000399278
       vertices: []
       indices: 

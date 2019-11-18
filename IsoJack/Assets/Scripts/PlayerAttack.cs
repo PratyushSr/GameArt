@@ -23,13 +23,10 @@ public class PlayerAttack : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.F))
             {
                 Debug.Log("f is pressed");
-                //take out the axe from inventory if axe is in inventory:
-                //otherwise dont
                 Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
                 for (int i = 0; i < enemiesToDamage.Length; i++)
                 {
                     enemiesToDamage[i].GetComponent<Enemy>().EnemyTakeDamage(damage);
-                    
                   
 
 
