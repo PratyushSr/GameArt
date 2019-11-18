@@ -6,8 +6,10 @@ public class TimeCycle : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public float timer;
+    public float timer = 720;
     public GameObject icon;
+    public GameObject nightcon;
+    public GameObject duskcon;
     public float INTIMERDONTCHANGE;
     void Start()
     {
@@ -17,14 +19,25 @@ public class TimeCycle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(INTIMERDONTCHANGE<=timer/2)
+        if(INTIMERDONTCHANGE>=480&&INTIMERDONTCHANGE<=720)
+        {
+            icon.SetActive(true);
+            duskcon.SetActive(false);
+            nightcon.SetActive(false);
+        }
+        else if(INTIMERDONTCHANGE>=360&&INTIMERDONTCHANGE<=480)
         {
             icon.SetActive(false);
+            duskcon.SetActive(true);
+            nightcon.SetActive(false);
         }
         else
         {
-            icon.SetActive(true);
+            icon.SetActive(false);
+            duskcon.SetActive(false);
+            nightcon.SetActive(true);
         }
+
         if(INTIMERDONTCHANGE>=0)
         {
             INTIMERDONTCHANGE -= Time.deltaTime;
