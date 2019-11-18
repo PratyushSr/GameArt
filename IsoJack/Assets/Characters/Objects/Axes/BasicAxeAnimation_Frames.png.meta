@@ -17,6 +17,9 @@ TextureImporter:
   - first:
       213: -661632159837172149
     second: BasicAxeAnimation_Frames_4
+  - first:
+      213: 917829188858936195
+    second: BasicAxeAnimation_Frames_5
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -105,17 +108,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 123
-        y: 951
-        width: 180
-        height: 371
+        y: 864
+        width: 228
+        height: 458
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e28fcf54b667c74eb94316aeab654c1
+      spriteID: 1de45a3464328da48a029deda8d9de7b
       internalID: -4088783916430392647
       vertices: []
       indices: 
@@ -125,18 +128,18 @@ TextureImporter:
       name: BasicAxeAnimation_Frames_1
       rect:
         serializedVersion: 2
-        x: 435
-        y: 941
-        width: 303
-        height: 390
+        x: 438
+        y: 864
+        width: 348
+        height: 474
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41eccc163755de249a7d5ea993c2e5ee
+      spriteID: 9fcaf10c4b0268943a8afc374f9d94a7
       internalID: 8240195186899278650
       vertices: []
       indices: 
@@ -151,13 +154,13 @@ TextureImporter:
         width: 342
         height: 564
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 484666ef84d457c45ba66a0d177a36e5
+      spriteID: 2d47b4713b48b484592e538f8d4b1f58
       internalID: 645584662094288509
       vertices: []
       indices: 
@@ -172,13 +175,13 @@ TextureImporter:
         width: 309
         height: 465
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f008d7216ee4ff844a09160c58d5a683
+      spriteID: 8fc87ee61078c5e459e7284975006362
       internalID: 7749143026150834008
       vertices: []
       indices: 
@@ -191,16 +194,37 @@ TextureImporter:
         x: 707
         y: 275
         width: 294
-        height: 375
+        height: 385
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a910226eac236dc49bc9ccd506784a83
+      spriteID: 7622108ef39b1f24fa1cf620439a680a
       internalID: -661632159837172149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicAxeAnimation_Frames_5
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 468
+        width: 97
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa0b590cf91ba084386773b4cea8176c
+      internalID: 917829188858936195
       vertices: []
       indices: 
       edges: []

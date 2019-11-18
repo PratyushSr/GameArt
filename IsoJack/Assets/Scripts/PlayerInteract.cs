@@ -9,10 +9,13 @@ public class PlayerInteract : MonoBehaviour
     public InteractionObject currentInterObjScript = null;
     public Inventory inventory;
 
+
+
     void Update()
     {
         if (Input.GetButtonDown("interact") && currentInterObj)
         {
+            
             //check to see if object is to be stored in inverntory
             if (currentInterObjScript.inventory)
             {
@@ -44,4 +47,7 @@ public class PlayerInteract : MonoBehaviour
             }
         }
     }
+
+
+
 }
