@@ -23,7 +23,7 @@ public class TraslucentWhenBehind : MonoBehaviour
             && (transform.position.y+5 > ObjectToTrack.transform.position.y)
             && (transform.position.x-5 < ObjectToTrack.transform.position.x)
             && (transform.position.x+5 > ObjectToTrack.transform.position.x));
-        Debug.Log(playerIsBehind);
+        //Debug.Log(playerIsBehind);
         if (isTranslucent && !playerIsBehind)
         {
             isTranslucent = false;
