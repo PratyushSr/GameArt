@@ -3,25 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
 
 public class GameManager : MonoBehaviour
 {
+
     public static GameManager instance = null;
     public int wood;
     public int coin;
     public int days;
+    public int hp;
     public Text woodCount;
     public Text coinCount;
     public Text daysRemain;
-
+    public Text locationTxt;
     public static bool isPaused = false;
     public GameObject pauseMenuUI;
-
     public Animator locationAni;
-    public Text locationTxt;
-
     public Animator adventureLogAni;
-
+    public Sprite[] timeOfDay;
+    public Image timeIndicator;
+    public bool isDay;
+    public bool inConversation;
 
 
     void Awake()
@@ -33,7 +36,11 @@ public class GameManager : MonoBehaviour
         woodCount.text = wood.ToString();
         coinCount.text = coin.ToString();
         daysRemain.text = days.ToString() + " Days Remain";
+        timeIndicator.sprite = timeOfDay[0];
+        isDay = true;
+        hp = 100;
 
+        
     }
 
     // Update is called once per frame
@@ -45,6 +52,21 @@ public class GameManager : MonoBehaviour
                 Resume();
             else
                 Pause();
+        }
+
+        if (Input.GetKeyDown(KeyCode.L))
+            locationPopIn();
+        if (Input.GetKeyDown(KeyCode.C))
+            changeIndicator();
+        if(inConversation == true)
+        {
+            Time.timeScale = 0f;
+            isPaused = true;
+        }
+        else
+        {
+            Time.timeScale = 1f;
+            isPaused = false;
         }
 
     }
@@ -64,9 +86,16 @@ public class GameManager : MonoBehaviour
 
     public void locationPopIn()
     {
-        locationTxt.text = "Arrived in Location"; 
+        locationTxt.text = "Iso Village"; 
         locationAni.SetTrigger("Active");
     }
+
+    public void locationPopIn(string location)
+    {
+        locationTxt.text = location;
+        locationAni.SetTrigger("Active");
+    }
+
 
     public void adventureLogPopIn()
     {
@@ -102,10 +131,33 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("Map");
     }
 
+    public void changeIndicator() // 0 is day and 1 is night
+    {
+        if(isDay)
+        {
+            timeIndicator.sprite = timeOfDay[1];
+            isDay = false;
+        }
+        else
+        {
+            timeIndicator.sprite = timeOfDay[0];
+            isDay = true;
+        }
+    }
+
     public void QuitGame()
     {
         Debug.Log("Quitting Game...");
         Application.Quit();
     }
 
+    void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene arg0, LoadSceneMode arg1)
+    {
+        locationPopIn();
+    }
 }
