@@ -5,22 +5,29 @@ using UnityEngine;
 public class Axe : MonoBehaviour
 {
 
-    Animator myanimator;
+    public Animator myanimator;
     Collider2D axe;
 
     // Start is called before the first frame update
     void Start()
     {
-        axe = GameObject.FindObjectWithTag("Axe").GetComponent<Collider2D>();
+        axe = GameObject.FindGameObjectWithTag("axe").GetComponent<Collider2D>();
+        myanimator = this.GetComponent<Animator>();
     }
 
     // Update is called once per frame
-    void Update()
+
+    void OnTriggerExit2D(Collider2D other)
     {
-        if(Input.GetButtonDown("interact"))
+        if (other.CompareTag("interObject") && Input.GetKeyDown(KeyCode.E))
         {
+ 
             myanimator.SetTrigger("swing");
+            Debug.Log("swing");
+
         }
+        
+
     }
 
     void Swing()
