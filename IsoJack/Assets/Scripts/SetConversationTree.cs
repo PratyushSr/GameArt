@@ -14,12 +14,20 @@ public class SetConversationTree : MonoBehaviour
      //0 = Normal
      //1 = 4 - way Choice
      //2 = Exit on next click
+     //3 = Instantly Warp based on what quest is active. Put this on the 
      
     public List<Sprite> NPCSprite;
+    //(Optional) Leave Null if not changed
     public List<Sprite> PlayerSprite;
+    //(Optional) Leave Null if not changed
     public List<string> NPCName;
+    //(Optional) Leave Null if not changed
     public List<string> dialogueText;
+    //The text to display;Choice 1 Text;Choice 2 Text; Choice 3 Text; Choice 4 Text
     public List<string> ChoiceWarps; //Only for Dialogue Options Warp1;Warp2;Warp3;Warp4
+    //If DialogueType == 3, it will test for a quest and sub-quest and then warp accordingly:
+    //QuestID,SubQuestNumber,WarpToPoint;QuestID2,SubQuestNumber2,WarpToPoint2;...
+    //If QuestID and Sub Quest can be set to -1 (;-1,-1,WarpToPoint;) to signify default value
 
     private int tp; //Text Position
     private GameObject DialogueTextObject;
@@ -121,7 +129,71 @@ public class SetConversationTree : MonoBehaviour
                 loadDialogue();
             }
         }
+        if (dialogueType[tp] == 3)
+        {
+            //Adventureog.advLogInstance.Quest[0]
+            int QuestID, SubQuest, WarpTo;
+            bool questFound = false;
+            List<string> Sections = new List<string>();
+            for (int i = 0; i < CountSections(ChoiceWarps); i++)
+            {
+                Sections.Add(GetSection(ChoiceWarps, i).Replace(',', ';'));
+            }
 
+            //CHECK EXACT QUEST = QUEST, SUB = SUB
+            for (int i = 0; i < Sections.Count(); i++)
+            {
+                QuestID = GetSection(Sections[i], 0);
+                SubQuest = GetSection(Sections[i], 1);
+                WarpTo = GetSection(Sections[i], 2);
+
+                if (Adventureog.advLogInstance.Quest[QuestID - 1].Active && Adventureog.advLogInstance.Quest[QuestID - 1].subQuest)
+                {
+                    tp = int.Parse(WarpTo);
+                    loadDialogue();
+                    questFound = true;
+                    break;
+                }
+            }
+
+            //CHECK QUEST, QUEST = QUEST, SUB = Default (-1)
+            if (!questFound)
+            {
+                for (int i = 0; i < Sections.Count(); i++)
+                {
+                    QuestID = GetSection(Sections[i], 0);
+                    SubQuest = GetSection(Sections[i], 1);
+                    WarpTo = GetSection(Sections[i], 2);
+
+                    if (Adventureog.advLogInstance.Quest[QuestID - 1].Active && SubQuest == "-1")
+                    {
+                        tp = int.Parse(WarpTo);
+                        loadDialogue();
+                        questFound = true;
+                        break;
+                    }
+                }
+            }
+
+            //CHECK DEFAULT, QUEST = Default (-1), SUB = Default (-1)
+            if (!questFound)
+            {
+                for (int i = 0; i < Sections.Count(); i++)
+                {
+                    QuestID = GetSection(Sections[i], 0);
+                    SubQuest = GetSection(Sections[i], 1);
+                    WarpTo = GetSection(Sections[i], 2);
+
+                    if (QuestID == "-1" && SubQuest == "-1")
+                    {
+                        tp = int.Parse(WarpTo);
+                        loadDialogue();
+                        questFound = true;
+                        break;
+                    }
+                }
+            }
+        }
     }
 
     void loadDialogue()
@@ -200,6 +272,7 @@ public class SetConversationTree : MonoBehaviour
         {
             Debug.Log("Can talk!!");
             dialogueActive = true;
+            tp--;
         }
     }
 
@@ -232,13 +305,8 @@ public class SetConversationTree : MonoBehaviour
 
         if(num == 7 && name == "Chief")
         {
-            Adventureog.advLogInstance.Quest[0].qButton.SetActive(true);
-            Adventureog.advLogInstance.Quest[0].questInfo = "•There is a war looming! Go talk to the Tavern Queen to start preparing.";
-        }
-
-        if(num == 8 && name == "Tavern Queen")
-        {
-            Adventureog.advLogInstance.Quest[0].questInfo += "\n•Go to the forest and slay 5 bears.";
+            Adventureog.advLogInstance.Quest[0].activate();
+            //Adventureog.advLogInstance.Quest[0].questInfo = "•There is a war looming! Go talk to the Tavern Queen to start preparing.";
         }
     }
 }

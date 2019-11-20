@@ -6,16 +6,41 @@ using UnityEngine.UI;
 
 public class quest
 {
-
+    public bool Active;
     public string questTitle;
-    public string questInfo;
+    public string currentQuestInfo;
     public GameObject qButton;
+    public int subQuest;
+    public int maxSubQuest;
+    public int progress;
+    public int maxProgress;
+    public List<string> questInfo;
 
     public quest(string title)
     {
+        Active = false;
         questTitle = title;
-        questInfo = " ";
+        currentQuestInfo = " ";
         qButton = null;
+        subQuest = 0;
+        maxSubQuest = 1;
+        progress = 0;
+        maxProgress = 1;
+        questInfo = new List<string>();
+    }
+    public void activate()
+    {
+        Active = true;
+        qButton.SetActive(true);
+    }
+    public void deActivate()
+    {
+        Active = false;
+        qButton.SetActive(false);
+    }
+    public void updateQuestInfo()
+    {
+        currentQuestInfo = questInfo[subQuest];
     }
 }
 
@@ -31,22 +56,21 @@ public class Adventureog : MonoBehaviour
     public bool isOpen;
 
     public List<quest> Quest = new List<quest>();
-    public int totalQuests;
+    public List<string> QuestTitles;
+    private int totalQuests;
+    public List<GameObject> QuestButton;//Must be same length as QuestTitles
 
     // Start is called before the first frame update
     void Start()
     {
-        totalQuests = 6;
-        Quest.Add(new quest("Protector of the People"));
-        Quest.Add(new quest("Battle of Beserk"));
-        Quest.Add(new quest("Wild Smith"));
-        Quest.Add(new quest("Tavern Queen's Bounty"));
-        Quest.Add(new quest("Sawmill Helper"));
-        Quest.Add(new quest("Hat for a Hero"));
-
-
-
-
+        //Create Quests based on Titles
+        totalQuests = QuestTitles.Count;
+        for(int i = 0; i < totalQuests; i++)
+        {
+            Quest.Add(new quest(QuestTitles[i]));
+            Quest[i].qButton = QuestButton[i];
+        }
+        
         if (advLogInstance == null) advLogInstance = this;
         else if (advLogInstance != this) Destroy(gameObject);
         DontDestroyOnLoad(gameObject);
@@ -54,20 +78,8 @@ public class Adventureog : MonoBehaviour
         AdventureLogCanvas = GameObject.Find("AdventureLogPanel/AdventureLogBox");
         advLogPos = AdventureLogCanvas.transform.position;
 
-        Quest[0].qButton = GameObject.Find("AdventureLogPanel/AdventureLogBox/QuestOne");
-        Quest[1].qButton = GameObject.Find("AdventureLogPanel/AdventureLogBox/QuestTwo");
-        Quest[2].qButton = GameObject.Find("AdventureLogPanel/AdventureLogBox/QuestThree");
-        Quest[3].qButton = GameObject.Find("AdventureLogPanel/AdventureLogBox/QuestFour");
-        Quest[4].qButton = GameObject.Find("AdventureLogPanel/AdventureLogBox/QuestFive");
-        Quest[5].qButton = GameObject.Find("AdventureLogPanel/AdventureLogBox/QuestSix");
-
-        Quest[0].qButton.SetActive(false);
-        Quest[1].qButton.SetActive(false);
-        Quest[2].qButton.SetActive(false);
-        Quest[3].qButton.SetActive(false);
-        Quest[4].qButton.SetActive(false);
-        Quest[5].qButton.SetActive(false);
-
+        for (int i = 0; i < totalQuests; i++)
+            Quest[i].qButton.SetActive(false);
     }
 
     void Update()
@@ -112,11 +124,32 @@ public class Adventureog : MonoBehaviour
     {
         if (num > 0 && num <= totalQuests) {
             QuestTitle.text = Quest[num - 1].questTitle;
-            QuestText.text = Quest[num - 1].questInfo;
+            QuestText.text = Quest[num - 1].currentQuestInfo;
             Quest[num - 1].qButton.GetComponent<Button>().image.sprite = pressed;
         }
         else {
             Debug.Log("Error setting questText!!");
+        }
+    }
+    
+    public void addProgress(int questNum, int progressToAdd)
+    {
+        var Q = Quest[questNum - 1];
+        Q.progress += progressToAdd;
+        if (Q.progress >= Q.maxProgress)
+        {
+            Q.progress = Q.maxProgress;
+            activateNextSubQuest(questNum);
+        }
+    }
+
+    private void activateNextSubQuest(int questNum)
+    {
+        var Q = Quest[questNum - 1];
+        Q.subQuest += 1;
+        if (Q.subQuest == Q.maxSubQuest)
+        {
+            Q.deActivate();
         }
     }
 }
