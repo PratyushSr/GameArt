@@ -30,17 +30,23 @@ public class Adventureog : MonoBehaviour
     private Vector3 advLogPos;
     public bool isOpen;
 
-    public quest questOne = new quest("Protector of the People");
-    public quest questTwo = new quest("Battle of Beserk");
-    public quest questThree = new quest("Wild Smith");
-    public quest questFour = new quest("Tavern Queen's Bounty");
-    public quest questFive = new quest("Sawmill Helper");
-    public quest questSix = new quest("Hat for a Hero");
-
+    public List<quest> Quest = new List<quest>();
+    public int totalQuests;
 
     // Start is called before the first frame update
     void Start()
     {
+        totalQuests = 6;
+        Quest.Add(new quest("Protector of the People"));
+        Quest.Add(new quest("Battle of Beserk"));
+        Quest.Add(new quest("Wild Smith"));
+        Quest.Add(new quest("Tavern Queen's Bounty"));
+        Quest.Add(new quest("Sawmill Helper"));
+        Quest.Add(new quest("Hat for a Hero"));
+
+
+
+
         if (advLogInstance == null) advLogInstance = this;
         else if (advLogInstance != this) Destroy(gameObject);
         DontDestroyOnLoad(gameObject);
@@ -48,19 +54,19 @@ public class Adventureog : MonoBehaviour
         AdventureLogCanvas = GameObject.Find("AdventureLogPanel/AdventureLogBox");
         advLogPos = AdventureLogCanvas.transform.position;
 
-        questOne.qButton = GameObject.Find("AdventureLogPanel/AdventureLogBox/QuestOne");
-        questTwo.qButton = GameObject.Find("AdventureLogPanel/AdventureLogBox/QuestTwo");
-        questThree.qButton = GameObject.Find("AdventureLogPanel/AdventureLogBox/QuestThree");
-        questFour.qButton = GameObject.Find("AdventureLogPanel/AdventureLogBox/QuestFour");
-        questFive.qButton = GameObject.Find("AdventureLogPanel/AdventureLogBox/QuestFive");
-        questSix.qButton = GameObject.Find("AdventureLogPanel/AdventureLogBox/QuestSix");
+        Quest[0].qButton = GameObject.Find("AdventureLogPanel/AdventureLogBox/QuestOne");
+        Quest[1].qButton = GameObject.Find("AdventureLogPanel/AdventureLogBox/QuestTwo");
+        Quest[2].qButton = GameObject.Find("AdventureLogPanel/AdventureLogBox/QuestThree");
+        Quest[3].qButton = GameObject.Find("AdventureLogPanel/AdventureLogBox/QuestFour");
+        Quest[4].qButton = GameObject.Find("AdventureLogPanel/AdventureLogBox/QuestFive");
+        Quest[5].qButton = GameObject.Find("AdventureLogPanel/AdventureLogBox/QuestSix");
 
-        questOne.qButton.SetActive(false);
-        questTwo.qButton.SetActive(false);
-        questThree.qButton.SetActive(false);
-        questFour.qButton.SetActive(false);
-        questFive.qButton.SetActive(false);
-        questSix.qButton.SetActive(false);
+        Quest[0].qButton.SetActive(false);
+        Quest[1].qButton.SetActive(false);
+        Quest[2].qButton.SetActive(false);
+        Quest[3].qButton.SetActive(false);
+        Quest[4].qButton.SetActive(false);
+        Quest[5].qButton.SetActive(false);
 
     }
 
@@ -71,11 +77,10 @@ public class Adventureog : MonoBehaviour
 
     bool checkAnyButtonActive()
     {
-        if (questOne.qButton.activeInHierarchy == false && questTwo.qButton.activeInHierarchy == false && questThree.qButton.activeInHierarchy == false
-            && questFour.qButton.activeInHierarchy == false && questFive.qButton.activeInHierarchy == false && questSix.qButton.activeInHierarchy == false)
-            return false;
-        else
-            return true;
+        for (var i = 0; i < totalQuests; i++)
+            if (Quest[i].qButton.activeInHierarchy == true)
+                return true;
+        return false;
     }
 
     public void openLog()
@@ -99,51 +104,19 @@ public class Adventureog : MonoBehaviour
 
     void resetButtons()
     {
-        questOne.qButton.GetComponent<Button>().image.sprite = unpressed;
-        questTwo.qButton.GetComponent<Button>().image.sprite = unpressed;
-        questThree.qButton.GetComponent<Button>().image.sprite = unpressed;
-        questFour.qButton.GetComponent<Button>().image.sprite = unpressed;
-        questFive.qButton.GetComponent<Button>().image.sprite = unpressed;
-        questSix.qButton.GetComponent<Button>().image.sprite = unpressed;
+        for (var i = 0; i < totalQuests; i++)
+            Quest[i].qButton.GetComponent<Button>().image.sprite = unpressed;
     }
 
     public void updateQuestText(int num)
     {
-        switch(num)
-        {
-            case 1:
-                QuestTitle.text = questOne.questTitle;
-                QuestText.text = questOne.questInfo;
-                questOne.qButton.GetComponent<Button>().image.sprite = pressed;
-                break;
-            case 2:
-                QuestTitle.text = questTwo.questTitle;
-                QuestText.text = questTwo.questInfo;
-                questTwo.qButton.GetComponent<Button>().image.sprite = pressed;
-                break;
-            case 3:
-                QuestTitle.text = questThree.questTitle;
-                QuestText.text = questThree.questInfo;
-                questThree.qButton.GetComponent<Button>().image.sprite = pressed;
-                break;
-            case 4:
-                QuestTitle.text = questFour.questTitle;
-                QuestText.text = questFour.questInfo;
-                questFour.qButton.GetComponent<Button>().image.sprite = pressed;
-                break;
-            case 5:
-                QuestTitle.text = questFive.questTitle;
-                QuestText.text = questFive.questInfo;
-                questFive.qButton.GetComponent<Button>().image.sprite = pressed;
-                break;
-            case 6:
-                QuestTitle.text = questSix.questTitle;
-                QuestText.text = questSix.questInfo;
-                questSix.qButton.GetComponent<Button>().image.sprite = pressed;
-                break;
-            default:
-                Debug.Log("Error setting questText!!");
-                break;
+        if (num > 0 && num <= totalQuests) {
+            QuestTitle.text = Quest[num - 1].questTitle;
+            QuestText.text = Quest[num - 1].questInfo;
+            Quest[num - 1].qButton.GetComponent<Button>().image.sprite = pressed;
+        }
+        else {
+            Debug.Log("Error setting questText!!");
         }
     }
 }

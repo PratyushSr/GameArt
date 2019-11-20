@@ -215,7 +215,7 @@ public class SetConversationTree : MonoBehaviour
     {
         if(num == 1 && name == "Tavern Queen")
         {
-            if (Adventureog.advLogInstance.questOne.qButton.activeInHierarchy == true)
+            if (Adventureog.advLogInstance.Quest[0].qButton.activeInHierarchy == true)
             {
                 textPosition = 4;
                 tp = 4;
@@ -223,7 +223,7 @@ public class SetConversationTree : MonoBehaviour
         }
         if(num == 4 && name == "Tavern Queen")
         {
-            if (Adventureog.advLogInstance.questOne.qButton.activeInHierarchy == false)
+            if (Adventureog.advLogInstance.Quest[0].qButton.activeInHierarchy == false)
             {
                 textPosition = 0;
                 tp = 1;
@@ -232,13 +232,13 @@ public class SetConversationTree : MonoBehaviour
 
         if(num == 7 && name == "Chief")
         {
-            Adventureog.advLogInstance.questOne.qButton.SetActive(true);
-            Adventureog.advLogInstance.questOne.questInfo = "•There is a war looming! Go talk to the Tavern Queen to start preparing.";
+            Adventureog.advLogInstance.Quest[0].qButton.SetActive(true);
+            Adventureog.advLogInstance.Quest[0].questInfo = "•There is a war looming! Go talk to the Tavern Queen to start preparing.";
         }
 
         if(num == 8 && name == "Tavern Queen")
         {
-            Adventureog.advLogInstance.questOne.questInfo += "\n•Go to the forest and slay 5 bears.";
+            Adventureog.advLogInstance.Quest[0].questInfo += "\n•Go to the forest and slay 5 bears.";
         }
     }
 }
