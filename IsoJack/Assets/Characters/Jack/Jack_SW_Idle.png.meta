@@ -92,43 +92,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Jack_SW_Idle_0
+      name: Jack_SW_Idle_1
       rect:
         serializedVersion: 2
-        x: 161
-        y: 395
+        x: 253
+        y: 31
         width: 140
-        height: 288
+        height: 276
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63b761bbbf5b1c94087848726c1deb4a
-      internalID: -4403035733242726456
+      spriteID: 3d79d256544877045886190f7ac38145
+      internalID: 4287647272150779151
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jack_SW_Idle_1
+      name: Jack_SW_Idle_0
       rect:
         serializedVersion: 2
-        x: 161
-        y: 55
+        x: 55
+        y: 31
         width: 140
-        height: 285
+        height: 279
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 514c8c92615c5744da6b89c484597ae8
-      internalID: 4287647272150779151
+      spriteID: cc8d1a23977567147987484cbd8be2dd
+      internalID: -4403035733242726456
       vertices: []
       indices: 
       edges: []
