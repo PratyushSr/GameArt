@@ -1,0 +1,487 @@
+fileFormatVersion: 2
+guid: ad950bb69156e994f97cb089b153f376
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7617322862444445541
+    second: Howler-Walk-Sprite-Sheet_0
+  - first:
+      213: -4513676750298711555
+    second: Howler-Walk-Sprite-Sheet_1
+  - first:
+      213: 2525785660283662646
+    second: Howler-Walk-Sprite-Sheet_2
+  - first:
+      213: -3077875017281156600
+    second: Howler-Walk-Sprite-Sheet_3
+  - first:
+      213: -1924592114888417353
+    second: Howler-Walk-Sprite-Sheet_4
+  - first:
+      213: 3400498034786062168
+    second: Howler-Walk-Sprite-Sheet_7
+  - first:
+      213: 1403415363331194349
+    second: Howler-Walk-Sprite-Sheet_10
+  - first:
+      213: -8056960920786401580
+    second: Howler-Walk-Sprite-Sheet_13
+  - first:
+      213: -4676953576566948405
+    second: Howler-Walk-Sprite-Sheet_14
+  - first:
+      213: -3135132883451748284
+    second: Howler-Walk-Sprite-Sheet_15
+  - first:
+      213: 682597891862854305
+    second: Howler-Walk-Sprite-Sheet_16
+  - first:
+      213: -2239467694737130239
+    second: Howler-Walk-Sprite-Sheet_17
+  - first:
+      213: -6904693762100313285
+    second: Howler-Walk-Sprite-Sheet_18
+  - first:
+      213: 3183014148902134535
+    second: Howler-Walk-Sprite-Sheet_21
+  - first:
+      213: -3640669771066701327
+    second: Howler-Walk-Sprite-Sheet_24
+  - first:
+      213: -6393181212569121100
+    second: Howler-Walk-Sprite-Sheet_27
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Howler-Walk-Sprite-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 1203
+        width: 188
+        height: 227
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0624f86545ef88240bbdaf12f0de25df
+      internalID: 7617322862444445541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Walk-Sprite-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 1203
+        width: 193
+        height: 227
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0184f0a0d03f26d4d9ed0650f0383ecc
+      internalID: -4513676750298711555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Walk-Sprite-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 1203
+        width: 192
+        height: 227
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1583931d94cbe3148b3a3c94a478c367
+      internalID: 2525785660283662646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Walk-Sprite-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1233
+        y: 1203
+        width: 188
+        height: 227
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae6dfebf1a624304c9135fd90ff79bca
+      internalID: -3077875017281156600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Walk-Sprite-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 807
+        width: 188
+        height: 223
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ddee7c6c120c85429012b5a8f9a9bad
+      internalID: -1924592114888417353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Walk-Sprite-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 807
+        width: 188
+        height: 223
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a735c903fed62dd4ba5a10d2320ff96c
+      internalID: 3400498034786062168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Walk-Sprite-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 807
+        width: 188
+        height: 223
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7517eefec769fb247926099f26f95a28
+      internalID: 1403415363331194349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Walk-Sprite-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1233
+        y: 804
+        width: 188
+        height: 226
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9e03db8eddf4cf4ea9d90713465f7b9
+      internalID: -8056960920786401580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Walk-Sprite-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 403
+        width: 188
+        height: 227
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fb10f138cc84e5449f26a3347b0a6ee
+      internalID: -4676953576566948405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Walk-Sprite-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 403
+        width: 193
+        height: 227
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15c92a4d3c54f6c4b8830d36696511c2
+      internalID: -3135132883451748284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Walk-Sprite-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 403
+        width: 192
+        height: 227
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 861dc78ff91914645a3a48f01f0292d9
+      internalID: 682597891862854305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Walk-Sprite-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1233
+        y: 403
+        width: 188
+        height: 227
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f211900d0803aa54a936b1b664928e95
+      internalID: -2239467694737130239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Walk-Sprite-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 7
+        width: 188
+        height: 223
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8fa8cea4f408334493aebafe16f3a79
+      internalID: -6904693762100313285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Walk-Sprite-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 7
+        width: 188
+        height: 223
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 477969d7a156cb44b85b3245a030dbf8
+      internalID: 3183014148902134535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Walk-Sprite-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 7
+        width: 188
+        height: 223
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abe6bbe67c8e08145a19fc9e08f53086
+      internalID: -3640669771066701327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Walk-Sprite-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 1233
+        y: 4
+        width: 188
+        height: 226
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96713c7b8d2443744a8c2f174aca9189
+      internalID: -6393181212569121100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
