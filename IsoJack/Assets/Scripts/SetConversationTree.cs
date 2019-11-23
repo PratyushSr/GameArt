@@ -217,7 +217,6 @@ public class SetConversationTree : MonoBehaviour
     {
         
         Debug.Log("Conversation Section: " + tp.ToString());
-        addQuestHandler(tp, NPCName[tp]);
         if (AdvanceQuestOnTextLoad[tp] != 0)
         {
             Adventureog.advLogInstance.addProgress(AdvanceQuestOnTextLoad[tp], 1);
@@ -305,28 +304,5 @@ public class SetConversationTree : MonoBehaviour
         }
     }
 
-    public void addQuestHandler(int num, string name)
-    {
-        if(num == 1 && name == "Tavern Queen")
-        {
-            if (Adventureog.advLogInstance.Quest[0].qButton.activeInHierarchy == true)
-            {
-                tp = 4;
-            }
-        }
-        if(num == 4 && name == "Tavern Queen")
-        {
-            if (Adventureog.advLogInstance.Quest[0].qButton.activeInHierarchy == false)
-            {
-                tp = 1;
-            }
-        }
-
-        if(num == 7 && name == "Chief")
-        {
-            Adventureog.advLogInstance.Quest[0].activate();
-            //Adventureog.advLogInstance.Quest[0].questInfo = "•There is a war looming! Go talk to the Tavern Queen to start preparing.";
-        }
-    }
 }
 //*/
