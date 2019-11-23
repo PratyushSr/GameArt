@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
     public Text coinCount;
     public Text daysRemain;
     public Text locationTxt;
-    public static bool isPaused = false;
+    public Text hpText;
     public GameObject pauseMenuUI;
     public Animator locationAni;
     public Animator adventureLogAni;
@@ -25,6 +25,10 @@ public class GameManager : MonoBehaviour
     public Image timeIndicator;
     public bool isDay;
     public bool inConversation;
+    public static bool isPaused = false;
+
+    public GameObject[] hpBarArray;
+    public Sprite[] hpIndicatorSprites;
 
 
     void Awake()
@@ -39,8 +43,10 @@ public class GameManager : MonoBehaviour
         timeIndicator.sprite = timeOfDay[0];
         isDay = true;
         hp = 100;
+        hpText.text = hp.ToString();
+        locationTxt.text = "Iso Village";
 
-        
+
     }
 
     // Update is called once per frame
@@ -86,7 +92,6 @@ public class GameManager : MonoBehaviour
 
     public void locationPopIn()
     {
-        locationTxt.text = "Iso Village"; 
         locationAni.SetTrigger("Active");
     }
 
@@ -143,6 +148,110 @@ public class GameManager : MonoBehaviour
             timeIndicator.sprite = timeOfDay[0];
             isDay = true;
         }
+    }
+
+    public void updateHP(int amount) //If the player is taking damage, amount should be negative!!
+    {
+        hp += amount;
+        if (hp <= 0)
+            hp = 0;
+        else if (hp >= 100)
+            hp = 100;
+        hpText.text = hp.ToString();
+        if (amount < 0)
+            depleateBar(hp);
+        else if (amount > 0)
+            incrementeBar(hp);
+    }
+
+
+
+    private void depleateBar( int amount)
+    {
+        int i = 100;
+        while (i >= amount)
+        {
+            if (amount < 10)
+            {
+                if (amount < 5)
+                    hpBarArray[0].SetActive(false);
+                else
+                    hpBarArray[0].GetComponent<Image>().sprite = hpIndicatorSprites[1];
+            }
+            if (amount < 20)
+                decrementeImage(1, amount, 15);
+            if (amount < 30)
+                decrementeImage(2, amount, 25);
+            if (amount < 40)
+                decrementeImage(3, amount, 35);
+            if (amount < 50)
+                decrementeImage(4, amount, 45);
+            if (amount < 60)
+                decrementeImage(5, amount, 55);
+            if (amount < 70)
+                decrementeImage(6, amount, 65);
+            if (amount < 80)
+                decrementeImage(7, amount, 75);
+            if (amount < 90)
+                decrementeImage(8, amount, 85);
+            if (amount < 100)
+                decrementeImage(9, amount, 95);
+            i -= 10;
+        }
+       
+    }
+
+    private void incrementeBar(int amount)
+    {
+        for(int i = 0; i < 10; i++)
+        {
+            if(i == 0)
+            {
+                hpBarArray[0].SetActive(true);
+                if (amount < 10)
+                    hpBarArray[0].GetComponent<Image>().sprite = hpIndicatorSprites[1];
+                else
+                    hpBarArray[0].GetComponent<Image>().sprite = hpIndicatorSprites[0];
+            }
+            else
+                if((i*10) < amount)
+                    incrementeImage(i, amount, ((i * 10) + 10));
+        }
+    }
+
+
+    private void decrementeImage(int index, int amount, int condi)
+    {
+        
+        GameObject left = hpBarArray[index].transform.GetChild(0).gameObject;
+        GameObject right = hpBarArray[index].transform.GetChild(1).gameObject;
+
+        left.GetComponent<Image>().sprite = hpIndicatorSprites[2];
+        right.GetComponent<Image>().sprite = hpIndicatorSprites[2];
+
+        if (amount < condi)
+            hpBarArray[index].SetActive(false);
+        else
+        {
+            left.GetComponent<Image>().sprite = hpIndicatorSprites[1];
+            right.GetComponent<Image>().sprite = hpIndicatorSprites[1];
+        }
+    }
+
+
+    private void incrementeImage(int index, int amount, int condi)
+    {
+        hpBarArray[index].SetActive(true);
+        GameObject left = hpBarArray[index].transform.GetChild(0).gameObject;
+        GameObject right = hpBarArray[index].transform.GetChild(1).gameObject;
+        left.GetComponent<Image>().sprite = hpIndicatorSprites[0];
+        right.GetComponent<Image>().sprite = hpIndicatorSprites[0];
+        if (amount < condi)
+        {
+            left.GetComponent<Image>().sprite = hpIndicatorSprites[1];
+            right.GetComponent<Image>().sprite = hpIndicatorSprites[1];
+        }
+
     }
 
     public void QuitGame()
