@@ -100,7 +100,7 @@ public class SetConversationTree : MonoBehaviour
                         tp += 1;
                         loadDialogue();
                     }
-                    if ((dialogueType[tp] == 2 || tp + 1 >= dialogueText.Count))
+                    else if ((dialogueType[tp] == 2 || tp + 1 >= dialogueText.Count))
                     {
                         Debug.Log("Ended Conversation");
                         ConversationView.SetActive(false);
