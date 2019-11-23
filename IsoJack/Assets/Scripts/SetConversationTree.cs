@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -27,6 +27,8 @@ public class SetConversationTree : MonoBehaviour
     //If DialogueType == 3, it will test for a quest and sub-quest and then warp accordingly:
     //QuestID,SubQuestNumber,WarpToPoint;QuestID2,SubQuestNumber2,WarpToPoint2;...
     //If QuestID and Sub Quest can be set to -1 (;-1,-1,WarpToPoint;) to signify default value
+    public List<int> AdvanceQuestOnTextLoad;
+    //Adds one progression to the given quest when the text loads.
 
     private int tp; //Text Position
     private GameObject DialogueTextObject;
@@ -85,82 +87,66 @@ public class SetConversationTree : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && dialogueActive)
+        if (dialogueActive)
         {
-            if (ConversationView.activeInHierarchy == false)
-                StartConversation();
-            else
+            if (Input.GetKeyDown(KeyCode.Space))
             {
-                if (dialogueType[tp] == 0)
+                if (ConversationView.activeInHierarchy == false)
+                    StartConversation();
+                else
                 {
-                    tp += 1;
-                    loadDialogue();
-                }
-                if ((dialogueType[tp] == 2 || tp + 1 >= dialogueText.Count))
-                {
-                    Debug.Log("Ended Conversation");
-                    ConversationView.SetActive(false);
-                    GameManager.instance.inConversation = false;
-                    hp.SetActive(true);
-                    inventory.SetActive(true);
-                    ChoicesCanvas.SetActive(true);
-                    Dia1.SetActive(true);
-                    Dia2.SetActive(true);
-                    Dia3.SetActive(true);
-                    Dia4.SetActive(true);
-
-
-                    if (NPCSprite[tp + 1] != null)
+                    if (dialogueType[tp] == 0)
                     {
-                        Debug.Log("Augmenting tp!");
-                        tp++;
+                        tp += 1;
+                        loadDialogue();
                     }
-                    else
-                        Debug.Log("Did not augment tp!");
-                    //CharTalk.charInstance.exitDialougeView();
+                    if ((dialogueType[tp] == 2 || tp + 1 >= dialogueText.Count))
+                    {
+                        Debug.Log("Ended Conversation");
+                        ConversationView.SetActive(false);
+                        GameManager.instance.inConversation = false;
+                        hp.SetActive(true);
+                        inventory.SetActive(true);
+                        ChoicesCanvas.SetActive(true);
+                        Dia1.SetActive(true);
+                        Dia2.SetActive(true);
+                        Dia3.SetActive(true);
+                        Dia4.SetActive(true);
+
+
+                        if (NPCSprite[tp + 1] != null)
+                        {
+                            Debug.Log("Augmenting tp!");
+                            tp++;
+                        }
+                        else
+                            Debug.Log("Did not augment tp!");
+                        //CharTalk.charInstance.exitDialougeView();
+                    }
                 }
             }
-        }
-        if (dialogueType[tp] == 1)
-        {
-            int choice = DialougeView.converstationInstance.getChoicePressed();
-            if (choice != 0)
+            if (dialogueType[tp] == 1)
             {
-                tp = int.Parse(GetSection(ChoiceWarps[tp], choice - 1));
-                loadDialogue();
-            }
-        }
-        if (dialogueType[tp] == 3)
-        {
-            //Adventureog.advLogInstance.Quest[0]
-            string QuestID, SubQuest, WarpTo;
-            bool questFound = false;
-            List<string> Sections = new List<string>();
-            for (int i = 0; i < CountSections(ChoiceWarps[tp]); i++)
-            {
-                Sections.Add(GetSection(ChoiceWarps[tp], i).Replace(',', ';'));
-            }
-
-            //CHECK EXACT QUEST = QUEST, SUB = SUB
-            for (int i = 0; i < Sections.Count; i++)
-            {
-                QuestID = GetSection(Sections[i], 0);
-                int QID = int.Parse(QuestID);
-                SubQuest = GetSection(Sections[i], 1);
-                WarpTo = GetSection(Sections[i], 2);
-
-                if (Adventureog.advLogInstance.Quest[QID - 1].Active && Adventureog.advLogInstance.Quest[QID - 1].subQuest == int.Parse(SubQuest))
+                int choice = DialougeView.converstationInstance.getChoicePressed();
+                if (choice != 0)
                 {
-                    tp = int.Parse(WarpTo);
+                    tp = int.Parse(GetSection(ChoiceWarps[tp], choice - 1));
                     loadDialogue();
-                    questFound = true;
-                    break;
                 }
             }
-
-            //CHECK QUEST, QUEST = QUEST, SUB = Default (-1)
-            if (!questFound)
+            if (dialogueType[tp] == 3)
             {
+                Debug.Log("Attempting warp to new slot");
+                //Adventureog.advLogInstance.Quest[0]
+                string QuestID, SubQuest, WarpTo;
+                bool questFound = false;
+                List<string> Sections = new List<string>();
+                for (int i = 0; i < CountSections(ChoiceWarps[tp]); i++)
+                {
+                    Sections.Add(GetSection(ChoiceWarps[tp], i).Replace(',', ';'));
+                }
+
+                //CHECK EXACT QUEST = QUEST, SUB = SUB
                 for (int i = 0; i < Sections.Count; i++)
                 {
                     QuestID = GetSection(Sections[i], 0);
@@ -168,32 +154,60 @@ public class SetConversationTree : MonoBehaviour
                     SubQuest = GetSection(Sections[i], 1);
                     WarpTo = GetSection(Sections[i], 2);
 
-                    if (Adventureog.advLogInstance.Quest[QID - 1].Active && SubQuest == "-1")
+                    if (Adventureog.advLogInstance.Quest[QID - 1].Active && Adventureog.advLogInstance.Quest[QID - 1].subQuest == int.Parse(SubQuest))
                     {
                         tp = int.Parse(WarpTo);
                         loadDialogue();
                         questFound = true;
+                        Debug.Log("Slot Found: QuestID " + QuestID + ", SubQuest " + SubQuest + ", Warp To " + WarpTo);
                         break;
                     }
                 }
-            }
 
-            //CHECK DEFAULT, QUEST = Default (-1), SUB = Default (-1)
-            if (!questFound)
-            {
-                for (int i = 0; i < Sections.Count; i++)
+                //CHECK QUEST, QUEST = QUEST, SUB = Default (-1)
+                if (!questFound)
                 {
-                    QuestID = GetSection(Sections[i], 0);
-                    SubQuest = GetSection(Sections[i], 1);
-                    WarpTo = GetSection(Sections[i], 2);
-
-                    if (QuestID == "-1" && SubQuest == "-1")
+                    for (int i = 0; i < Sections.Count; i++)
                     {
-                        tp = int.Parse(WarpTo);
-                        loadDialogue();
-                        questFound = true;
-                        break;
+                        QuestID = GetSection(Sections[i], 0);
+                        int QID = int.Parse(QuestID);
+                        SubQuest = GetSection(Sections[i], 1);
+                        WarpTo = GetSection(Sections[i], 2);
+
+                        if (Adventureog.advLogInstance.Quest[QID - 1].Active && SubQuest == "-1")
+                        {
+                            tp = int.Parse(WarpTo);
+                            loadDialogue();
+                            questFound = true;
+                            Debug.Log("Slot Found: QuestID " + QuestID + ", SubQuest " + SubQuest + ", Warp To " + WarpTo);
+                            break;
+                        }
                     }
+                }
+
+                //CHECK DEFAULT, QUEST = Default (-1), SUB = Default (-1)
+                if (!questFound)
+                {
+                    for (int i = 0; i < Sections.Count; i++)
+                    {
+                        QuestID = GetSection(Sections[i], 0);
+                        SubQuest = GetSection(Sections[i], 1);
+                        WarpTo = GetSection(Sections[i], 2);
+
+                        if (QuestID == "-1" && SubQuest == "-1")
+                        {
+                            tp = int.Parse(WarpTo);
+                            loadDialogue();
+                            questFound = true;
+                            Debug.Log("Slot Found: QuestID " + QuestID + ", SubQuest " + SubQuest + ", Warp To " + WarpTo);
+                            break;
+                        }
+                    }
+                }
+
+                if (!questFound)
+                {
+                    Debug.Log("Failed to warp to new slot. Check Slot " + tp.ToString() + "'s \"Warp To\" section for errors");
                 }
             }
         }
@@ -204,6 +218,10 @@ public class SetConversationTree : MonoBehaviour
         
         Debug.Log("Conversation Section: " + tp.ToString());
         addQuestHandler(tp, NPCName[tp]);
+        if (AdvanceQuestOnTextLoad[tp] != 0)
+        {
+            Adventureog.advLogInstance.addProgress(AdvanceQuestOnTextLoad[tp], 1);
+        }
         if (dialogueType[tp] == 0 || dialogueType[tp] == 2)
         { 
             ChoicesCanvas.SetActive(false);

@@ -32,6 +32,7 @@ public class quest
     {
         Active = true;
         qButton.SetActive(true);
+        updateQuestInfo();
     }
     public void deActivate()
     {
@@ -70,7 +71,7 @@ public class Adventureog : MonoBehaviour
             Quest.Add(new quest(QuestTitles[i]));
             Quest[i].qButton = QuestButton[i];
         }
-        
+
         if (advLogInstance == null) advLogInstance = this;
         else if (advLogInstance != this) Destroy(gameObject);
         DontDestroyOnLoad(gameObject);
@@ -150,6 +151,10 @@ public class Adventureog : MonoBehaviour
         if (Q.subQuest == Q.maxSubQuest)
         {
             Q.deActivate();
+        }
+        else
+        {
+            Q.updateQuestInfo();
         }
     }
 }
