@@ -9,7 +9,6 @@ public class SetConversationTree : MonoBehaviour
 {
     
     public GameObject ConversationView;
-    private int textPosition = 0;
     public List<int> dialogueType;
      //0 = Normal
      //1 = 4 - way Choice
@@ -79,7 +78,7 @@ public class SetConversationTree : MonoBehaviour
         ConversationView.SetActive(true);
         if (Adventureog.advLogInstance.isOpen == true)
             Adventureog.advLogInstance.closeLog();
-        tp = textPosition;
+        tp = 0;
         loadDialogue();
     }
 
@@ -88,36 +87,38 @@ public class SetConversationTree : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && dialogueActive)
         {
-            if(ConversationView.activeInHierarchy == false)
+            if (ConversationView.activeInHierarchy == false)
                 StartConversation();
-
-            if (dialogueType[tp] == 0)
+            else
             {
-                tp += 1;
-                loadDialogue();
-            }
-            if ((dialogueType[tp] == 2 || tp + 1 >= dialogueText.Count))
-            {
-                Debug.Log("Ended Conversation");
-                ConversationView.SetActive(false);
-                GameManager.instance.inConversation = false;
-                hp.SetActive(true);
-                inventory.SetActive(true);
-                ChoicesCanvas.SetActive(true);
-                Dia1.SetActive(true);
-                Dia2.SetActive(true);
-                Dia3.SetActive(true);
-                Dia4.SetActive(true);
-
-
-                if (NPCSprite[tp + 1] != null)
+                if (dialogueType[tp] == 0)
                 {
-                    Debug.Log("Augmenting tp!");
-                    textPosition = tp+1;
+                    tp += 1;
+                    loadDialogue();
                 }
-                else
-                    Debug.Log("Did not augment tp!");
-                //CharTalk.charInstance.exitDialougeView();
+                if ((dialogueType[tp] == 2 || tp + 1 >= dialogueText.Count))
+                {
+                    Debug.Log("Ended Conversation");
+                    ConversationView.SetActive(false);
+                    GameManager.instance.inConversation = false;
+                    hp.SetActive(true);
+                    inventory.SetActive(true);
+                    ChoicesCanvas.SetActive(true);
+                    Dia1.SetActive(true);
+                    Dia2.SetActive(true);
+                    Dia3.SetActive(true);
+                    Dia4.SetActive(true);
+
+
+                    if (NPCSprite[tp + 1] != null)
+                    {
+                        Debug.Log("Augmenting tp!");
+                        tp++;
+                    }
+                    else
+                        Debug.Log("Did not augment tp!");
+                    //CharTalk.charInstance.exitDialougeView();
+                }
             }
         }
         if (dialogueType[tp] == 1)
@@ -132,22 +133,23 @@ public class SetConversationTree : MonoBehaviour
         if (dialogueType[tp] == 3)
         {
             //Adventureog.advLogInstance.Quest[0]
-            int QuestID, SubQuest, WarpTo;
+            string QuestID, SubQuest, WarpTo;
             bool questFound = false;
             List<string> Sections = new List<string>();
-            for (int i = 0; i < CountSections(ChoiceWarps); i++)
+            for (int i = 0; i < CountSections(ChoiceWarps[tp]); i++)
             {
-                Sections.Add(GetSection(ChoiceWarps, i).Replace(',', ';'));
+                Sections.Add(GetSection(ChoiceWarps[tp], i).Replace(',', ';'));
             }
 
             //CHECK EXACT QUEST = QUEST, SUB = SUB
-            for (int i = 0; i < Sections.Count(); i++)
+            for (int i = 0; i < Sections.Count; i++)
             {
                 QuestID = GetSection(Sections[i], 0);
+                int QID = int.Parse(QuestID);
                 SubQuest = GetSection(Sections[i], 1);
                 WarpTo = GetSection(Sections[i], 2);
 
-                if (Adventureog.advLogInstance.Quest[QuestID - 1].Active && Adventureog.advLogInstance.Quest[QuestID - 1].subQuest)
+                if (Adventureog.advLogInstance.Quest[QID - 1].Active && Adventureog.advLogInstance.Quest[QID - 1].subQuest == int.Parse(SubQuest))
                 {
                     tp = int.Parse(WarpTo);
                     loadDialogue();
@@ -159,13 +161,14 @@ public class SetConversationTree : MonoBehaviour
             //CHECK QUEST, QUEST = QUEST, SUB = Default (-1)
             if (!questFound)
             {
-                for (int i = 0; i < Sections.Count(); i++)
+                for (int i = 0; i < Sections.Count; i++)
                 {
                     QuestID = GetSection(Sections[i], 0);
+                    int QID = int.Parse(QuestID);
                     SubQuest = GetSection(Sections[i], 1);
                     WarpTo = GetSection(Sections[i], 2);
 
-                    if (Adventureog.advLogInstance.Quest[QuestID - 1].Active && SubQuest == "-1")
+                    if (Adventureog.advLogInstance.Quest[QID - 1].Active && SubQuest == "-1")
                     {
                         tp = int.Parse(WarpTo);
                         loadDialogue();
@@ -178,7 +181,7 @@ public class SetConversationTree : MonoBehaviour
             //CHECK DEFAULT, QUEST = Default (-1), SUB = Default (-1)
             if (!questFound)
             {
-                for (int i = 0; i < Sections.Count(); i++)
+                for (int i = 0; i < Sections.Count; i++)
                 {
                     QuestID = GetSection(Sections[i], 0);
                     SubQuest = GetSection(Sections[i], 1);
@@ -272,7 +275,7 @@ public class SetConversationTree : MonoBehaviour
         {
             Debug.Log("Can talk!!");
             dialogueActive = true;
-            tp--;
+
         }
     }
 
@@ -290,7 +293,6 @@ public class SetConversationTree : MonoBehaviour
         {
             if (Adventureog.advLogInstance.Quest[0].qButton.activeInHierarchy == true)
             {
-                textPosition = 4;
                 tp = 4;
             }
         }
@@ -298,7 +300,6 @@ public class SetConversationTree : MonoBehaviour
         {
             if (Adventureog.advLogInstance.Quest[0].qButton.activeInHierarchy == false)
             {
-                textPosition = 0;
                 tp = 1;
             }
         }
