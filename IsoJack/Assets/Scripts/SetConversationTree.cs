@@ -217,6 +217,10 @@ public class SetConversationTree : MonoBehaviour
     {
         
         Debug.Log("Conversation Section: " + tp.ToString());
+
+        //Replce Text with appropriate 
+        currentQuestInfo.replce("<changeOfWinningWar>", getChangeOfWinning().ToString());
+
         if (AdvanceQuestOnTextLoad[tp] != 0)
         {
             Adventureog.advLogInstance.addProgress(AdvanceQuestOnTextLoad[tp], 1);
@@ -302,6 +306,11 @@ public class SetConversationTree : MonoBehaviour
         {
             dialogueActive = false;
         }
+    }
+
+    private int getChangeOfWinning()
+    {
+        return 0;
     }
 
 }

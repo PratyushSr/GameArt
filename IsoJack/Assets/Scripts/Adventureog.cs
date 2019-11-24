@@ -43,6 +43,7 @@ public class quest
     {
         currentQuestInfo = questInfo[subQuest];
     }
+    
 }
 
 public class Adventureog : MonoBehaviour
