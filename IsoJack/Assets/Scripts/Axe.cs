@@ -7,6 +7,7 @@ public class Axe : MonoBehaviour
 
     public Animator myanimator;
     Collider2D axe;
+    
 
     // Start is called before the first frame update
     void Start()
