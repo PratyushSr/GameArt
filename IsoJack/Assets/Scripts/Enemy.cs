@@ -21,35 +21,89 @@ public class Enemy : MonoBehaviour
     public LayerMask whatIsEnemies;
     public float attackRange;
     public float damage;
+    public float projectilRange;
+    public GameObject projectile;
+
+
+    private float dazedTime;
+
+    private SpriteRenderer mySpriteRenderer;
+
 
     private Animator anim;
 
+    private float maxHealth;
 
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         anim = GetComponent<Animator>();
+        maxHealth = health;
+        dazedTime = 2;
+        mySpriteRenderer = GetComponent<SpriteRenderer>();
+
     }
 
     void Update()
     {
+
         if (aggressive == true)
         {
-
-            if (Vector2.Distance(transform.position, target.position) < 5 && Vector2.Distance(transform.position, target.position) > 1)
+            // follow
+            if (Vector2.Distance(transform.position, target.position) < 3 && Vector2.Distance(transform.position, target.position) > 1)
+            {
+                
                 transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
+                anim.SetTrigger("walk");
+            }
+            else
+            {
+                anim.SetTrigger("idle");
 
+            }
+
+
+            if (target.position.x > transform.position.x)
+            {
+                mySpriteRenderer.flipX = true;
+
+            }
+
+            else mySpriteRenderer.flipX = false;
+
+            //attack
             if (attackCd <= 0)
             {
-
-                Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
-                for (int i = 0; i < enemiesToDamage.Length; i++)
+                
+                
+                //range
+                if (Vector2.Distance(transform.position, target.position) < 10 && Vector2.Distance(transform.position, target.position) > 5)
                 {
-                    enemiesToDamage[i].GetComponent<PlayerAttack>().TakeDamage(damage);
+                   // Collider2D[] enemiesToShoot = Physics2D.OverlapCircleAll(attackPos.position, projectilRange, whatIsEnemies);
+                   
+                    //RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, transform.up, whatIsEnemies);
                     anim.SetTrigger("attack");
+                    Instantiate(projectile, attackPos);
+                    attackCd = attackTimer;
+                }
+                
+
+
+
+                //melee
+                if (Vector2.Distance(transform.position, target.position) < 5)
+                {
+                    Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
+                    for (int i = 0; i < enemiesToDamage.Length; i++)
+                    {
+                        enemiesToDamage[i].GetComponent<PlayerAttack>().TakeDamage(damage);
+                        anim.SetTrigger("attack");
+                        attackCd = attackTimer;
+                    }
+
+
                 }
 
-                attackCd = attackTimer;
 
             }
 
@@ -59,31 +113,70 @@ public class Enemy : MonoBehaviour
             }
         }
 
+        if (dazedTime <= 1.5)
+        {
+
+            moveSpeed = 0;
+            dazedTime += Time.deltaTime;
+        }
+
+        else
+        {
+            moveSpeed = 1;
+        }
+
+
+
+
         if (health <= 0)
         {
-            Destroy(gameObject);
+
+            moveSpeed = 0;
+            anim.SetTrigger("dead");
+
+
+            Destroy(gameObject, 5);
 
         }
     }
 
-    
+
 
 
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(attackPos.position, attackRange);
-
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(attackPos.position, projectilRange);
     }
 
-   
+
 
     public void EnemyTakeDamage(float damage)
     {
 
-        health -= damage;
+
         Debug.Log("Enemy takes damage!!!");
 
         aggressive = true;
+
+        if (health <= (float)(maxHealth * .5))
+        {
+            health -= (float)(damage - damage * .2);
+        }
+        else
+        {
+            health -= damage;
+
+        }
+
+        //knockback
+        Vector2 difference = transform.position - target.transform.position;
+        transform.position = new Vector2(transform.position.x + difference.x, transform.position.y + difference.y);
+        dazedTime = 0;
+
     }
+
+
 }
