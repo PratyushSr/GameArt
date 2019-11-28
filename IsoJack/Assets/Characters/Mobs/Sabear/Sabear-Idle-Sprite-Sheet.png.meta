@@ -137,10 +137,17 @@ TextureImporter:
       name: Sabear-Idle-Sprite-Sheet_0
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 79
         y: 928
         width: 140
         height: 243
+=======
+        x: 0
+        y: 900
+        width: 300
+        height: 300
+>>>>>>> DEVBRANCH
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -148,7 +155,11 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 99d9fc5da4a41a34f9812b439cb5f5dc
+=======
+      spriteID: 6e1b07df3b709824281676aa10d91a06
+>>>>>>> DEVBRANCH
       internalID: -600859042328792370
       vertices: []
       indices: 
@@ -158,10 +169,17 @@ TextureImporter:
       name: Sabear-Idle-Sprite-Sheet_1
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 378
         y: 928
         width: 143
         height: 243
+=======
+        x: 300
+        y: 900
+        width: 300
+        height: 300
+>>>>>>> DEVBRANCH
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,7 +187,11 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: c3b4357cf73427d449a4a52c2e23d6a9
+=======
+      spriteID: 870a66b5a50434145bdbaa26c7b326e7
+>>>>>>> DEVBRANCH
       internalID: -7713631486413576871
       vertices: []
       indices: 
@@ -179,10 +201,17 @@ TextureImporter:
       name: Sabear-Idle-Sprite-Sheet_2
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 676
         y: 928
         width: 148
         height: 243
+=======
+        x: 600
+        y: 900
+        width: 300
+        height: 300
+>>>>>>> DEVBRANCH
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,7 +219,11 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 60c901b93239ee444815f53ae5ce8a39
+=======
+      spriteID: 2c95b7b42600fff4d89ce70cc48733f4
+>>>>>>> DEVBRANCH
       internalID: 8079855177540487226
       vertices: []
       indices: 
@@ -200,10 +233,17 @@ TextureImporter:
       name: Sabear-Idle-Sprite-Sheet_3
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 976
         y: 928
         width: 153
         height: 243
+=======
+        x: 900
+        y: 900
+        width: 300
+        height: 300
+>>>>>>> DEVBRANCH
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -211,7 +251,11 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: ac5a45f6e8ad8974a8628827186e545b
+=======
+      spriteID: 149d1568149c381469c991ba04667169
+>>>>>>> DEVBRANCH
       internalID: 6204887051555420697
       vertices: []
       indices: 
@@ -221,10 +265,17 @@ TextureImporter:
       name: Sabear-Idle-Sprite-Sheet_4
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 75
         y: 628
         width: 154
         height: 243
+=======
+        x: 0
+        y: 600
+        width: 300
+        height: 300
+>>>>>>> DEVBRANCH
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -232,7 +283,11 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 8debedb5978a20d40895fc9818e2b3bd
+=======
+      spriteID: 513e44a4d636dc246a16aa1b96331bf3
+>>>>>>> DEVBRANCH
       internalID: 4528173939363069290
       vertices: []
       indices: 
@@ -242,10 +297,17 @@ TextureImporter:
       name: Sabear-Idle-Sprite-Sheet_5
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 376
         y: 628
         width: 153
         height: 243
+=======
+        x: 300
+        y: 600
+        width: 300
+        height: 300
+>>>>>>> DEVBRANCH
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,7 +315,11 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 16d7857ba24039b4a90b35b49f4b458f
+=======
+      spriteID: 60d4b3feeba6b4742af9aae574d9a29a
+>>>>>>> DEVBRANCH
       internalID: -4845716743582621768
       vertices: []
       indices: 
@@ -263,10 +329,17 @@ TextureImporter:
       name: Sabear-Idle-Sprite-Sheet_6
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 676
         y: 628
         width: 148
         height: 243
+=======
+        x: 600
+        y: 600
+        width: 300
+        height: 300
+>>>>>>> DEVBRANCH
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -274,7 +347,11 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 712fc174ef2ea564e8805bbc2265e7bb
+=======
+      spriteID: 8d38b279480201a46b9f2a169bb1da6c
+>>>>>>> DEVBRANCH
       internalID: 6383372202739770941
       vertices: []
       indices: 
@@ -284,10 +361,17 @@ TextureImporter:
       name: Sabear-Idle-Sprite-Sheet_7
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 978
         y: 628
         width: 143
         height: 243
+=======
+        x: 900
+        y: 600
+        width: 300
+        height: 300
+>>>>>>> DEVBRANCH
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -295,7 +379,11 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 09725aa93ec7c1a4aac4e18d7f87e8ae
+=======
+      spriteID: 368e6b6cd2596034fb0a91e8905ad2d5
+>>>>>>> DEVBRANCH
       internalID: -5443133970231296457
       vertices: []
       indices: 
@@ -305,10 +393,17 @@ TextureImporter:
       name: Sabear-Idle-Sprite-Sheet_8
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 79
         y: 328
         width: 140
         height: 243
+=======
+        x: 0
+        y: 300
+        width: 300
+        height: 300
+>>>>>>> DEVBRANCH
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -316,7 +411,11 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 9ba9d9432233fdf4aa657d30522c3cae
+=======
+      spriteID: 9429ccc06de2f944bba5ca3aac077a86
+>>>>>>> DEVBRANCH
       internalID: 414461627762307561
       vertices: []
       indices: 
@@ -326,10 +425,17 @@ TextureImporter:
       name: Sabear-Idle-Sprite-Sheet_9
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 378
         y: 328
         width: 143
         height: 243
+=======
+        x: 300
+        y: 300
+        width: 300
+        height: 300
+>>>>>>> DEVBRANCH
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -337,7 +443,11 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: a024d8d3b2c142949a504a8392377645
+=======
+      spriteID: 012768198ebe07c4fb4621b9fa81d911
+>>>>>>> DEVBRANCH
       internalID: 7289791612255458713
       vertices: []
       indices: 
@@ -347,10 +457,17 @@ TextureImporter:
       name: Sabear-Idle-Sprite-Sheet_10
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 676
         y: 328
         width: 148
         height: 243
+=======
+        x: 600
+        y: 300
+        width: 300
+        height: 300
+>>>>>>> DEVBRANCH
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -358,7 +475,11 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 583c7457dcbcf5e4d803ec2c60bff1e6
+=======
+      spriteID: 7d22e93267d773644b375aed4129c025
+>>>>>>> DEVBRANCH
       internalID: -1112323554855615237
       vertices: []
       indices: 
@@ -368,10 +489,17 @@ TextureImporter:
       name: Sabear-Idle-Sprite-Sheet_11
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 976
         y: 328
         width: 153
         height: 243
+=======
+        x: 900
+        y: 300
+        width: 300
+        height: 300
+>>>>>>> DEVBRANCH
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -379,7 +507,11 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 1fbe3d7648befda4883f23e50b364354
+=======
+      spriteID: 3e19324f96b102e4b9be6b2dc9ad808e
+>>>>>>> DEVBRANCH
       internalID: -8414328348803091468
       vertices: []
       indices: 
@@ -389,10 +521,17 @@ TextureImporter:
       name: Sabear-Idle-Sprite-Sheet_12
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 75
         y: 28
         width: 154
         height: 243
+=======
+        x: 0
+        y: 0
+        width: 300
+        height: 300
+>>>>>>> DEVBRANCH
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -400,7 +539,11 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 52d4023fc86795d4ebd432eaccc854f9
+=======
+      spriteID: 15d5a3f3a4b6cb842bde4d8673d4a111
+>>>>>>> DEVBRANCH
       internalID: -2733160485788268617
       vertices: []
       indices: 
@@ -410,10 +553,17 @@ TextureImporter:
       name: Sabear-Idle-Sprite-Sheet_13
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 376
         y: 28
         width: 153
         height: 243
+=======
+        x: 300
+        y: 0
+        width: 300
+        height: 300
+>>>>>>> DEVBRANCH
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -421,7 +571,11 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 75f1735995b9a1848b746a661c657f43
+=======
+      spriteID: a62c19a8402603049ac60ce4e794562f
+>>>>>>> DEVBRANCH
       internalID: -4994632773202542223
       vertices: []
       indices: 
@@ -431,10 +585,17 @@ TextureImporter:
       name: Sabear-Idle-Sprite-Sheet_14
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 676
         y: 28
         width: 148
         height: 243
+=======
+        x: 600
+        y: 0
+        width: 300
+        height: 300
+>>>>>>> DEVBRANCH
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -442,7 +603,11 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: d9bca4811e2ec7642a26d15389b3e098
+=======
+      spriteID: 54422921550b81e4298778a4d4b349a6
+>>>>>>> DEVBRANCH
       internalID: 6684830610770171684
       vertices: []
       indices: 
@@ -452,10 +617,17 @@ TextureImporter:
       name: Sabear-Idle-Sprite-Sheet_15
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 978
         y: 28
         width: 143
         height: 243
+=======
+        x: 900
+        y: 0
+        width: 300
+        height: 300
+>>>>>>> DEVBRANCH
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -463,7 +635,11 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 533e70b44eb74e348b8adcc4ee8a806f
+=======
+      spriteID: 781ed1285a19b4646bdd858bf580e800
+>>>>>>> DEVBRANCH
       internalID: -2599829653013774512
       vertices: []
       indices: 

@@ -95,10 +95,17 @@ TextureImporter:
       name: Sawyer_R_Idle_0
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 147
         y: 345
         width: 136
         height: 280
+=======
+        x: 148
+        y: 345
+        width: 136
+        height: 281
+>>>>>>> DEVBRANCH
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -106,7 +113,11 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 8fb87ed9cecba444299cd0ffb60139b2
+=======
+      spriteID: 56659832b1057ad49988876ab249f596
+>>>>>>> DEVBRANCH
       internalID: 932183814467613387
       vertices: []
       indices: 
@@ -118,7 +129,11 @@ TextureImporter:
         serializedVersion: 2
         x: 148
         y: 66
+<<<<<<< HEAD
         width: 133
+=======
+        width: 135
+>>>>>>> DEVBRANCH
         height: 278
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -127,7 +142,11 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: f8abdedc917dc124a8b0476910e4bde0
+=======
+      spriteID: edd6e38904963bd45bb1552f5b83e037
+>>>>>>> DEVBRANCH
       internalID: -1988279476079474209
       vertices: []
       indices: 

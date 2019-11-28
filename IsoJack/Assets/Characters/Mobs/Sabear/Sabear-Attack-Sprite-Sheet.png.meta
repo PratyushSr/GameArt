@@ -21,12 +21,24 @@ TextureImporter:
       213: -4534045556624918920
     second: Sabear-Attack-Sprite-Sheet_5
   - first:
+<<<<<<< HEAD
+=======
+      213: 3407589216651574532
+    second: Sabear-Attack-Sprite-Sheet_6
+  - first:
+>>>>>>> DEVBRANCH
       213: 39169215638057420
     second: Sabear-Attack-Sprite-Sheet_7
   - first:
       213: 8800006759552972471
     second: Sabear-Attack-Sprite-Sheet_8
   - first:
+<<<<<<< HEAD
+=======
+      213: 571553634326872647
+    second: Sabear-Attack-Sprite-Sheet_9
+  - first:
+>>>>>>> DEVBRANCH
       213: -8700869794467874769
     second: Sabear-Attack-Sprite-Sheet_10
   - first:
@@ -39,6 +51,7 @@ TextureImporter:
       213: -4460640998933410621
     second: Sabear-Attack-Sprite-Sheet_13
   - first:
+<<<<<<< HEAD
       213: 5495306055203782004
     second: Sabear-Attack-Sprite-Sheet_15
   - first:
@@ -47,6 +60,10 @@ TextureImporter:
   - first:
       213: -1317386434561216268
     second: Sabear-Attack-Sprite-Sheet_19
+=======
+      213: -5175960618350197357
+    second: Sabear-Attack-Sprite-Sheet_14
+>>>>>>> DEVBRANCH
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -134,10 +151,17 @@ TextureImporter:
       name: Sabear-Attack-Sprite-Sheet_0
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 36
         y: 618
         width: 139
         height: 242
+=======
+        x: 0
+        y: 600
+        width: 300
+        height: 300
+>>>>>>> DEVBRANCH
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,7 +169,11 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 76ee18cab469f16488ca8363466c48da
+=======
+      spriteID: 22289ba01ed7cd84db8c63ad664f3dcf
+>>>>>>> DEVBRANCH
       internalID: 9184112285371080368
       vertices: []
       indices: 
@@ -155,10 +183,17 @@ TextureImporter:
       name: Sabear-Attack-Sprite-Sheet_1
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 336
         y: 618
         width: 193
         height: 242
+=======
+        x: 300
+        y: 600
+        width: 300
+        height: 300
+>>>>>>> DEVBRANCH
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,7 +201,11 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 550b0139ac9b5b545a0d04e7917e1738
+=======
+      spriteID: 258c122132cc8e34ca6636866a0d0024
+>>>>>>> DEVBRANCH
       internalID: -3978123961276643738
       vertices: []
       indices: 
@@ -176,10 +215,17 @@ TextureImporter:
       name: Sabear-Attack-Sprite-Sheet_2
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 636
         y: 617
         width: 240
         height: 243
+=======
+        x: 600
+        y: 600
+        width: 300
+        height: 300
+>>>>>>> DEVBRANCH
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,7 +233,11 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 03c5e68fc3471f548a22571d09c54b8a
+=======
+      spriteID: aca3d78e8c0300840919516ff4f12333
+>>>>>>> DEVBRANCH
       internalID: 4928923455490033948
       vertices: []
       indices: 
@@ -197,10 +247,17 @@ TextureImporter:
       name: Sabear-Attack-Sprite-Sheet_3
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 936
         y: 617
         width: 253
         height: 243
+=======
+        x: 900
+        y: 600
+        width: 300
+        height: 300
+>>>>>>> DEVBRANCH
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,7 +265,11 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: a62e08dfbacd907458c7f8e9784b9fdf
+=======
+      spriteID: a3d2f0d96d4281c439ca6240af7ac30d
+>>>>>>> DEVBRANCH
       internalID: 4949390406290283685
       vertices: []
       indices: 
@@ -218,10 +279,17 @@ TextureImporter:
       name: Sabear-Attack-Sprite-Sheet_4
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 1236
         y: 619
         width: 213
         height: 278
+=======
+        x: 1200
+        y: 600
+        width: 300
+        height: 300
+>>>>>>> DEVBRANCH
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,7 +297,11 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 72d8ed45386567149851cb6996f3087d
+=======
+      spriteID: d56b4f104c3466242b0156ae66a62c10
+>>>>>>> DEVBRANCH
       internalID: 3829463726415770631
       vertices: []
       indices: 
@@ -239,10 +311,17 @@ TextureImporter:
       name: Sabear-Attack-Sprite-Sheet_5
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 36
         y: 319
         width: 221
         height: 241
+=======
+        x: 0
+        y: 300
+        width: 300
+        height: 300
+>>>>>>> DEVBRANCH
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,13 +329,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 17e363eca1536394bb880371145d5f8e
+=======
+      spriteID: 27f2ca6d4291b46449d07f12106f6189
+>>>>>>> DEVBRANCH
       internalID: -4534045556624918920
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: Sabear-Attack-Sprite-Sheet_7
       rect:
         serializedVersion: 2
@@ -264,6 +348,15 @@ TextureImporter:
         y: 314
         width: 179
         height: 249
+=======
+      name: Sabear-Attack-Sprite-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 300
+        width: 300
+        height: 300
+>>>>>>> DEVBRANCH
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,13 +364,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 83438c25e01cac54aae84dffeb1b8723
       internalID: 39169215638057420
+=======
+      spriteID: 183fab97949a2ef4ab62545584e890db
+      internalID: 3407589216651574532
+>>>>>>> DEVBRANCH
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: Sabear-Attack-Sprite-Sheet_8
       rect:
         serializedVersion: 2
@@ -285,6 +384,15 @@ TextureImporter:
         y: 319
         width: 150
         height: 236
+=======
+      name: Sabear-Attack-Sprite-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 300
+        width: 300
+        height: 300
+>>>>>>> DEVBRANCH
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -292,13 +400,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 5181bfc7c4cb0314ab36e5620f677c37
       internalID: 8800006759552972471
+=======
+      spriteID: 5d3279f67749b5446978ae560d8d88e3
+      internalID: 39169215638057420
+>>>>>>> DEVBRANCH
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: Sabear-Attack-Sprite-Sheet_10
       rect:
         serializedVersion: 2
@@ -306,6 +420,15 @@ TextureImporter:
         y: 314
         width: 147
         height: 237
+=======
+      name: Sabear-Attack-Sprite-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 300
+        width: 300
+        height: 300
+>>>>>>> DEVBRANCH
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -313,13 +436,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: af07bb7e7d9819a45abade2e9723e151
       internalID: -8700869794467874769
+=======
+      spriteID: 0f86e804b3ec9af4eaf93523e5ac946e
+      internalID: 8800006759552972471
+>>>>>>> DEVBRANCH
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: Sabear-Attack-Sprite-Sheet_11
       rect:
         serializedVersion: 2
@@ -327,6 +456,15 @@ TextureImporter:
         y: 314
         width: 147
         height: 237
+=======
+      name: Sabear-Attack-Sprite-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 300
+        width: 300
+        height: 300
+>>>>>>> DEVBRANCH
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -334,13 +472,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 0404edd1e955abc48bf046b5b4553b9f
       internalID: 671610143541752865
+=======
+      spriteID: 08d39b4b7dab84742aadce328fa418fb
+      internalID: 571553634326872647
+>>>>>>> DEVBRANCH
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: Sabear-Attack-Sprite-Sheet_12
       rect:
         serializedVersion: 2
@@ -348,6 +492,15 @@ TextureImporter:
         y: 14
         width: 147
         height: 237
+=======
+      name: Sabear-Attack-Sprite-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 300
+        height: 300
+>>>>>>> DEVBRANCH
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -355,13 +508,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: e0b549a1ce18e85419d523e35e29348f
       internalID: 6259214572355284980
+=======
+      spriteID: 3c1618dbe1e84bb4993376ee629008c8
+      internalID: -8700869794467874769
+>>>>>>> DEVBRANCH
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: Sabear-Attack-Sprite-Sheet_13
       rect:
         serializedVersion: 2
@@ -369,6 +528,15 @@ TextureImporter:
         y: 16
         width: 196
         height: 243
+=======
+      name: Sabear-Attack-Sprite-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 300
+        height: 300
+>>>>>>> DEVBRANCH
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,13 +544,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 9bc92e6680b985e42b793906b4621f0e
       internalID: -4460640998933410621
+=======
+      spriteID: 4159c7454cdb0d64f89a1f3e7c5dc604
+      internalID: 671610143541752865
+>>>>>>> DEVBRANCH
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: Sabear-Attack-Sprite-Sheet_15
       rect:
         serializedVersion: 2
@@ -390,6 +564,15 @@ TextureImporter:
         y: 15
         width: 196
         height: 241
+=======
+      name: Sabear-Attack-Sprite-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 300
+        height: 300
+>>>>>>> DEVBRANCH
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -397,13 +580,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 3551ce2496c970d45b2b3797ffba6b7a
       internalID: 5495306055203782004
+=======
+      spriteID: d19fcc5778af1cc42b1c5a9503fac60f
+      internalID: 6259214572355284980
+>>>>>>> DEVBRANCH
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: Sabear-Attack-Sprite-Sheet_17
       rect:
         serializedVersion: 2
@@ -411,6 +600,15 @@ TextureImporter:
         y: 14
         width: 144
         height: 248
+=======
+      name: Sabear-Attack-Sprite-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 0
+        width: 300
+        height: 300
+>>>>>>> DEVBRANCH
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -418,13 +616,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: e827b2f26b7ae6046b85d403b0e3e2fe
       internalID: 5837101751295388069
+=======
+      spriteID: 2b97f7745f6b2434dac884f26af91d1e
+      internalID: -4460640998933410621
+>>>>>>> DEVBRANCH
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: Sabear-Attack-Sprite-Sheet_19
       rect:
         serializedVersion: 2
@@ -432,6 +636,15 @@ TextureImporter:
         y: 14
         width: 144
         height: 248
+=======
+      name: Sabear-Attack-Sprite-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 300
+        height: 300
+>>>>>>> DEVBRANCH
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -439,8 +652,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 64a3d3a949cac7a4a9f3aec2f2e93d0a
       internalID: -1317386434561216268
+=======
+      spriteID: e71531f4661717f4aaf3a7ea829971c6
+      internalID: -5175960618350197357
+>>>>>>> DEVBRANCH
       vertices: []
       indices: 
       edges: []
