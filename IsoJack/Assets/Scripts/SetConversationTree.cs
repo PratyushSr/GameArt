@@ -218,8 +218,10 @@ public class SetConversationTree : MonoBehaviour
         
         Debug.Log("Conversation Section: " + tp.ToString());
 
-        //Replce Text with appropriate 
-        currentQuestInfo.replce("<changeOfWinningWar>", getChangeOfWinning().ToString());
+        string textToDisplay = dialogueText[tp];
+
+        //Replce Text with appropriate calculations
+        textToDisplay = textToDisplay.Replace("<changeOfWinningWar>", getChanceOfWinning().ToString());
 
         if (AdvanceQuestOnTextLoad[tp] != 0)
         {
@@ -228,15 +230,15 @@ public class SetConversationTree : MonoBehaviour
         if (dialogueType[tp] == 0 || dialogueType[tp] == 2)
         { 
             ChoicesCanvas.SetActive(false);
-            DialogueTextObject.GetComponent<UnityEngine.UI.Text>().text = dialogueText[tp];
+            DialogueTextObject.GetComponent<UnityEngine.UI.Text>().text = textToDisplay;
         }
         else if (dialogueType[tp] == 1)
         {
             ChoicesCanvas.SetActive(true);
-            DialogueTextObject.GetComponent<UnityEngine.UI.Text>().text = GetSection(dialogueText[tp], 0);
+            DialogueTextObject.GetComponent<UnityEngine.UI.Text>().text = GetSection(textToDisplay, 0);
             DialougeView.converstationInstance.showDialougeChoices();
             ChoicesCanvas.SetActive(true);
-            int c = CountSections(dialogueText[tp]);
+            int c = CountSections(textToDisplay);
             Dia1.SetActive(false);
             Dia2.SetActive(false);
             Dia3.SetActive(false);
@@ -245,22 +247,22 @@ public class SetConversationTree : MonoBehaviour
             if (c > 1)
             {
                 Dia1.SetActive(true);
-                Dia1.transform.GetChild(0).gameObject.GetComponent<UnityEngine.UI.Text>().text = GetSection(dialogueText[tp], 1);
+                Dia1.transform.GetChild(0).gameObject.GetComponent<UnityEngine.UI.Text>().text = GetSection(textToDisplay, 1);
             }
             if (c > 2)
             {
                 Dia2.SetActive(true);
-                Dia2.transform.GetChild(0).gameObject.GetComponent<UnityEngine.UI.Text>().text = GetSection(dialogueText[tp], 2);
+                Dia2.transform.GetChild(0).gameObject.GetComponent<UnityEngine.UI.Text>().text = GetSection(textToDisplay, 2);
             }
             if (c > 3)
             {
                 Dia3.SetActive(true);
-                Dia3.transform.GetChild(0).gameObject.GetComponent<UnityEngine.UI.Text>().text = GetSection(dialogueText[tp], 3);
+                Dia3.transform.GetChild(0).gameObject.GetComponent<UnityEngine.UI.Text>().text = GetSection(textToDisplay, 3);
             }
             if (c > 4)
             {
                 Dia4.SetActive(true);
-                Dia4.transform.GetChild(0).gameObject.GetComponent<UnityEngine.UI.Text>().text = GetSection(dialogueText[tp], 4);
+                Dia4.transform.GetChild(0).gameObject.GetComponent<UnityEngine.UI.Text>().text = GetSection(textToDisplay, 4);
             }
         }
         //Update Name
@@ -308,7 +310,7 @@ public class SetConversationTree : MonoBehaviour
         }
     }
 
-    private int getChangeOfWinning()
+    private int getChanceOfWinning()
     {
         return 0;
     }
