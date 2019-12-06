@@ -1,0 +1,487 @@
+fileFormatVersion: 2
+guid: 75d682ac865410049b729b3fd4f2f870
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5897371009121970519
+    second: Pig-Walk-Sprite_0
+  - first:
+      213: 585739309202025733
+    second: Pig-Walk-Sprite_1
+  - first:
+      213: -2606570641213813386
+    second: Pig-Walk-Sprite_2
+  - first:
+      213: 5196399847487519675
+    second: Pig-Walk-Sprite_3
+  - first:
+      213: 4256219424419915452
+    second: Pig-Walk-Sprite_4
+  - first:
+      213: -7378383664294844994
+    second: Pig-Walk-Sprite_5
+  - first:
+      213: 5126400111341741064
+    second: Pig-Walk-Sprite_6
+  - first:
+      213: -3846460996354939156
+    second: Pig-Walk-Sprite_7
+  - first:
+      213: -4889029914964639716
+    second: Pig-Walk-Sprite_8
+  - first:
+      213: -3388091224589315338
+    second: Pig-Walk-Sprite_9
+  - first:
+      213: 5874344730812464568
+    second: Pig-Walk-Sprite_10
+  - first:
+      213: 902626201077087655
+    second: Pig-Walk-Sprite_11
+  - first:
+      213: -1104622751262615154
+    second: Pig-Walk-Sprite_12
+  - first:
+      213: -6283596481798554626
+    second: Pig-Walk-Sprite_13
+  - first:
+      213: -8355315569812067836
+    second: Pig-Walk-Sprite_14
+  - first:
+      213: -4918264835721387106
+    second: Pig-Walk-Sprite_15
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pig-Walk-Sprite_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 633
+        width: 151
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 498ac54db27f22941ab18be9d0fd90e0
+      internalID: 5897371009121970519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pig-Walk-Sprite_1
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 633
+        width: 151
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11c7a326cdac6544f897f3cc899dcbb5
+      internalID: 585739309202025733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pig-Walk-Sprite_2
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 632
+        width: 151
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da0fc354c29a14a46a8a1f2ada5939e0
+      internalID: -2606570641213813386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pig-Walk-Sprite_3
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 632
+        width: 151
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71ab11ac1d9f6ba4f986880ed7a760ba
+      internalID: 5196399847487519675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pig-Walk-Sprite_4
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 433
+        width: 151
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b1dcee52a7f84d408376c22ceec1b35
+      internalID: 4256219424419915452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pig-Walk-Sprite_5
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 433
+        width: 151
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b7887044eaa1da4d8e2a879ea7d76a1
+      internalID: -7378383664294844994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pig-Walk-Sprite_6
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 432
+        width: 151
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc7fd8c22f355624a9f07f8d0fd8646c
+      internalID: 5126400111341741064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pig-Walk-Sprite_7
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 432
+        width: 151
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c94abaf6579b9ee4fbdfb25d6ac37b5b
+      internalID: -3846460996354939156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pig-Walk-Sprite_8
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 233
+        width: 151
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c6c0bca6348d71478037a957b2cda2f
+      internalID: -4889029914964639716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pig-Walk-Sprite_9
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 233
+        width: 151
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d177bdf90f0437b479a68d9f0f81444f
+      internalID: -3388091224589315338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pig-Walk-Sprite_10
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 232
+        width: 151
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1e70393befce3a45834e09c727c9448
+      internalID: 5874344730812464568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pig-Walk-Sprite_11
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 232
+        width: 151
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d122bb4f79d6e1140a53f7f6aec10ff6
+      internalID: 902626201077087655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pig-Walk-Sprite_12
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 33
+        width: 151
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0d4af00d97def84595ced91c7f760be
+      internalID: -1104622751262615154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pig-Walk-Sprite_13
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 33
+        width: 151
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aea36e94825696b498448423f5b7d4de
+      internalID: -6283596481798554626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pig-Walk-Sprite_14
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 32
+        width: 151
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f723246bd2d1454e96a1e65b2d7b235
+      internalID: -8355315569812067836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pig-Walk-Sprite_15
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 32
+        width: 151
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d22243dc61a04c48acba4aa8c32778a
+      internalID: -4918264835721387106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

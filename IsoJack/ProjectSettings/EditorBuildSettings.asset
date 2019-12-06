@@ -5,7 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/MainMenu.unity
+    guid: 8b033ec85a863b640b578240acd0e9d4
+  - enabled: 1
+    path: Assets/Scenes/IsoJack_OverWorld.unity
+    guid: a466d47578c1a7240a58b3c8c26c1e74
   m_configObjects: {}
