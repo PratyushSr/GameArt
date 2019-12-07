@@ -155,12 +155,16 @@ public class SetConversationTree : MonoBehaviour
                     SubQuest = GetSection(Sections[i], 1);
                     WarpTo = GetSection(Sections[i], 2);
 
-                    if (QID != -1 && Adventureog.advLogInstance.Quest[QID - 1].Active && Adventureog.advLogInstance.Quest[QID - 1].subQuest == int.Parse(SubQuest))
+                    if (QID != -1 && (Adventureog.advLogInstance.Quest[QID - 1].Active || Adventureog.advLogInstance.Quest[QID - 1].AllowDialogueActivation) && Adventureog.advLogInstance.Quest[QID - 1].subQuest == int.Parse(SubQuest))
                     {
                         tp = int.Parse(WarpTo);
                         loadDialogue();
                         questFound = true;
                         Debug.Log("Slot Found: QuestID " + QuestID + ", SubQuest " + SubQuest + ", Warp To " + WarpTo);
+                        if (!Adventureog.advLogInstance.Quest[QID - 1].Active)
+                        {
+                            Adventureog.advLogInstance.Quest[QID - 1].activate();
+                        }
                         break;
                     }
                 }

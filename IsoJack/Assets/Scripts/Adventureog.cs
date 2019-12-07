@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class quest
 {
     public bool Active;
+    public bool AllowDialogueActivation;
     public string questTitle;
     public string currentQuestInfo;
     public GameObject qButton;
@@ -19,6 +20,7 @@ public class quest
     public quest(string title)
     {
         Active = false;
+        AllowDialogueActivation = false;
         questTitle = title;
         currentQuestInfo = " ";
         qButton = null;
