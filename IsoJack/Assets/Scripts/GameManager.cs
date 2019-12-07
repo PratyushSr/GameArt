@@ -13,8 +13,14 @@ public class GameManager : MonoBehaviour
     public int coin;
     public int days;
     public int hp;
+    public int bones;
+    public int food;
+    public int meat;
     public Text woodCount;
     public Text coinCount;
+    public Text foodCount;
+    public Text boneCount;
+    public Text meatCount;
     public Text daysRemain;
     public Text locationTxt;
     public static bool isPaused = false;
