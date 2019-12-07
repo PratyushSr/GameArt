@@ -51,15 +51,14 @@ public class SetConversationTree : MonoBehaviour
     {
         //bool ConvIsInactive = ConversationView.activeSelf;
         //if (ConvIsInactive) ConversationView.SetActive(true);
-        DialogueTextObject = GameObject.Find("ConversationView/DialogueText");
-        NPCPortrait = GameObject.Find("ConversationView/npcPortrait");
-        PlayerPortrait = GameObject.Find("ConversationView/playerPortrait");
-        NPCNameObject = GameObject.Find("ConversationView/NPCNameTag");
-        //ChoicesCanvas = GameObject.Find("ConversationView/choicesCanvas");
-        Dia1 = GameObject.Find("ConversationView/choicesCanvas/DialogueOptionOne");
-        Dia2 = GameObject.Find("ConversationView/choicesCanvas/DialogueOptionTwo");
-        Dia3 = GameObject.Find("ConversationView/choicesCanvas/DialogueOptionThree");
-        Dia4 = GameObject.Find("ConversationView/choicesCanvas/DialogueOptionFour");
+        DialogueTextObject = ConversationView.transform.Find("DialogueText").gameObject;
+        NPCPortrait = ConversationView.transform.Find("npcPortrait").gameObject;
+        PlayerPortrait = ConversationView.transform.Find("playerPortrait").gameObject;
+        NPCNameObject = ConversationView.transform.Find("NPCNameTag").gameObject;
+        Dia1 = ConversationView.transform.Find("choicesCanvas/DialogueOptionOne").gameObject;
+        Dia2 = ConversationView.transform.Find("choicesCanvas/DialogueOptionTwo").gameObject;
+        Dia3 = ConversationView.transform.Find("choicesCanvas/DialogueOptionThree").gameObject;
+        Dia4 = ConversationView.transform.Find("choicesCanvas/DialogueOptionFour").gameObject;
         AdvLog = GameObject.Find("AdventureLogPanel/AdventureLogBox");
         //if (ConvIsInactive) ConversationView.SetActive(false);
         hp = GameObject.Find("HUDCanvas/HPIndicator");
