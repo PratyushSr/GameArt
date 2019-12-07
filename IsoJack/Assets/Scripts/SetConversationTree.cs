@@ -7,35 +7,35 @@ using UnityEngine.UI;
 ///*
 public class SetConversationTree : MonoBehaviour
 {
-    
+    [Tooltip("Use \"Conversation View\" Gameobject")]
     public GameObject ConversationView;
+    [Tooltip("0 = Normal\n" +
+    "1 = 4 - way Choice\n" +
+    "2 = Exit on next click\n" +
+    "3 = Instantly Warp based on what quest is active. Put this on the ")]
     public List<int> dialogueType;
-     //0 = Normal
-     //1 = 4 - way Choice
-     //2 = Exit on next click
-     //3 = Instantly Warp based on what quest is active. Put this on the 
-     
+    [Tooltip("Sprite to display on left\n(Optional) Leave Null if not changed")]
     public List<Sprite> NPCSprite;
-    //(Optional) Leave Null if not changed
+    [Tooltip("Sprite to display on the right\n(Optional) Leave Null if not changed")]
     public List<Sprite> PlayerSprite;
-    //(Optional) Leave Null if not changed
+    [Tooltip("The name of the current character talking\n(Optional) Leave Null if not changed")]
     public List<string> NPCName;
-    //(Optional) Leave Null if not changed
+    [Tooltip("Format: The text to display;Choice 1 Text;Choice 2 Text; Choice 3 Text; Choice 4 Text")]
     public List<string> dialogueText;
-    //The text to display;Choice 1 Text;Choice 2 Text; Choice 3 Text; Choice 4 Text
-    public List<string> ChoiceWarps; //Only for Dialogue Options Warp1;Warp2;Warp3;Warp4
-    //If DialogueType == 3, it will test for a quest and sub-quest and then warp accordingly:
-    //QuestID,SubQuestNumber,WarpToPoint;QuestID2,SubQuestNumber2,WarpToPoint2;...
-    //If QuestID and Sub Quest can be set to -1 (;-1,-1,WarpToPoint;) to signify default value
+    [Tooltip("If DialogueType == 1 (Choices): Warp1;Warp2;Warp3;Warp4 (The conversation element to warp to)\n"+
+    "If DialogueType == 3, it will test for a quest and sub-quest and then warp accordingly:\n"+
+    "QuestID,SubQuestNumber,WarpToPoint;QuestID2,SubQuestNumber2,WarpToPoint2;...\n"+
+    "QuestID and Sub Quest can be set to -1 (;-1,-1,WarpToPoint;) to signify default value")]
+    public List<string> ChoiceWarps; 
+    [Tooltip("Adds one progression to the given quest when the text loads.")]
     public List<int> AdvanceQuestOnTextLoad;
-    //Adds one progression to the given quest when the text loads.
 
     private int tp; //Text Position
     private GameObject DialogueTextObject;
     private GameObject NPCPortrait;
     private GameObject PlayerPortrait;
     private GameObject NPCNameObject;
-    public GameObject ChoicesCanvas;
+    private GameObject ChoicesCanvas;
     private GameObject Dia1;
     private GameObject Dia2;
     private GameObject Dia3;
@@ -55,6 +55,7 @@ public class SetConversationTree : MonoBehaviour
         NPCPortrait = ConversationView.transform.Find("npcPortrait").gameObject;
         PlayerPortrait = ConversationView.transform.Find("playerPortrait").gameObject;
         NPCNameObject = ConversationView.transform.Find("NPCNameTag").gameObject;
+        ChoicesCanvas = ConversationView.transform.Find("choicesCanvas").gameObject;
         Dia1 = ConversationView.transform.Find("choicesCanvas/DialogueOptionOne").gameObject;
         Dia2 = ConversationView.transform.Find("choicesCanvas/DialogueOptionTwo").gameObject;
         Dia3 = ConversationView.transform.Find("choicesCanvas/DialogueOptionThree").gameObject;

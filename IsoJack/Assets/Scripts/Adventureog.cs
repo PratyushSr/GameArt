@@ -50,17 +50,24 @@ public class Adventureog : MonoBehaviour
 {
     public static Adventureog advLogInstance = null;
     private GameObject AdventureLogCanvas;
+    [Tooltip("Use \"Quest Text\" text")]
     public Text QuestText;
+    [Tooltip("Use \"Quest Title\" text")]
     public Text QuestTitle;
+    [Tooltip("Use \"Quest Idle\" sprite")]
     public Sprite unpressed;
+    [Tooltip("Use \"Quest Pressed\" sprite")]
     public Sprite pressed;
     private Vector3 advLogPos;
+    [Tooltip("Open the menu by default")]
     public bool isOpen;
 
     public List<quest> Quest = new List<quest>();
     public List<string> QuestTitles;
+    [Tooltip("The name of the quest. The total number put here also registers that many quests")]
     private int totalQuests;
-    public List<GameObject> QuestButton;//Must be same length as QuestTitles
+    [Tooltip("Must be same length as QuestTitles. These should map to a button in the adventure log panel")]
+    public List<GameObject> QuestButton;
 
     // Start is called before the first frame update
     void Start()

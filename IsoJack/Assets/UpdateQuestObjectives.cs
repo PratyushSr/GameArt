@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class UpdateQuestObjectives : MonoBehaviour
 {
+    [Tooltip("1 - max quests (Check Adventurog.cs for more details)")]
     public int QuestID;
+    [Tooltip("Make it start activated")]
     public bool ActivateIfDisabled;
-    //1 - max quests (Check Adventurog.cs for more details)
+    [Tooltip("Registers all the sub-quests and places text for them. The max listed here is the max sub-quests that it will register")]
     public List<string> subQuestText;
-    // Start is called before the first frame update
 
     private int waitAFrame = 0; //Forced the script to wait one frame before activating
     void Start()
