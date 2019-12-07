@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 
 ///*
@@ -45,6 +46,8 @@ public class SetConversationTree : MonoBehaviour
     private GameObject hp;
     private GameObject inventory;
 
+    private GameObject PlayerObject;
+
     private bool dialogueActive;
     // Start is called before the first frame update
     void Start()
@@ -64,6 +67,7 @@ public class SetConversationTree : MonoBehaviour
         //if (ConvIsInactive) ConversationView.SetActive(false);
         hp = GameObject.Find("HUDCanvas/HPIndicator");
         inventory = GameObject.Find("HUDCanvas/Inventory");
+        PlayerObject = GameObject.Find("Player_Jack");
     }
 
     void OnEnable()
@@ -87,6 +91,8 @@ public class SetConversationTree : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        dialogueActive = Math.Sqrt(Math.Pow(transform.position.x - PlayerObject.transform.position.x, 2) +
+                Math.Pow(transform.position.y - PlayerObject.transform.position.y, 2)) <= 1;
         if (dialogueActive)
         {
             if (Input.GetKeyDown(KeyCode.Space))
@@ -300,23 +306,6 @@ public class SetConversationTree : MonoBehaviour
             if (c == ';') count++;
         }
         return count;
-    }
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            Debug.Log("Can talk!!");
-            dialogueActive = true;
-
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            dialogueActive = false;
-        }
     }
 
     private int getChanceOfWinning()
