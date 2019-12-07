@@ -113,13 +113,14 @@ public class SetConversationTree : MonoBehaviour
                         Dia4.SetActive(true);
 
 
-                        if (NPCSprite[tp + 1] != null)
+                        /*if (NPCSprite[tp + 1] != null)
                         {
                             Debug.Log("Augmenting tp!");
                             tp++;
                         }
                         else
                             Debug.Log("Did not augment tp!");
+                        */                    
                         //CharTalk.charInstance.exitDialougeView();
                     }
                 }
@@ -153,7 +154,7 @@ public class SetConversationTree : MonoBehaviour
                     SubQuest = GetSection(Sections[i], 1);
                     WarpTo = GetSection(Sections[i], 2);
 
-                    if (Adventureog.advLogInstance.Quest[QID - 1].Active && Adventureog.advLogInstance.Quest[QID - 1].subQuest == int.Parse(SubQuest))
+                    if (QID != -1 && Adventureog.advLogInstance.Quest[QID - 1].Active && Adventureog.advLogInstance.Quest[QID - 1].subQuest == int.Parse(SubQuest))
                     {
                         tp = int.Parse(WarpTo);
                         loadDialogue();
@@ -173,7 +174,7 @@ public class SetConversationTree : MonoBehaviour
                         SubQuest = GetSection(Sections[i], 1);
                         WarpTo = GetSection(Sections[i], 2);
 
-                        if (Adventureog.advLogInstance.Quest[QID - 1].Active && SubQuest == "-1")
+                        if (QID != -1 && Adventureog.advLogInstance.Quest[QID - 1].Active && SubQuest == "-1")
                         {
                             tp = int.Parse(WarpTo);
                             loadDialogue();
