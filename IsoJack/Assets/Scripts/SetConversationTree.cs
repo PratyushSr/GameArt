@@ -12,7 +12,7 @@ public class SetConversationTree : MonoBehaviour
     [Tooltip("0 = Normal\n" +
     "1 = 4 - way Choice\n" +
     "2 = Exit on next click\n" +
-    "3 = Instantly Warp based on what quest is active. Put this on the ")]
+    "3 = Instantly Warp based on what quest is active.")]
     public List<int> dialogueType;
     [Tooltip("Sprite to display on left\n(Optional) Leave Null if not changed")]
     public List<Sprite> NPCSprite;
