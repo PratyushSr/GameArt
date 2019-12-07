@@ -8,6 +8,8 @@ public class UpdateQuestObjectives : MonoBehaviour
     public int QuestID;
     [Tooltip("Make it start activated")]
     public bool ActivateIfDisabled;
+    [Tooltip("If enabled, will automatically turn on the quest if a setConversationTree script calls the quest ID")]
+    public bool AllowTextActivation;
     [Tooltip("Registers all the sub-quests and places text for them. The max listed here is the max sub-quests that it will register")]
     public List<string> subQuestText;
 
@@ -23,6 +25,7 @@ public class UpdateQuestObjectives : MonoBehaviour
         if (waitAFrame == 1)
         {
             var Q = GameObject.Find("AdventureLogPanel").GetComponent<Adventureog>().Quest[QuestID - 1];
+            Q.AllowDialogueActivation = AllowTextActivation;
             Q.maxSubQuest = subQuestText.Count;
             Q.questInfo = new List<string>();
             for (var i = 0; i < subQuestText.Count; i++)

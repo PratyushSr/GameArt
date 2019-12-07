@@ -231,6 +231,10 @@ public class SetConversationTree : MonoBehaviour
         if (AdvanceQuestOnTextLoad[tp] != 0)
         {
             Adventureog.advLogInstance.addProgress(AdvanceQuestOnTextLoad[tp], 1);
+            if (!Adventureog.advLogInstance.Quest[AdvanceQuestOnTextLoad[tp] - 1].Active)
+            {
+                Adventureog.advLogInstance.Quest[AdvanceQuestOnTextLoad[tp] - 1].activate();
+            }
         }
         if (dialogueType[tp] == 0 || dialogueType[tp] == 2)
         { 
