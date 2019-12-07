@@ -222,7 +222,7 @@ public class SetConversationTree : MonoBehaviour
         string textToDisplay = dialogueText[tp];
 
         //Replce Text with appropriate calculations
-        textToDisplay = textToDisplay.Replace("<changeOfWinningWar>", getChanceOfWinning().ToString());
+        textToDisplay = textToDisplay.Replace("<chanceOfWinningWar>", getChanceOfWinning().ToString());
 
         if (AdvanceQuestOnTextLoad[tp] != 0)
         {
