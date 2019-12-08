@@ -6,8 +6,7 @@ public class TimeCycle : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public float timer;
-    public GameObject icon;
+    public float timer = 720;
     public float INTIMERDONTCHANGE;
     void Start()
     {
@@ -17,14 +16,23 @@ public class TimeCycle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(INTIMERDONTCHANGE<=timer/2)
+        Debug.Log(INTIMERDONTCHANGE.ToString());
+        if(INTIMERDONTCHANGE>=480&&INTIMERDONTCHANGE<=720)
         {
-            icon.SetActive(false);
+
+            GameManager.instance.timeIndicator.sprite = GameManager.instance.timeOfDay[0];
+        }
+        else if(INTIMERDONTCHANGE>=360&&INTIMERDONTCHANGE<=480)
+        {
+
+            GameManager.instance.timeIndicator.sprite = GameManager.instance.timeOfDay[1];
         }
         else
         {
-            icon.SetActive(true);
+
+            GameManager.instance.timeIndicator.sprite = GameManager.instance.timeOfDay[3];
         }
+
         if(INTIMERDONTCHANGE>=0)
         {
             INTIMERDONTCHANGE -= Time.deltaTime;
