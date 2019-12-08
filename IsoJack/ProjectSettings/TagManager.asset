@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - interObject
+  - Bear
+  - Boar
   layers:
   - Default
   - TransparentFX
@@ -14,8 +16,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - enemy
+  - player
   - 
   - 
   - 

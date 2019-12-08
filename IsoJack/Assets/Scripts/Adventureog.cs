@@ -6,41 +6,82 @@ using UnityEngine.UI;
 
 public class quest
 {
-
+    public bool Active;
+    public bool AllowDialogueActivation;
     public string questTitle;
-    public string questInfo;
+    public string currentQuestInfo;
     public GameObject qButton;
+    public int subQuest;
+    public int maxSubQuest;
+    public int progress;
+    public int maxProgress;
+    public List<string> questInfo;
 
     public quest(string title)
     {
+        Active = false;
+        AllowDialogueActivation = false;
         questTitle = title;
-        questInfo = " ";
+        currentQuestInfo = " ";
         qButton = null;
+        subQuest = 0;
+        maxSubQuest = 1;
+        progress = 0;
+        maxProgress = 1;
+        questInfo = new List<string>();
     }
+    public void activate()
+    {
+        Active = true;
+        qButton.SetActive(true);
+        updateQuestInfo();
+    }
+    public void deActivate()
+    {
+        Active = false;
+        qButton.SetActive(false);
+    }
+    public void updateQuestInfo()
+    {
+        currentQuestInfo = questInfo[subQuest];
+    }
+    
 }
 
 public class Adventureog : MonoBehaviour
 {
     public static Adventureog advLogInstance = null;
     private GameObject AdventureLogCanvas;
+    [Tooltip("Use \"Quest Text\" text")]
     public Text QuestText;
+    [Tooltip("Use \"Quest Title\" text")]
     public Text QuestTitle;
+    [Tooltip("Use \"Quest Idle\" sprite")]
     public Sprite unpressed;
+    [Tooltip("Use \"Quest Pressed\" sprite")]
     public Sprite pressed;
     private Vector3 advLogPos;
+    [Tooltip("Open the menu by default")]
     public bool isOpen;
 
-    public quest questOne = new quest("Protector of the People");
-    public quest questTwo = new quest("Battle of Beserk");
-    public quest questThree = new quest("Wild Smith");
-    public quest questFour = new quest("Tavern Queen's Bounty");
-    public quest questFive = new quest("Sawmill Helper");
-    public quest questSix = new quest("Hat for a Hero");
-
+    public List<quest> Quest = new List<quest>();
+    public List<string> QuestTitles;
+    [Tooltip("The name of the quest. The total number put here also registers that many quests")]
+    private int totalQuests;
+    [Tooltip("Must be same length as QuestTitles. These should map to a button in the adventure log panel")]
+    public List<GameObject> QuestButton;
 
     // Start is called before the first frame update
     void Start()
     {
+        //Create Quests based on Titles
+        totalQuests = QuestTitles.Count;
+        for(int i = 0; i < totalQuests; i++)
+        {
+            Quest.Add(new quest(QuestTitles[i]));
+            Quest[i].qButton = QuestButton[i];
+        }
+
         if (advLogInstance == null) advLogInstance = this;
         else if (advLogInstance != this) Destroy(gameObject);
         DontDestroyOnLoad(gameObject);
@@ -48,20 +89,8 @@ public class Adventureog : MonoBehaviour
         AdventureLogCanvas = GameObject.Find("AdventureLogPanel/AdventureLogBox");
         advLogPos = AdventureLogCanvas.transform.position;
 
-        questOne.qButton = GameObject.Find("AdventureLogPanel/AdventureLogBox/QuestOne");
-        questTwo.qButton = GameObject.Find("AdventureLogPanel/AdventureLogBox/QuestTwo");
-        questThree.qButton = GameObject.Find("AdventureLogPanel/AdventureLogBox/QuestThree");
-        questFour.qButton = GameObject.Find("AdventureLogPanel/AdventureLogBox/QuestFour");
-        questFive.qButton = GameObject.Find("AdventureLogPanel/AdventureLogBox/QuestFive");
-        questSix.qButton = GameObject.Find("AdventureLogPanel/AdventureLogBox/QuestSix");
-
-        questOne.qButton.SetActive(false);
-        questTwo.qButton.SetActive(false);
-        questThree.qButton.SetActive(false);
-        questFour.qButton.SetActive(false);
-        questFive.qButton.SetActive(false);
-        questSix.qButton.SetActive(false);
-
+        for (int i = 0; i < totalQuests; i++)
+            Quest[i].qButton.SetActive(false);
     }
 
     void Update()
@@ -71,11 +100,10 @@ public class Adventureog : MonoBehaviour
 
     bool checkAnyButtonActive()
     {
-        if (questOne.qButton.activeInHierarchy == false && questTwo.qButton.activeInHierarchy == false && questThree.qButton.activeInHierarchy == false
-            && questFour.qButton.activeInHierarchy == false && questFive.qButton.activeInHierarchy == false && questSix.qButton.activeInHierarchy == false)
-            return false;
-        else
-            return true;
+        for (var i = 0; i < totalQuests; i++)
+            if (Quest[i].qButton.activeInHierarchy == true)
+                return true;
+        return false;
     }
 
     public void openLog()
@@ -99,51 +127,44 @@ public class Adventureog : MonoBehaviour
 
     void resetButtons()
     {
-        questOne.qButton.GetComponent<Button>().image.sprite = unpressed;
-        questTwo.qButton.GetComponent<Button>().image.sprite = unpressed;
-        questThree.qButton.GetComponent<Button>().image.sprite = unpressed;
-        questFour.qButton.GetComponent<Button>().image.sprite = unpressed;
-        questFive.qButton.GetComponent<Button>().image.sprite = unpressed;
-        questSix.qButton.GetComponent<Button>().image.sprite = unpressed;
+        for (var i = 0; i < totalQuests; i++)
+            Quest[i].qButton.GetComponent<Button>().image.sprite = unpressed;
     }
 
     public void updateQuestText(int num)
     {
-        switch(num)
+        if (num > 0 && num <= totalQuests) {
+            QuestTitle.text = Quest[num - 1].questTitle;
+            QuestText.text = Quest[num - 1].currentQuestInfo;
+            Quest[num - 1].qButton.GetComponent<Button>().image.sprite = pressed;
+        }
+        else {
+            Debug.Log("Error setting questText!!");
+        }
+    }
+    
+    public void addProgress(int questNum, int progressToAdd)
+    {
+        var Q = Quest[questNum - 1];
+        Q.progress += progressToAdd;
+        if (Q.progress >= Q.maxProgress)
         {
-            case 1:
-                QuestTitle.text = questOne.questTitle;
-                QuestText.text = questOne.questInfo;
-                questOne.qButton.GetComponent<Button>().image.sprite = pressed;
-                break;
-            case 2:
-                QuestTitle.text = questTwo.questTitle;
-                QuestText.text = questTwo.questInfo;
-                questTwo.qButton.GetComponent<Button>().image.sprite = pressed;
-                break;
-            case 3:
-                QuestTitle.text = questThree.questTitle;
-                QuestText.text = questThree.questInfo;
-                questThree.qButton.GetComponent<Button>().image.sprite = pressed;
-                break;
-            case 4:
-                QuestTitle.text = questFour.questTitle;
-                QuestText.text = questFour.questInfo;
-                questFour.qButton.GetComponent<Button>().image.sprite = pressed;
-                break;
-            case 5:
-                QuestTitle.text = questFive.questTitle;
-                QuestText.text = questFive.questInfo;
-                questFive.qButton.GetComponent<Button>().image.sprite = pressed;
-                break;
-            case 6:
-                QuestTitle.text = questSix.questTitle;
-                QuestText.text = questSix.questInfo;
-                questSix.qButton.GetComponent<Button>().image.sprite = pressed;
-                break;
-            default:
-                Debug.Log("Error setting questText!!");
-                break;
+            Q.progress = Q.maxProgress;
+            activateNextSubQuest(questNum);
+        }
+    }
+
+    private void activateNextSubQuest(int questNum)
+    {
+        var Q = Quest[questNum - 1];
+        Q.subQuest += 1;
+        if (Q.subQuest == Q.maxSubQuest)
+        {
+            Q.deActivate();
+        }
+        else
+        {
+            Q.updateQuestInfo();
         }
     }
 }
