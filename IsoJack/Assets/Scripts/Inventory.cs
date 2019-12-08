@@ -19,7 +19,7 @@ public class Inventory : MonoBehaviour
 
     void start()
     {
-        for (int i = 0; i < 5; i++)
+        for(int i = 0; i < 5; i++)
         {
             invSlot[i] = transform.Find("Slot" + i.ToString()).gameObject;
             amountInSlot[i] = 0;
@@ -29,7 +29,7 @@ public class Inventory : MonoBehaviour
     public void AddItem(int slot, int amount)
     {
         //Never input an amount other than one for slot 1
-        amountInSlot[slot - 1] += amount;
+        amountInSlot[slot - 1]+=amount;
         if (slot == 1)
             invSlot[0].GetComponent<UnityEngine.UI.Image>().sprite = Slot1Sprite[amountInSlot[0] - 1];
         else if (slot == 2)
@@ -47,16 +47,16 @@ public class Inventory : MonoBehaviour
         if (amountInSlot[slot - 1] <= amount)
             return false;
 
-        amountInSlot[slot - 1] -= amount;
+        amountInSlot[slot - 1]-=amount;
 
         if (slot == 1)
             Debug.Log("Do not remove items in slot 1");
-        else if (amountInSlot[slot - 1] == 0)
-            invSlot[slot - 1].GetComponent<UnityEngine.UI.Image>().sprite = null;
+        else if (amountInSlot[slot-1] == 0)
+            invSlot[slot-1].GetComponent<UnityEngine.UI.Image>().sprite = null;
 
         return true;
     }
-
+    
     public int GetSlotCount(int slot)
     {
         return amountInSlot[slot - 1];
@@ -65,7 +65,7 @@ public class Inventory : MonoBehaviour
     private void UpdateCountInSlot(int slot)
     {
         string textToDisplay = "";
-        if (amountInSlot[slot - 1] > 0)
+        if (amountInSlot[slot-1] > 0)
         {
             textToDisplay = amountInSlot[slot - 1].ToString();
         }
