@@ -160,4 +160,17 @@ public class GameManager : MonoBehaviour
     {
         locationPopIn();
     }
+
+    public void LoadMain()
+    {
+        Debug.Log("Loading Main Menu...");
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    public void LoadGame()
+    {
+        Debug.Log("Loading Game...");
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("IsoJack_OverWorld");
+    }
 }
