@@ -35,40 +35,43 @@ public class TraslucentWhenBehind : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        bool playerIsBehind;
-        if (CircleCollision)
+        if (ObjectToTrack != null)
         {
-            //Distance Formula
-            playerIsBehind = Math.Sqrt(Math.Pow(transform.position.x + xoffset - ObjectToTrack.transform.position.x, 2) +
-                Math.Pow(transform.position.y + yoffset - ObjectToTrack.transform.position.y, 2)) <= radius;
-        }
-        else
-        {
-            playerIsBehind = ((transform.position.y - radius - yAdditionalRadiusIfRectangle + yoffset < ObjectToTrack.transform.position.y)
-                && (transform.position.y + radius + yAdditionalRadiusIfRectangle + yoffset > ObjectToTrack.transform.position.y)
-                && (transform.position.x - radius - xAdditionalRadiusIfRectangle + xoffset < ObjectToTrack.transform.position.x)
-                && (transform.position.x + radius + xAdditionalRadiusIfRectangle + xoffset > ObjectToTrack.transform.position.x));
-        }
-        //Debug.Log(playerIsBehind);
-        if (isTranslucent && !playerIsBehind)
-        {
-            isTranslucent = false;
+            bool playerIsBehind;
+            if (CircleCollision)
+            {
+                //Distance Formula
+                playerIsBehind = Math.Sqrt(Math.Pow(transform.position.x + xoffset - ObjectToTrack.transform.position.x, 2) +
+                    Math.Pow(transform.position.y + yoffset - ObjectToTrack.transform.position.y, 2)) <= radius;
+            }
+            else
+            {
+                playerIsBehind = ((transform.position.y - radius - yAdditionalRadiusIfRectangle + yoffset < ObjectToTrack.transform.position.y)
+                    && (transform.position.y + radius + yAdditionalRadiusIfRectangle + yoffset > ObjectToTrack.transform.position.y)
+                    && (transform.position.x - radius - xAdditionalRadiusIfRectangle + xoffset < ObjectToTrack.transform.position.x)
+                    && (transform.position.x + radius + xAdditionalRadiusIfRectangle + xoffset > ObjectToTrack.transform.position.x));
+            }
+            //Debug.Log(playerIsBehind);
+            if (isTranslucent && !playerIsBehind)
+            {
+                isTranslucent = false;
 
-            //Change Back to Normal Visability based on Editor Settings
-            image = GetComponent<SpriteRenderer>();
-            var tempColor = image.color;
-            tempColor.a = 1f;
-            image.color = tempColor;
-        }
-        else if (!isTranslucent && playerIsBehind)
-        {
-            isTranslucent = true;
+                //Change Back to Normal Visability based on Editor Settings
+                image = GetComponent<SpriteRenderer>();
+                var tempColor = image.color;
+                tempColor.a = 1f;
+                image.color = tempColor;
+            }
+            else if (!isTranslucent && playerIsBehind)
+            {
+                isTranslucent = true;
 
-            //Make Translucent
-            image = GetComponent<SpriteRenderer>();
-            var tempColor = image.color;
-            tempColor.a = 0.5f;
-            image.color = tempColor;
+                //Make Translucent
+                image = GetComponent<SpriteRenderer>();
+                var tempColor = image.color;
+                tempColor.a = 0.5f;
+                image.color = tempColor;
+            }
         }
     }
 }

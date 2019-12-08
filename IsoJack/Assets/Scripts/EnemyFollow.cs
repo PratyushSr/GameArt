@@ -26,11 +26,13 @@ public class EnemyFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-     
-        if (Vector2.Distance(transform.position, target.position) < 5&&Vector2.Distance(transform.position,target.position)>1)
-            transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
-        if (Vector2.Distance(transform.position, target.position) < 5 && Vector2.Distance(transform.position, target.position) > 1)
-            IsWalking = true;
+        if (target != null)
+        {
+            if (Vector2.Distance(transform.position, target.position) < 5 && Vector2.Distance(transform.position, target.position) > 1)
+                transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
+            if (Vector2.Distance(transform.position, target.position) < 5 && Vector2.Distance(transform.position, target.position) > 1)
+                IsWalking = true;
+        }
     }
        
 }
