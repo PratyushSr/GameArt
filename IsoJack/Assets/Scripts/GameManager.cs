@@ -41,6 +41,9 @@ public class GameManager : MonoBehaviour
 
         woodCount.text = wood.ToString();
         coinCount.text = coin.ToString();
+        boneCount.text = bones.ToString();
+        meatCount.text = meat.ToString();
+        foodCount.text = food.ToString();
         daysRemain.text = days.ToString() + " Days Remain";
         timeIndicator.sprite = timeOfDay[0];
         isDay = true;

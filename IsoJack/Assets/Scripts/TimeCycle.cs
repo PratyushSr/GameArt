@@ -19,23 +19,17 @@ public class TimeCycle : MonoBehaviour
         Debug.Log(INTIMERDONTCHANGE.ToString());
         if(INTIMERDONTCHANGE>=480&&INTIMERDONTCHANGE<=720)
         {
-            //icon.SetActive(true);
-            //duskcon.SetActive(false);
-            //nightcon.SetActive(false);
+
             GameManager.instance.timeIndicator.sprite = GameManager.instance.timeOfDay[0];
         }
         else if(INTIMERDONTCHANGE>=360&&INTIMERDONTCHANGE<=480)
         {
-            //icon.SetActive(false);
-            //duskcon.SetActive(true);
-            //nightcon.SetActive(false);
+
             GameManager.instance.timeIndicator.sprite = GameManager.instance.timeOfDay[1];
         }
         else
         {
-            //icon.SetActive(false);
-            //duskcon.SetActive(false);
-            //nightcon.SetActive(true);
+
             GameManager.instance.timeIndicator.sprite = GameManager.instance.timeOfDay[3];
         }
 
