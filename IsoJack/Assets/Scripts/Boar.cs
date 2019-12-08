@@ -73,7 +73,7 @@ public class Boar : MonoBehaviour
 
 
             }
-
+        }
         else
         {
             attackCd -= Time.deltaTime;
