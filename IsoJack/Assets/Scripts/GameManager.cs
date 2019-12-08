@@ -78,6 +78,11 @@ public class GameManager : MonoBehaviour
             isPaused = false;
         }
 
+        if (Input.GetKeyDown(KeyCode.Alpha0))
+        {
+            GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().AddItem(1, 1);
+        }
+
     }
 
     public void updateCount(Text txt, ref int counter,  int amount)
