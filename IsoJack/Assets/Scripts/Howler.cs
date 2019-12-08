@@ -38,8 +38,7 @@ public class Howler : MonoBehaviour
     void Update()
     {
         
-
-        if (target.position.x > transform.position.x)
+        if (target != null && target.position.x > transform.position.x)
         {
             mySpriteRenderer.flipX = true;
 

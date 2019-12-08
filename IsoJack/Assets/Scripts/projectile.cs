@@ -19,16 +19,27 @@ public class projectile : MonoBehaviour
     {
         //Invoke("DestroyProjectile", lifetime);
         Debug.Log("projectile created");
-        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-        normalizeDirection = (target.position - transform.position).normalized;
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player == null)
+        {
+            target = null;
+            normalizeDirection = new Vector3(0, 0, 0);
+        }
+        else
+        {
+            target = player.GetComponent<Transform>();
+            normalizeDirection = (target.position - transform.position).normalized;
+        }
         //transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
     }
 
 
     void Update()
     {
-
-        Vector3 temp = new Vector3(target.position.x, target.position.y, target.position.z);
+        if (target != null)
+        {
+            Vector3 temp = new Vector3(target.position.x, target.position.y, target.position.z);
+        }
 
 
 

@@ -40,8 +40,9 @@ public class Bear : MonoBehaviour
 
     void Update()
     {
+        if (target != null)
+        {
 
-       
             // follow
             if (Vector2.Distance(transform.position, target.position) < 3 && Vector2.Distance(transform.position, target.position) > 1)
             {
@@ -67,7 +68,7 @@ public class Bear : MonoBehaviour
             //attack
             if (attackCd <= 0)
             {
-            
+
 
                 //melee
                 if (Vector2.Distance(transform.position, target.position) < 5)
@@ -90,9 +91,9 @@ public class Bear : MonoBehaviour
             {
                 attackCd -= Time.deltaTime;
             }
-        
-            
 
+
+        }
     }
 
 
