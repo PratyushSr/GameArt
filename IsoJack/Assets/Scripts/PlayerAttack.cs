@@ -14,24 +14,25 @@ public class PlayerAttack : MonoBehaviour
 
     public float health;
 
+    
 
     void Update()
     {
 
         if (attackCd <= 0)
         {
-            if (Input.GetKeyDown(KeyCode.F))
+            if (Input.GetKeyDown(KeyCode.Q))
             {
                 Debug.Log("f is pressed");
                 Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
                 for (int i = 0; i < enemiesToDamage.Length; i++)
                 {
+
                     enemiesToDamage[i].GetComponent<Enemy>().EnemyTakeDamage(damage);
-                  
 
-
+             
                 }
-                   
+
             }
             attackCd = attackTimer;
 

@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class Boar : MonoBehaviour
 {
-    public float health;
-
-
-
+ 
+    
     public float moveSpeed;
     // public float stopDistance;
     private Transform target;
@@ -79,34 +77,7 @@ public class Boar : MonoBehaviour
         {
             attackCd -= Time.deltaTime;
         }
-
-
-
-        if (dazedTime <= 1.5)
-        {
-
-            moveSpeed = 0;
-            dazedTime += Time.deltaTime;
-        }
-
-        else
-        {
-            moveSpeed = 1;
-        }
-
-
-
-
-        if (health <= 0)
-        {
-
-            moveSpeed = 0;
-            anim.SetTrigger("dead");
-
-
-            Destroy(gameObject, 5);
-
-        }
+        
     }
 
 
@@ -119,22 +90,6 @@ public class Boar : MonoBehaviour
     }
 
 
-
-    public void EnemyTakeDamage(float damage)
-    {
-
-
-        Debug.Log("Enemy takes damage!!!");
-  
-            health -= damage;
-      
-
-        //knockback
-        Vector2 difference = transform.position - target.transform.position;
-        transform.position = new Vector2(transform.position.x + difference.x, transform.position.y + difference.y);
-        dazedTime = 0;
-
-    }
 
 
 }
