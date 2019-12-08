@@ -16,7 +16,7 @@ public class TimeCycle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(INTIMERDONTCHANGE.ToString());
+        //Debug.Log(INTIMERDONTCHANGE.ToString());
         if(INTIMERDONTCHANGE>=480&&INTIMERDONTCHANGE<=720)
         {
 

@@ -17,13 +17,14 @@ public class Inventory : MonoBehaviour
     [Tooltip("The image to display in Slot 5 when you get quest item")]
     public Sprite Slot5Sprite;
 
-    void start()
+    void Start()
     {
         for(int i = 0; i < 5; i++)
         {
-            invSlot[i] = transform.Find("Slot" + i.ToString()).gameObject;
+            invSlot[i] = this.gameObject.transform.Find("Slot" + (i+1).ToString()).gameObject;
             amountInSlot[i] = 0;
         }
+        Debug.Log(invSlot[0]);
     }
 
     public void AddItem(int slot, int amount)
@@ -40,11 +41,13 @@ public class Inventory : MonoBehaviour
             invSlot[3].GetComponent<UnityEngine.UI.Image>().sprite = Slot4Sprite;
         else if (slot == 5)
             invSlot[4].GetComponent<UnityEngine.UI.Image>().sprite = Slot5Sprite;
+
+        UpdateCountInSlot(slot);
     }
     public bool RemoveItem(int slot, int amount)
     {
         //Never use Slot 1
-        if (amountInSlot[slot - 1] <= amount)
+        if (amountInSlot[slot - 1] < amount)
             return false;
 
         amountInSlot[slot - 1]-=amount;
@@ -53,6 +56,7 @@ public class Inventory : MonoBehaviour
             Debug.Log("Do not remove items in slot 1");
         else if (amountInSlot[slot-1] == 0)
             invSlot[slot-1].GetComponent<UnityEngine.UI.Image>().sprite = null;
+        UpdateCountInSlot(slot);
 
         return true;
     }
@@ -69,7 +73,7 @@ public class Inventory : MonoBehaviour
         {
             textToDisplay = amountInSlot[slot - 1].ToString();
         }
-        if (slot >= 2 || slot <= 4)
+        if (slot >= 1 || slot <= 3)
         {
             invSlot[slot - 1].transform.Find("AmountDisplay").gameObject.GetComponent<UnityEngine.UI.Text>().text = textToDisplay;
         }

@@ -41,9 +41,9 @@ public class GameManager : MonoBehaviour
 
         woodCount.text = wood.ToString();
         coinCount.text = coin.ToString();
-        boneCount.text = bones.ToString();
-        meatCount.text = meat.ToString();
-        foodCount.text = food.ToString();
+        //boneCount.text = bones.ToString();
+        //meatCount.text = meat.ToString();
+        //foodCount.text = food.ToString();
         daysRemain.text = days.ToString() + " Days Remain";
         timeIndicator.sprite = timeOfDay[0];
         isDay = true;
@@ -78,9 +78,57 @@ public class GameManager : MonoBehaviour
             isPaused = false;
         }
 
+        //TEMP INV TESTING CODE
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            Debug.Log("ADDED AXE");
+            GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().AddItem(1, 1);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            Debug.Log("ADDED FOOD");
+            GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().AddItem(2, 1);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            Debug.Log("ADDED RAW MEET");
+            GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().AddItem(3, 1);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            Debug.Log("ADDED BONES");
+            GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().AddItem(4, 1);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            Debug.Log("ADDED QUEST ITEM");
+            GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().AddItem(5, 1);
+        }
+        //TEMP INV TESTING CODE
+        if (Input.GetKeyDown(KeyCode.Alpha6))
+        {
+            Debug.Log("REMOVED AXE");
+            GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().RemoveItem(1, 1);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha7))
+        {
+            Debug.Log("REMOVED FOOD");
+            GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().RemoveItem(2, 1);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha8))
+        {
+            Debug.Log("REMOVED RAW MEET");
+            GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().RemoveItem(3, 1);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha9))
+        {
+            Debug.Log("REMOVED BONES");
+            GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().RemoveItem(4, 1);
+        }
         if (Input.GetKeyDown(KeyCode.Alpha0))
         {
-            GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().AddItem(1, 1);
+            Debug.Log("REMOVED QUEST ITEM");
+            GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().RemoveItem(5, 1);
         }
 
     }
