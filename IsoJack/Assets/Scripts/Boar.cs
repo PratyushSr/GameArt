@@ -42,70 +42,72 @@ public class Boar : MonoBehaviour
 
     void Update()
     {
-
-        if (target.position.x > transform.position.x)
+        if (target != null)
         {
-            mySpriteRenderer.flipX = true;
-
-        }
-
-        else mySpriteRenderer.flipX = false;
-
-        //attack
-        if (attackCd <= 0)
-        {
-
-            //melee
-            if (Vector2.Distance(transform.position, target.position) < 10)
+            if (target.position.x > transform.position.x)
             {
-                moveSpeed = 5;
-                transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
-                
+                mySpriteRenderer.flipX = true;
 
-                Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
-                for (int i = 0; i < enemiesToDamage.Length; i++)
+            }
+
+            else mySpriteRenderer.flipX = false;
+
+            //attack
+            if (attackCd <= 0)
+            {
+
+                //melee
+                if (Vector2.Distance(transform.position, target.position) < 10)
                 {
-                    moveSpeed = 1;
-                    enemiesToDamage[i].GetComponent<PlayerAttack>().TakeDamage(damage);
-                    anim.SetTrigger("attack");
-                    attackCd = attackTimer;
+                    moveSpeed = 5;
+                    transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
+
+
+                    Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
+                    for (int i = 0; i < enemiesToDamage.Length; i++)
+                    {
+                        moveSpeed = 1;
+                        enemiesToDamage[i].GetComponent<PlayerAttack>().TakeDamage(damage);
+                        anim.SetTrigger("attack");
+                        attackCd = attackTimer;
+                    }
                 }
+
+
+            }
+
+            else
+            {
+                attackCd -= Time.deltaTime;
             }
 
 
-        }
 
-        else
-        {
-            attackCd -= Time.deltaTime;
-        }
+            if (dazedTime <= 1.5)
+            {
 
+                moveSpeed = 0;
+                dazedTime += Time.deltaTime;
+            }
 
-
-        if (dazedTime <= 1.5)
-        {
-
-            moveSpeed = 0;
-            dazedTime += Time.deltaTime;
-        }
-
-        else
-        {
-            moveSpeed = 1;
-        }
+            else
+            {
+                moveSpeed = 1;
+            }
 
 
 
 
-        if (health <= 0)
-        {
+            if (health <= 0)
+            {
 
-            moveSpeed = 0;
-            anim.SetTrigger("dead");
+                moveSpeed = 0;
+                anim.SetTrigger("dead");
 
 
-            Destroy(gameObject, 5);
+                Destroy(gameObject, 5);
 
+            }
         }
     }
 

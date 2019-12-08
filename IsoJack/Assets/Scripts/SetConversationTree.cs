@@ -91,7 +91,7 @@ public class SetConversationTree : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        dialogueActive = Math.Sqrt(Math.Pow(transform.position.x - PlayerObject.transform.position.x, 2) +
+        dialogueActive = PlayerObject != null && Math.Sqrt(Math.Pow(transform.position.x - PlayerObject.transform.position.x, 2) +
                 Math.Pow(transform.position.y - PlayerObject.transform.position.y, 2)) <= 1;
         if (dialogueActive)
         {

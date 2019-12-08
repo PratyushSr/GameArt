@@ -45,7 +45,7 @@ public class Enemy : MonoBehaviour
     void Update()
     {
 
-        if (aggressive == true)
+        if (aggressive == true && target != null)
         {
             // follow
             if (Vector2.Distance(transform.position, target.position) < 3 && Vector2.Distance(transform.position, target.position) > 1)
