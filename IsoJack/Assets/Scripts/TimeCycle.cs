@@ -29,11 +29,11 @@ public class TimeCycle : MonoBehaviour
         }
         else
         {
-
-            GameManager.instance.timeIndicator.sprite = GameManager.instance.timeOfDay[3];
+            //GameManager.instance.timeIndicator.sprite = GameManager.instance.timeOfDay[3];
+            //GameManager.instance.timeOfDay.Length is equal to 2, meaning timeOfDay[3] is out of range. Fix that first.
         }
 
-        if(INTIMERDONTCHANGE>=0)
+        if (INTIMERDONTCHANGE>=0)
         {
             INTIMERDONTCHANGE -= Time.deltaTime;
         }

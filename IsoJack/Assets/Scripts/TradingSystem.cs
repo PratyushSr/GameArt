@@ -4,6 +4,6 @@ using UnityEngine;
 
 public class TradingSystem : MonoBehaviour
 {
-    public Resources.Supplies resourceType;
+    //public Resources.Supplies resourceType;
     public int value = 5;
 }
