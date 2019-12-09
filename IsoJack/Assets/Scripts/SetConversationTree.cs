@@ -13,7 +13,8 @@ public class SetConversationTree : MonoBehaviour
     [Tooltip("0 = Normal\n" +
     "1 = 4 - way Choice\n" +
     "2 = Exit on next click\n" +
-    "3 = Instantly Warp based on what quest is active.")]
+    "3 = Instantly Warp based on what quest is active.\n" +
+    "4 = Shop Script")]
     public List<int> dialogueType;
     [Tooltip("Sprite to display on left\n(Optional) Leave Null if not changed")]
     public List<Sprite> NPCSprite;
@@ -26,7 +27,10 @@ public class SetConversationTree : MonoBehaviour
     [Tooltip("If DialogueType == 1 (Choices): Warp1;Warp2;Warp3;Warp4 (The conversation element to warp to)\n"+
     "If DialogueType == 3, it will test for a quest and sub-quest and then warp accordingly:\n"+
     "QuestID,SubQuestNumber,WarpToPoint;QuestID2,SubQuestNumber2,WarpToPoint2;...\n"+
-    "QuestID and Sub Quest can be set to -1 (;-1,-1,WarpToPoint;) to signify default value")]
+    "QuestID and Sub Quest can be set to -1 (;-1,-1,WarpToPoint;) to signify default value\n" +
+    "if DialogueType == 4 (Shop), Use the following format\n" +
+    "TradeType1,WarpIfSuccessful,warpIfFailed;TradeType2,WarpIfSuccessful,warpIfFailed..." +
+    "For a No Trade warp, do: -1,warpToPoint,-1")]
     public List<string> ChoiceWarps; 
     [Tooltip("Adds one progression to the given quest when the text loads.")]
     public List<int> AdvanceQuestOnTextLoad;
@@ -103,7 +107,10 @@ public class SetConversationTree : MonoBehaviour
                 {
                     if (dialogueType[tp] == 0)
                     {
-                        tp += 1;
+                        if (ChoiceWarps.Count > tp && ChoiceWarps[tp] != "")
+                            tp = int.Parse(ChoiceWarps[tp]);
+                        else
+                            tp++;
                         loadDialogue();
                     }
                     else if ((dialogueType[tp] == 2 || tp + 1 >= dialogueText.Count))
@@ -138,6 +145,29 @@ public class SetConversationTree : MonoBehaviour
                 if (choice != 0)
                 {
                     tp = int.Parse(GetSection(ChoiceWarps[tp], choice - 1));
+                    loadDialogue();
+                }
+            }
+            if (dialogueType[tp] == 4)
+            {
+                int choice = DialougeView.converstationInstance.getChoicePressed();
+                if (choice != 0)
+                {
+                    string section = GetSection(ChoiceWarps[tp], choice-1).Replace(',', ';');
+                    int tradeType = int.Parse(GetSection(section, 0));
+                    if (tradeType == 0)
+                    {
+                        if (true)
+                            tp = int.Parse(GetSection(section, 1));
+                        else
+                            tp = int.Parse(GetSection(section, 2));
+
+                    }
+                    else if (tradeType == -1)
+                    {
+                        tp = int.Parse(GetSection(section, 1));
+                    }
+                    
                     loadDialogue();
                 }
             }
@@ -234,7 +264,7 @@ public class SetConversationTree : MonoBehaviour
         //Replce Text with appropriate calculations
         textToDisplay = textToDisplay.Replace("<chanceOfWinningWar>", getChanceOfWinning().ToString());
 
-        if (AdvanceQuestOnTextLoad[tp] != 0)
+        if (AdvanceQuestOnTextLoad.Count > tp && AdvanceQuestOnTextLoad[tp] != 0)
         {
             Adventureog.advLogInstance.addProgress(AdvanceQuestOnTextLoad[tp], 1);
             if (!Adventureog.advLogInstance.Quest[AdvanceQuestOnTextLoad[tp] - 1].Active)
@@ -247,7 +277,7 @@ public class SetConversationTree : MonoBehaviour
             ChoicesCanvas.SetActive(false);
             DialogueTextObject.GetComponent<UnityEngine.UI.Text>().text = textToDisplay;
         }
-        else if (dialogueType[tp] == 1)
+        else if (dialogueType[tp] == 1 || dialogueType[tp] == 4)
         {
             ChoicesCanvas.SetActive(true);
             DialogueTextObject.GetComponent<UnityEngine.UI.Text>().text = GetSection(textToDisplay, 0);
