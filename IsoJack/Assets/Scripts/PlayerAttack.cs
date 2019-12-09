@@ -13,8 +13,13 @@ public class PlayerAttack : MonoBehaviour
     public float damage;
 
     public float health;
+    private float maxHealth;
 
-    
+    private void Start()
+    {
+        maxHealth = health;
+        transform.position = new Vector3(-94, 30, 0);
+    }
 
     void Update()
     {
@@ -45,7 +50,8 @@ public class PlayerAttack : MonoBehaviour
 
         if (health <= 0)
         {
-            Destroy(gameObject);
+            health = maxHealth;
+            transform.position = new Vector3(-94, 30, 0);
 
         }
 
