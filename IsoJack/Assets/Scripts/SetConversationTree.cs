@@ -175,7 +175,7 @@ public class SetConversationTree : MonoBehaviour
                         {
                             tp = int.Parse(GetSection(section, 1));
                             GameManager.instance.updateCount(GameManager.instance.coinCount, ref GameManager.instance.coin, -50);
-                            GameObject.Find("HUDCanvas/Inventory").GetComponent<Inventory>().AddItem(2, 1);
+                            inventory.GetComponent<Inventory>().AddItem(2, 1);
                         }
                         else
                             tp = int.Parse(GetSection(section, 2));
@@ -183,21 +183,21 @@ public class SetConversationTree : MonoBehaviour
                     }
                     else if (tradeType == 2) //50 Coins for 1 Raw Meat
                     {
-                        if (GameObject.Find("HUDCanvas/Inventory").GetComponent<Inventory>().GetSlotCount(3) >= 1) {
+                        if (inventory.GetComponent<Inventory>().GetSlotCount(3) >= 1) {
                             tp = int.Parse(GetSection(section, 1));
                             GameManager.instance.updateCount(GameManager.instance.coinCount, ref GameManager.instance.coin, 50);
-                            GameObject.Find("HUDCanvas/Inventory").GetComponent<Inventory>().RemoveItem(3, 1);
+                            inventory.GetComponent<Inventory>().RemoveItem(3, 1);
                         } else
                             tp = int.Parse(GetSection(section, 2));
 
                     }
                     else if (tradeType == 3) //50 Coins for 1 Bone
                     {
-                        if (GameObject.Find("HUDCanvas/Inventory").GetComponent<Inventory>().GetSlotCount(4) >= 1)
+                        if (inventory.GetComponent<Inventory>().GetSlotCount(4) >= 1)
                         {
                             tp = int.Parse(GetSection(section, 1));
                             GameManager.instance.updateCount(GameManager.instance.coinCount, ref GameManager.instance.coin, 50);
-                            GameObject.Find("HUDCanvas/Inventory").GetComponent<Inventory>().RemoveItem(4, 1);
+                            inventory.GetComponent<Inventory>().RemoveItem(4, 1);
                         }
                         else
                             tp = int.Parse(GetSection(section, 2));
@@ -222,6 +222,18 @@ public class SetConversationTree : MonoBehaviour
                             tp = int.Parse(GetSection(section, 1));
                             GameManager.instance.updateCount(GameManager.instance.coinCount, ref GameManager.instance.coin, -250);
                             //Give One Upgrade
+                        }
+                        else
+                            tp = int.Parse(GetSection(section, 2));
+
+                    }
+                    else if (tradeType == 6) //1 Axe Upgrade for 300 coins
+                    {
+                        if (GameManager.instance.coin >= 300 && inventory.GetComponent<Inventory>().GetSlotCount(1) < 3)
+                        {
+                            tp = int.Parse(GetSection(section, 1));
+                            GameManager.instance.updateCount(GameManager.instance.coinCount, ref GameManager.instance.coin, -300);
+                            inventory.GetComponent<Inventory>().AddItem(1, 1);
                         }
                         else
                             tp = int.Parse(GetSection(section, 2));
@@ -330,11 +342,11 @@ public class SetConversationTree : MonoBehaviour
 
         if (AdvanceQuestOnTextLoad.Count > tp && AdvanceQuestOnTextLoad[tp] != 0)
         {
-            Adventureog.advLogInstance.addProgress(AdvanceQuestOnTextLoad[tp], 1);
             if (!Adventureog.advLogInstance.Quest[AdvanceQuestOnTextLoad[tp] - 1].Active)
             {
                 Adventureog.advLogInstance.Quest[AdvanceQuestOnTextLoad[tp] - 1].activate();
             }
+            Adventureog.advLogInstance.addProgress(AdvanceQuestOnTextLoad[tp], 1);
         }
         if (dialogueType[tp] == 0 || dialogueType[tp] == 2)
         { 
