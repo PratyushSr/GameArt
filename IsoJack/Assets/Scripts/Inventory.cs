@@ -24,7 +24,7 @@ public class Inventory : MonoBehaviour
             invSlot[i] = this.gameObject.transform.Find("Slot" + (i+1).ToString()).gameObject;
             amountInSlot[i] = 0;
         }
-        Debug.Log(invSlot[0]);
+        AddItem(1, 1);
     }
 
     public void AddItem(int slot, int amount)

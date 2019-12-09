@@ -227,6 +227,18 @@ public class SetConversationTree : MonoBehaviour
                             tp = int.Parse(GetSection(section, 2));
 
                     }
+                    else if (tradeType == 6) //1 Axe Upgrade for 300 coins
+                    {
+                        if (GameManager.instance.coin >= 300 && inventory.GetComponent<Inventory>().GetSlotCount(1) < 3)
+                        {
+                            tp = int.Parse(GetSection(section, 1));
+                            GameManager.instance.updateCount(GameManager.instance.coinCount, ref GameManager.instance.coin, -300);
+                            inventory.GetComponent<Inventory>().AddItem(1, 1);
+                        }
+                        else
+                            tp = int.Parse(GetSection(section, 2));
+
+                    }
                     else if (tradeType == -1)
                     {
                         tp = int.Parse(GetSection(section, 1));
@@ -330,11 +342,11 @@ public class SetConversationTree : MonoBehaviour
 
         if (AdvanceQuestOnTextLoad.Count > tp && AdvanceQuestOnTextLoad[tp] != 0)
         {
-            Adventureog.advLogInstance.addProgress(AdvanceQuestOnTextLoad[tp], 1);
             if (!Adventureog.advLogInstance.Quest[AdvanceQuestOnTextLoad[tp] - 1].Active)
             {
                 Adventureog.advLogInstance.Quest[AdvanceQuestOnTextLoad[tp] - 1].activate();
             }
+            Adventureog.advLogInstance.addProgress(AdvanceQuestOnTextLoad[tp], 1);
         }
         if (dialogueType[tp] == 0 || dialogueType[tp] == 2)
         { 
