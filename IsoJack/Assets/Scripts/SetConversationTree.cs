@@ -155,10 +155,74 @@ public class SetConversationTree : MonoBehaviour
                 {
                     string section = GetSection(ChoiceWarps[tp], choice-1).Replace(',', ';');
                     int tradeType = int.Parse(GetSection(section, 0));
-                    if (tradeType == 0)
+                    Debug.Log("Trade Type: " + tradeType.ToString());
+                    if (tradeType == 0) //20 Coins for 1 Wood
                     {
-                        if (true)
+                        if (GameManager.instance.wood >= 1)
+                        {
                             tp = int.Parse(GetSection(section, 1));
+                            Debug.Log("This stuff def is running");
+                            GameManager.instance.updateCount(GameManager.instance.woodCount, ref GameManager.instance.wood, -1);
+                            GameManager.instance.updateCount(GameManager.instance.coinCount, ref GameManager.instance.coin, 20);
+                        }
+                        else
+                            tp = int.Parse(GetSection(section, 2));
+
+                    }
+                    else if (tradeType == 1) //1 Food for 50 Coins
+                    {
+                        if (GameManager.instance.coin >= 50)
+                        {
+                            tp = int.Parse(GetSection(section, 1));
+                            GameManager.instance.updateCount(GameManager.instance.coinCount, ref GameManager.instance.coin, -50);
+                            GameObject.Find("HUDCanvas/Inventory").GetComponent<Inventory>().AddItem(2, 1);
+                        }
+                        else
+                            tp = int.Parse(GetSection(section, 2));
+
+                    }
+                    else if (tradeType == 2) //50 Coins for 1 Raw Meat
+                    {
+                        if (GameObject.Find("HUDCanvas/Inventory").GetComponent<Inventory>().GetSlotCount(3) >= 1) {
+                            tp = int.Parse(GetSection(section, 1));
+                            GameManager.instance.updateCount(GameManager.instance.coinCount, ref GameManager.instance.coin, 50);
+                            GameObject.Find("HUDCanvas/Inventory").GetComponent<Inventory>().RemoveItem(3, 1);
+                        } else
+                            tp = int.Parse(GetSection(section, 2));
+
+                    }
+                    else if (tradeType == 3) //50 Coins for 1 Bone
+                    {
+                        if (GameObject.Find("HUDCanvas/Inventory").GetComponent<Inventory>().GetSlotCount(4) >= 1)
+                        {
+                            tp = int.Parse(GetSection(section, 1));
+                            GameManager.instance.updateCount(GameManager.instance.coinCount, ref GameManager.instance.coin, 50);
+                            GameObject.Find("HUDCanvas/Inventory").GetComponent<Inventory>().RemoveItem(4, 1);
+                        }
+                        else
+                            tp = int.Parse(GetSection(section, 2));
+
+                    }
+                    else if (tradeType == 4) //1 Wall Upgrade for 200 coins
+                    {
+                        if (GameManager.instance.coin >= 200 /*&& Wall Upgrade < 2*/)
+                        {
+                            tp = int.Parse(GetSection(section, 1));
+                            GameManager.instance.updateCount(GameManager.instance.coinCount, ref GameManager.instance.coin, -200);
+                            //Give One Upgrade
+                        }
+                        else
+                            tp = int.Parse(GetSection(section, 2));
+
+                    }
+                    else if (tradeType == 5) //1 Guard Tower Upgrade for 250 coins
+                    {
+                        if (GameManager.instance.coin >= 250 /*&& Tower Upgrade < 1*/)
+                        {
+                            tp = int.Parse(GetSection(section, 1));
+                            GameManager.instance.updateCount(GameManager.instance.coinCount, ref GameManager.instance.coin, -250);
+                            //Give One Upgrade
+                        }
                         else
                             tp = int.Parse(GetSection(section, 2));
 
