@@ -53,6 +53,7 @@ public class SetConversationTree : MonoBehaviour
     private GameObject PlayerObject;
 
     private bool dialogueActive;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -205,11 +206,24 @@ public class SetConversationTree : MonoBehaviour
                     }
                     else if (tradeType == 4) //1 Wall Upgrade for 200 coins
                     {
-                        if (GameManager.instance.coin >= 200 /*&& Wall Upgrade < 2*/)
+                        if (GameManager.instance.coin >= 200 && GameManager.instance.BarricadesUpgrade < 2)
                         {
                             tp = int.Parse(GetSection(section, 1));
                             GameManager.instance.updateCount(GameManager.instance.coinCount, ref GameManager.instance.coin, -200);
-                            //Give One Upgrade
+                            GameManager.instance.BarricadesUpgrade++;
+                            if(GameManager.instance.BarricadesUpgrade == 1)
+                            {
+                                Debug.Log("Adding Mini Barricade");
+                                GameManager.instance.Barricades.SetActive(true);
+                                GameManager.instance.Barricades.transform.Find("Mini Barricade").gameObject.SetActive(true);
+                                GameManager.instance.Barricades.transform.Find("Barricade").gameObject.SetActive(false);
+                            }
+                            else if (GameManager.instance.BarricadesUpgrade == 2)
+                            {
+                                Debug.Log("Adding Large Barricade");
+                                GameManager.instance.Barricades.transform.Find("Mini Barricade").gameObject.SetActive(false);
+                                GameManager.instance.Barricades.transform.Find("Barricade").gameObject.SetActive(true);
+                            }
                         }
                         else
                             tp = int.Parse(GetSection(section, 2));
@@ -217,11 +231,13 @@ public class SetConversationTree : MonoBehaviour
                     }
                     else if (tradeType == 5) //1 Guard Tower Upgrade for 250 coins
                     {
-                        if (GameManager.instance.coin >= 250 /*&& Tower Upgrade < 1*/)
+                        if (GameManager.instance.coin >= 250 && GameManager.instance.GuardTowerUpgrade < 1)
                         {
                             tp = int.Parse(GetSection(section, 1));
                             GameManager.instance.updateCount(GameManager.instance.coinCount, ref GameManager.instance.coin, -250);
-                            //Give One Upgrade
+                            GameManager.instance.GuardTowerUpgrade++;
+                            Debug.Log("Adding Guard Towers");
+                            GameManager.instance.GuardTowers.SetActive(true);
                         }
                         else
                             tp = int.Parse(GetSection(section, 2));
