@@ -73,7 +73,7 @@ public class Inventory : MonoBehaviour
         {
             textToDisplay = amountInSlot[slot - 1].ToString();
         }
-        if (slot >= 1 || slot <= 3)
+        if (slot >= 2 && slot <= 4)
         {
             invSlot[slot - 1].transform.Find("AmountDisplay").gameObject.GetComponent<UnityEngine.UI.Text>().text = textToDisplay;
         }
