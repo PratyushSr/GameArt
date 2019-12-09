@@ -445,6 +445,15 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
+  - first: {x: -4, y: 4, z: 0}
+    second:
+      m_TileIndex: 40
+      m_TileSpriteIndex: 40
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
   - first: {x: -1, y: 4, z: 0}
     second:
       m_TileIndex: 18
@@ -536,6 +545,8 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: e99372b5709ec554dad97efc57e1d78f, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 1e6f3d6bf7ad8b146a1e150331105859, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 7a90243af17946342acde44905861412, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: be010b463e4f05b4a8c6e2fe4f601ebc, type: 3}
@@ -617,8 +628,10 @@ Tilemap:
     m_Data: {fileID: 21300000, guid: 13236e8cb1e4c3f4590df56711c4af7a, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 15570cabcd7f84b40af6fc36fb29c307, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: a49f095519babe045b6d773bab16cf10, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 41
+  - m_RefCount: 42
     m_Data:
       e00: 1
       e01: 0
@@ -637,14 +650,14 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 41
+  - m_RefCount: 42
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   - m_RefCount: 0
     m_Data: {r: -1.5683715e+10, g: -1.5683715e+10, b: -1.5683715e+10, a: -1.5683715e+10}
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: -13, y: -13, z: 0}
-  m_Size: {x: 19, y: 18, z: 1}
+  m_Size: {x: 19, y: 20, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -703,7 +716,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0.50602555, y: 4.2650037, z: 0}
+  m_ChunkCullingBounds: {x: 2.0342975, y: 4.2650037, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 3
