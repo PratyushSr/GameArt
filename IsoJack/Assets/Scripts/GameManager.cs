@@ -31,6 +31,10 @@ public class GameManager : MonoBehaviour
     public Image timeIndicator;
     public bool isDay;
     public bool inConversation;
+    public GameObject GuardTowers;
+    public GameObject Barricades;
+    public int GuardTowerUpgrade;
+    public int BarricadesUpgrade;
 
 
     void Awake()
@@ -49,7 +53,14 @@ public class GameManager : MonoBehaviour
         isDay = true;
         hp = 100;
 
-        
+        GuardTowers = GameObject.Find("IsoJack_Overworld/Buildings/AllGuardTowers");
+        Barricades = GameObject.Find("IsoJack_Overworld/Buildings/Wall_Barricade");
+        GuardTowers.SetActive(false);
+        Barricades.SetActive(false);
+        GuardTowerUpgrade = 0;
+        BarricadesUpgrade = 0;
+
+
     }
 
     // Update is called once per frame
