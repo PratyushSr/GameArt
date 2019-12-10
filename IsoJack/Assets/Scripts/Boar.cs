@@ -12,16 +12,16 @@ public class Boar : MonoBehaviour
 
     
     //combat stuff
-    private float attackCd = 0;
+    private float attackCd = -1;
     public float attackTimer;
     public Transform attackPos;
     public LayerMask whatIsEnemies;
     public float attackRange;
     public float damage;
+    public float chargeRange;
 
 
-
-    private float dazedTime;
+   // private float dazedTime;
 
     private SpriteRenderer mySpriteRenderer;
 
@@ -33,15 +33,35 @@ public class Boar : MonoBehaviour
     {
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         anim = GetComponent<Animator>();
-        dazedTime = 2;
+        //dazedTime = 2;
         mySpriteRenderer = GetComponent<SpriteRenderer>();
+        
 
+    }
+
+     IEnumerator Wait()
+     {
+        anim.SetTrigger("attack");
+        moveSpeed = 5;
+        transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
+        yield return new WaitForSeconds(2.5f);
+        Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
+        for (int i = 0; i < enemiesToDamage.Length; i++)
+        {
+            enemiesToDamage[i].GetComponent<PlayerAttack>().TakeDamage(damage);
+            attackCd = attackTimer;
+        }
+            attackCd = attackTimer;
+    }
+
+    void Charge()
+    {
+        
     }
 
     void Update()
     {
-        if (target != null)
-        {
+       
             if (target.position.x > transform.position.x)
             {
                 mySpriteRenderer.flipX = true;
@@ -55,29 +75,25 @@ public class Boar : MonoBehaviour
             {
 
                 //melee
-                if (Vector2.Distance(transform.position, target.position) < 10)
+                if (Vector2.Distance(transform.position, target.position) < chargeRange)
                 {
-                    moveSpeed = 5;
-                    transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
+                     
 
-
-                    Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
-                    for (int i = 0; i < enemiesToDamage.Length; i++)
-                    {
-                        moveSpeed = 1;
-                        enemiesToDamage[i].GetComponent<PlayerAttack>().TakeDamage(damage);
-                        anim.SetTrigger("attack");
-                        attackCd = attackTimer;
-                    }
-                }
-
+                     //Invoke("Charge", 2);
+                
+                     StartCoroutine("Wait");
+                     
 
             }
-        }
-        else
-        {
-            attackCd -= Time.deltaTime;
-        }
+                
+            }
+            else
+            {
+                attackCd -= Time.deltaTime;
+                anim.SetTrigger("idle");
+                moveSpeed = 0;
+            }
+        
         
     }
 
@@ -88,6 +104,8 @@ public class Boar : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(attackPos.position, attackRange);
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(attackPos.position, chargeRange);
     }
 
 

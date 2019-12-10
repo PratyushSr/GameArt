@@ -110,7 +110,7 @@ public class GameManager : MonoBehaviour
             Debug.Log("ADDED BEER");
             GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().AddItem(3, 1);
         }
-        if (Input.GetKeyDown(KeyCode.Alph4))
+        if (Input.GetKeyDown(KeyCode.Alpha4))
         {
             Debug.Log("ADDED RAW MEET");
             GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().AddItem(4, 1);
