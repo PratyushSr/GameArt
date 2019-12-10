@@ -1,7 +1,22 @@
 fileFormatVersion: 2
 guid: ef8e1e252d8fd744a9a7508e72c1ce34
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 1935550417776906279
+    second: BetterAxeAnimation_Frames_0
+  - first:
+      213: -3099639885829611779
+    second: BetterAxeAnimation_Frames_1
+  - first:
+      213: 1922635347463143509
+    second: BetterAxeAnimation_Frames_2
+  - first:
+      213: -2806264868606722236
+    second: BetterAxeAnimation_Frames_3
+  - first:
+      213: -7864457591082076470
+    second: BetterAxeAnimation_Frames_4
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +55,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,9 +85,126 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: BetterAxeAnimation_Frames_0
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 883
+        width: 203
+        height: 359
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd71722389414cc43b5d69e0110f678f
+      internalID: 1935550417776906279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BetterAxeAnimation_Frames_1
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 883
+        width: 367
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ad159ec457437f44818d8e593d18d3b
+      internalID: -3099639885829611779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BetterAxeAnimation_Frames_2
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 719
+        width: 381
+        height: 623
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f4b51964c1edde45b8116e02a0fa245
+      internalID: 1922635347463143509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BetterAxeAnimation_Frames_3
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 212
+        width: 305
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de1d0ee9538c6e445aa0f11e92affbc0
+      internalID: -2806264868606722236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BetterAxeAnimation_Frames_4
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 212
+        width: 291
+        height: 397
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f75969170b7e00343b3a80ec97b6d8e3
+      internalID: -7864457591082076470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

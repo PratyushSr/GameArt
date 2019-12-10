@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
 {
 
     public static GameManager instance = null;
-    public int wood;
+    public int wood ;
     public int coin;
     public int days;
     public int hp;
@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour
     {
         if (instance == null) instance = this;
         else if (instance != this) Destroy(gameObject);
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
 
         woodCount.text = wood.ToString();
         coinCount.text = coin.ToString();

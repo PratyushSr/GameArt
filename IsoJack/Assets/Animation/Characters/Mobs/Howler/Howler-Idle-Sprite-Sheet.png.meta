@@ -1,0 +1,487 @@
+fileFormatVersion: 2
+guid: c7efbc45c26702948be537e0fb0443b8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7619715010580363366
+    second: Howler-Idle-Sprite-Sheet_0
+  - first:
+      213: 4543924137009799421
+    second: Howler-Idle-Sprite-Sheet_1
+  - first:
+      213: -4431490045626758211
+    second: Howler-Idle-Sprite-Sheet_2
+  - first:
+      213: -5560633079131814046
+    second: Howler-Idle-Sprite-Sheet_3
+  - first:
+      213: 5129910929275869845
+    second: Howler-Idle-Sprite-Sheet_4
+  - first:
+      213: -1092564287110161571
+    second: Howler-Idle-Sprite-Sheet_5
+  - first:
+      213: -2445314474711949772
+    second: Howler-Idle-Sprite-Sheet_6
+  - first:
+      213: -2993762491283862443
+    second: Howler-Idle-Sprite-Sheet_7
+  - first:
+      213: 2021452448484196415
+    second: Howler-Idle-Sprite-Sheet_8
+  - first:
+      213: -6086564243646020064
+    second: Howler-Idle-Sprite-Sheet_9
+  - first:
+      213: 3564299244763441177
+    second: Howler-Idle-Sprite-Sheet_10
+  - first:
+      213: -863184483517551942
+    second: Howler-Idle-Sprite-Sheet_11
+  - first:
+      213: -4575114592377771863
+    second: Howler-Idle-Sprite-Sheet_12
+  - first:
+      213: -5356403521915526772
+    second: Howler-Idle-Sprite-Sheet_13
+  - first:
+      213: -3598387536667186263
+    second: Howler-Idle-Sprite-Sheet_14
+  - first:
+      213: -44637910361356272
+    second: Howler-Idle-Sprite-Sheet_15
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Howler-Idle-Sprite-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 1203
+        width: 188
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f5843c327bec2d40baeed5489cbbcc7
+      internalID: -7619715010580363366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Idle-Sprite-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 1203
+        width: 188
+        height: 227
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 489329f362d76a94a897d24cc34c6bee
+      internalID: 4543924137009799421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Idle-Sprite-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 1203
+        width: 188
+        height: 227
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b4ea75f101d62e4fb59d0a2ca7e260c
+      internalID: -4431490045626758211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Idle-Sprite-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1233
+        y: 1203
+        width: 188
+        height: 227
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff6843e9bfc6faf46b1baad7197b6d8f
+      internalID: -5560633079131814046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Idle-Sprite-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 803
+        width: 188
+        height: 227
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd629cd4f5456e2479f57d588f2c845e
+      internalID: 5129910929275869845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Idle-Sprite-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 803
+        width: 188
+        height: 227
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49273c42548a36d448258916f92ba78c
+      internalID: -1092564287110161571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Idle-Sprite-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 803
+        width: 188
+        height: 227
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a08236edc5e13d4992f1c573ca04db1
+      internalID: -2445314474711949772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Idle-Sprite-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1233
+        y: 803
+        width: 188
+        height: 227
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4716f0bacfbb4d844b48ce5169946b6c
+      internalID: -2993762491283862443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Idle-Sprite-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 403
+        width: 188
+        height: 227
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21d107b04bdd90a469d42f460770ab86
+      internalID: 2021452448484196415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Idle-Sprite-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 403
+        width: 188
+        height: 227
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b1e7c43f0eecb44597bb661de216da4
+      internalID: -6086564243646020064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Idle-Sprite-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 403
+        width: 188
+        height: 227
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32e9f8cddc1682e4789e79983b77bc3c
+      internalID: 3564299244763441177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Idle-Sprite-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1233
+        y: 403
+        width: 188
+        height: 227
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a298aa5ade378ac45afaa7d3f52f49e7
+      internalID: -863184483517551942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Idle-Sprite-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 3
+        width: 188
+        height: 227
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4df8b8bbe2548146836d48592deb10c
+      internalID: -4575114592377771863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Idle-Sprite-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 3
+        width: 188
+        height: 227
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c501acc685d37f648bd58ac623aaa5b9
+      internalID: -5356403521915526772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Idle-Sprite-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 3
+        width: 188
+        height: 227
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e9a6eba989a57442a1af76b6be79927
+      internalID: -3598387536667186263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Idle-Sprite-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1233
+        y: 3
+        width: 188
+        height: 227
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c07528a97606c01438ce4318cb6a6488
+      internalID: -44637910361356272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

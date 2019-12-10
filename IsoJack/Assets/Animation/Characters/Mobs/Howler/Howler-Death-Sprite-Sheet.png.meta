@@ -1,0 +1,463 @@
+fileFormatVersion: 2
+guid: afbcd2a5dcccc0a428675408c7324cbd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4700448000830752297
+    second: Howler-Death-Sprite-Sheet_0
+  - first:
+      213: 6446480814852570627
+    second: Howler-Death-Sprite-Sheet_1
+  - first:
+      213: 739489153762440504
+    second: Howler-Death-Sprite-Sheet_2
+  - first:
+      213: 4266822396163730498
+    second: Howler-Death-Sprite-Sheet_3
+  - first:
+      213: -2839059191847469478
+    second: Howler-Death-Sprite-Sheet_4
+  - first:
+      213: -5978111278539086354
+    second: Howler-Death-Sprite-Sheet_5
+  - first:
+      213: 271523120341353090
+    second: Howler-Death-Sprite-Sheet_6
+  - first:
+      213: -1488088742977320052
+    second: Howler-Death-Sprite-Sheet_7
+  - first:
+      213: -6914024435821643648
+    second: Howler-Death-Sprite-Sheet_8
+  - first:
+      213: -7335420548353727869
+    second: Howler-Death-Sprite-Sheet_9
+  - first:
+      213: -4068981168086411274
+    second: Howler-Death-Sprite-Sheet_10
+  - first:
+      213: -4207808664324665863
+    second: Howler-Death-Sprite-Sheet_11
+  - first:
+      213: -1947827153484547447
+    second: Howler-Death-Sprite-Sheet_12
+  - first:
+      213: 961842121056243883
+    second: Howler-Death-Sprite-Sheet_13
+  - first:
+      213: -96847654933152887
+    second: Howler-Death-Sprite-Sheet_14
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Howler-Death-Sprite-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 1203
+        width: 192
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bf98f81697b58f43ba3e414fc0ef8b9
+      internalID: -4700448000830752297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Death-Sprite-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 1203
+        width: 192
+        height: 227
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de7840f4c7d5ea948b0636048aa666f5
+      internalID: 6446480814852570627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Death-Sprite-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 1203
+        width: 192
+        height: 227
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a5534f2c599f96498ef058b99362fea
+      internalID: 739489153762440504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Death-Sprite-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1233
+        y: 1203
+        width: 192
+        height: 227
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a57b57a9f26fa804098ba4507d067b1b
+      internalID: 4266822396163730498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Death-Sprite-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 803
+        width: 192
+        height: 227
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ee4a071746ff2b4897beb6643616937
+      internalID: -2839059191847469478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Death-Sprite-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 803
+        width: 192
+        height: 227
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbc4993ca2567b14d92a25144d444df6
+      internalID: -5978111278539086354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Death-Sprite-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 803
+        width: 192
+        height: 227
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aab8147af0f24fc4f8f042a683af517e
+      internalID: 271523120341353090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Death-Sprite-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1233
+        y: 803
+        width: 192
+        height: 227
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cdc875bf4fc16942b57a8152c30b66b
+      internalID: -1488088742977320052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Death-Sprite-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 403
+        width: 192
+        height: 227
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1dae9cbf3b1e8a4bae3a393da687dc0
+      internalID: -6914024435821643648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Death-Sprite-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 403
+        width: 192
+        height: 227
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d16f38f9c5ca9a74f9cc0058743b7f6d
+      internalID: -7335420548353727869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Death-Sprite-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 403
+        width: 192
+        height: 227
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50884080c4d4d794e83d89e1f12ff353
+      internalID: -4068981168086411274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Death-Sprite-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1233
+        y: 403
+        width: 192
+        height: 227
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac30b63e3fdbedd4b8a6710eda19cc48
+      internalID: -4207808664324665863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Death-Sprite-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 3
+        width: 192
+        height: 227
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84f631979d4f8a64d9110a530bfe27a2
+      internalID: -1947827153484547447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Death-Sprite-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 3
+        width: 192
+        height: 227
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1d3f88e1a151504fa2dd31568a91933
+      internalID: 961842121056243883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Death-Sprite-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 3
+        width: 192
+        height: 227
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25f5c3b82dcf529438c12c885f68c840
+      internalID: -96847654933152887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
