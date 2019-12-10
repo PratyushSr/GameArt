@@ -8,7 +8,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Jack_Axe2_Attack
-  m_Speed: 3
+  m_Speed: 0.5
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -34,7 +34,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Jack_Axe3_Attack
-  m_Speed: 3
+  m_Speed: 0.5
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -595,7 +595,7 @@ AnimatorStateMachine:
     m_Position: {x: 760, y: 90, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -9040207989032518372}
-    m_Position: {x: 840, y: 150, z: 0}
+    m_Position: {x: 840, y: 140, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -6154145450000345363}
     m_Position: {x: 930, y: 210, z: 0}
@@ -620,7 +620,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Jack_Axe1_attack
-  m_Speed: 3
+  m_Speed: 10
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours:

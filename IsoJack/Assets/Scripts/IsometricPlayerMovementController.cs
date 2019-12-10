@@ -26,12 +26,19 @@ public class IsometricPlayerMovementController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Q))
         {
             int x = GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().GetSlotCount(1);
+            Debug.Log(x);
             if(x==1)
                 animator.SetBool("attack", true);
             else if(x==2)
-                animator.SetBool("attack2",true);
+            {
+                animator.SetBool("attack2", true);
+                animator.SetBool("attack", false);
+            }
             else if (x == 3)
+            {
+                animator.SetBool("attack2", false);
                 animator.SetBool("attack3", true);
+            }
             isbusy = true;
             temptimer = timer;
         }
@@ -73,6 +80,7 @@ public class IsometricPlayerMovementController : MonoBehaviour
     {
         isbusy = false;
         yield return new WaitForSeconds(1);
+        animator.SetBool("attack", false);
         animator.SetBool("attack", false);
     }
 }
