@@ -377,7 +377,7 @@ MonoBehaviour:
     m_Bits: 256
   attackRange: 0.81
   damage: 5
-  health: 100
+  blackoutScreen: {fileID: 0}
 --- !u!114 &321440858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -408,6 +408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 3
+  animator: {fileID: 0}
 --- !u!114 &321440860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -423,6 +424,8 @@ MonoBehaviour:
   currentInterObj: {fileID: 0}
   currentInterObjScript: {fileID: 0}
   inventory: {fileID: 321440861}
+  tree: 0
+  treeamount: {fileID: 0}
 --- !u!114 &321440861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -435,17 +438,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e60575469823a594197f62e1bf4b6cea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  Slot1Sprite: []
+  Slot2Sprite: {fileID: 0}
+  Slot3Sprite: {fileID: 0}
+  Slot4Sprite: {fileID: 0}
+  Slot5Sprite: {fileID: 0}
+  Slot6Sprite: {fileID: 0}
 --- !u!61 &321440862
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -755,7 +753,7 @@ MonoBehaviour:
     m_Bits: 256
   attackRange: 0.81
   damage: 5
-  health: 100
+  blackoutScreen: {fileID: 0}
 --- !u!114 &399371193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -786,6 +784,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 3
+  animator: {fileID: 0}
 --- !u!114 &399371195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -801,6 +800,8 @@ MonoBehaviour:
   currentInterObj: {fileID: 0}
   currentInterObjScript: {fileID: 0}
   inventory: {fileID: 399371196}
+  tree: 0
+  treeamount: {fileID: 0}
 --- !u!114 &399371196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -813,17 +814,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e60575469823a594197f62e1bf4b6cea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  Slot1Sprite: []
+  Slot2Sprite: {fileID: 0}
+  Slot3Sprite: {fileID: 0}
+  Slot4Sprite: {fileID: 0}
+  Slot5Sprite: {fileID: 0}
+  Slot6Sprite: {fileID: 0}
 --- !u!61 &399371197
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -888,7 +884,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1056981293}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 2.5, y: -2.26, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 363603111}
@@ -6775,7 +6771,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 7.516754
+  orthographic size: 2.3875046
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
