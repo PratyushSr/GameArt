@@ -35,8 +35,11 @@ public class Bear : MonoBehaviour
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         anim = GetComponent<Animator>();
         mySpriteRenderer = GetComponent<SpriteRenderer>();
-
+        
     }
+
+
+    
 
     void Update()
     {
@@ -71,13 +74,14 @@ public class Bear : MonoBehaviour
 
 
                 //melee
-                if (Vector2.Distance(transform.position, target.position) < 5)
+                if (Vector2.Distance(transform.position, target.position) < 3)
+                    anim.SetTrigger("attack");
                 {
                     Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
                     for (int i = 0; i < enemiesToDamage.Length; i++)
                     {
+                        
                         enemiesToDamage[i].GetComponent<PlayerAttack>().TakeDamage(damage);
-                        anim.SetTrigger("attack");
                         attackCd = attackTimer;
                     }
 

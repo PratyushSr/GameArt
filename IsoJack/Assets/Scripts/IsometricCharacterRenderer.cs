@@ -19,6 +19,12 @@ public class IsometricCharacterRenderer : MonoBehaviour
     }
 
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Q))
+            animator.Play("Jack_Attack");
+    }
+
     public void SetDirection(Vector2 direction){
 
         //use the Run states by default

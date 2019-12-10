@@ -17,7 +17,7 @@ public class projectile : MonoBehaviour
 
     void Start()
     {
-        //Invoke("DestroyProjectile", lifetime);
+        Invoke("DestroyProjectile", lifetime);
         Debug.Log("projectile created");
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (player == null)

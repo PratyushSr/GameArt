@@ -13,8 +13,14 @@ public class GameManager : MonoBehaviour
     public int coin;
     public int days;
     public int hp;
+    public int bones;
+    public int food;
+    public int meat;
     public Text woodCount;
     public Text coinCount;
+    public Text foodCount;
+    public Text boneCount;
+    public Text meatCount;
     public Text daysRemain;
     public Text locationTxt;
     public static bool isPaused = false;
@@ -25,6 +31,10 @@ public class GameManager : MonoBehaviour
     public Image timeIndicator;
     public bool isDay;
     public bool inConversation;
+    public GameObject GuardTowers;
+    public GameObject Barricades;
+    public int GuardTowerUpgrade;
+    public int BarricadesUpgrade;
 
 
     void Awake()
@@ -35,12 +45,22 @@ public class GameManager : MonoBehaviour
 
         woodCount.text = wood.ToString();
         coinCount.text = coin.ToString();
+        //boneCount.text = bones.ToString();
+        //meatCount.text = meat.ToString();
+        //foodCount.text = food.ToString();
         daysRemain.text = days.ToString() + " Days Remain";
         timeIndicator.sprite = timeOfDay[0];
         isDay = true;
         hp = 100;
 
-        
+        GuardTowers = GameObject.Find("IsoJack_Overworld/Buildings/AllGuardTowers");
+        Barricades = GameObject.Find("IsoJack_Overworld/Buildings/Wall_Barricade");
+        GuardTowers.SetActive(false);
+        Barricades.SetActive(false);
+        GuardTowerUpgrade = 0;
+        BarricadesUpgrade = 0;
+
+
     }
 
     // Update is called once per frame
@@ -67,6 +87,59 @@ public class GameManager : MonoBehaviour
         {
             Time.timeScale = 1f;
             isPaused = false;
+        }
+
+        //TEMP INV TESTING CODE
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            Debug.Log("ADDED AXE");
+            GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().AddItem(1, 1);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            Debug.Log("ADDED FOOD");
+            GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().AddItem(2, 1);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            Debug.Log("ADDED RAW MEET");
+            GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().AddItem(3, 1);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            Debug.Log("ADDED BONES");
+            GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().AddItem(4, 1);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            Debug.Log("ADDED QUEST ITEM");
+            GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().AddItem(5, 1);
+        }
+        //TEMP INV TESTING CODE
+        if (Input.GetKeyDown(KeyCode.Alpha6))
+        {
+            Debug.Log("REMOVED AXE");
+            GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().RemoveItem(1, 1);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha7))
+        {
+            Debug.Log("REMOVED FOOD");
+            GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().RemoveItem(2, 1);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha8))
+        {
+            Debug.Log("REMOVED RAW MEET");
+            GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().RemoveItem(3, 1);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha9))
+        {
+            Debug.Log("REMOVED BONES");
+            GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().RemoveItem(4, 1);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha0))
+        {
+            Debug.Log("REMOVED QUEST ITEM");
+            GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().RemoveItem(5, 1);
         }
 
     }
@@ -159,5 +232,18 @@ public class GameManager : MonoBehaviour
     private void OnSceneLoaded(Scene arg0, LoadSceneMode arg1)
     {
         locationPopIn();
+    }
+
+    public void LoadMain()
+    {
+        Debug.Log("Loading Main Menu...");
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    public void LoadGame()
+    {
+        Debug.Log("Loading Game...");
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("IsoJack_OverWorld");
     }
 }

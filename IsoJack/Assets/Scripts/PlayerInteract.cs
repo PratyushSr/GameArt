@@ -16,7 +16,8 @@ public class PlayerInteract : MonoBehaviour
             //check to see if object is to be stored in inverntory
             if (currentInterObjScript.inventory)
             {
-                inventory.AddItem(currentInterObj);
+                //inventory.AddItem(currentInterObj);
+                //We will need to change this to an int based on what item it is, unfortunatly.
             }
 
 

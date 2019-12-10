@@ -13,7 +13,8 @@ public class SetConversationTree : MonoBehaviour
     [Tooltip("0 = Normal\n" +
     "1 = 4 - way Choice\n" +
     "2 = Exit on next click\n" +
-    "3 = Instantly Warp based on what quest is active.")]
+    "3 = Instantly Warp based on what quest is active.\n" +
+    "4 = Shop Script")]
     public List<int> dialogueType;
     [Tooltip("Sprite to display on left\n(Optional) Leave Null if not changed")]
     public List<Sprite> NPCSprite;
@@ -26,7 +27,10 @@ public class SetConversationTree : MonoBehaviour
     [Tooltip("If DialogueType == 1 (Choices): Warp1;Warp2;Warp3;Warp4 (The conversation element to warp to)\n"+
     "If DialogueType == 3, it will test for a quest and sub-quest and then warp accordingly:\n"+
     "QuestID,SubQuestNumber,WarpToPoint;QuestID2,SubQuestNumber2,WarpToPoint2;...\n"+
-    "QuestID and Sub Quest can be set to -1 (;-1,-1,WarpToPoint;) to signify default value")]
+    "QuestID and Sub Quest can be set to -1 (;-1,-1,WarpToPoint;) to signify default value\n" +
+    "if DialogueType == 4 (Shop), Use the following format\n" +
+    "TradeType1,WarpIfSuccessful,warpIfFailed;TradeType2,WarpIfSuccessful,warpIfFailed..." +
+    "For a No Trade warp, do: -1,warpToPoint,-1")]
     public List<string> ChoiceWarps; 
     [Tooltip("Adds one progression to the given quest when the text loads.")]
     public List<int> AdvanceQuestOnTextLoad;
@@ -49,6 +53,7 @@ public class SetConversationTree : MonoBehaviour
     private GameObject PlayerObject;
 
     private bool dialogueActive;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -103,7 +108,10 @@ public class SetConversationTree : MonoBehaviour
                 {
                     if (dialogueType[tp] == 0)
                     {
-                        tp += 1;
+                        if (ChoiceWarps.Count > tp && ChoiceWarps[tp] != "")
+                            tp = int.Parse(ChoiceWarps[tp]);
+                        else
+                            tp++;
                         loadDialogue();
                     }
                     else if ((dialogueType[tp] == 2 || tp + 1 >= dialogueText.Count))
@@ -138,6 +146,120 @@ public class SetConversationTree : MonoBehaviour
                 if (choice != 0)
                 {
                     tp = int.Parse(GetSection(ChoiceWarps[tp], choice - 1));
+                    loadDialogue();
+                }
+            }
+            if (dialogueType[tp] == 4)
+            {
+                int choice = DialougeView.converstationInstance.getChoicePressed();
+                if (choice != 0)
+                {
+                    string section = GetSection(ChoiceWarps[tp], choice-1).Replace(',', ';');
+                    int tradeType = int.Parse(GetSection(section, 0));
+                    Debug.Log("Trade Type: " + tradeType.ToString());
+                    if (tradeType == 0) //20 Coins for 1 Wood
+                    {
+                        if (GameManager.instance.wood >= 1)
+                        {
+                            tp = int.Parse(GetSection(section, 1));
+                            Debug.Log("This stuff def is running");
+                            GameManager.instance.updateCount(GameManager.instance.woodCount, ref GameManager.instance.wood, -1);
+                            GameManager.instance.updateCount(GameManager.instance.coinCount, ref GameManager.instance.coin, 20);
+                        }
+                        else
+                            tp = int.Parse(GetSection(section, 2));
+
+                    }
+                    else if (tradeType == 1) //1 Food for 50 Coins
+                    {
+                        if (GameManager.instance.coin >= 50)
+                        {
+                            tp = int.Parse(GetSection(section, 1));
+                            GameManager.instance.updateCount(GameManager.instance.coinCount, ref GameManager.instance.coin, -50);
+                            inventory.GetComponent<Inventory>().AddItem(2, 1);
+                        }
+                        else
+                            tp = int.Parse(GetSection(section, 2));
+
+                    }
+                    else if (tradeType == 2) //50 Coins for 1 Raw Meat
+                    {
+                        if (inventory.GetComponent<Inventory>().GetSlotCount(3) >= 1) {
+                            tp = int.Parse(GetSection(section, 1));
+                            GameManager.instance.updateCount(GameManager.instance.coinCount, ref GameManager.instance.coin, 50);
+                            inventory.GetComponent<Inventory>().RemoveItem(3, 1);
+                        } else
+                            tp = int.Parse(GetSection(section, 2));
+
+                    }
+                    else if (tradeType == 3) //50 Coins for 1 Bone
+                    {
+                        if (inventory.GetComponent<Inventory>().GetSlotCount(4) >= 1)
+                        {
+                            tp = int.Parse(GetSection(section, 1));
+                            GameManager.instance.updateCount(GameManager.instance.coinCount, ref GameManager.instance.coin, 50);
+                            inventory.GetComponent<Inventory>().RemoveItem(4, 1);
+                        }
+                        else
+                            tp = int.Parse(GetSection(section, 2));
+
+                    }
+                    else if (tradeType == 4) //1 Wall Upgrade for 200 coins
+                    {
+                        if (GameManager.instance.coin >= 200 && GameManager.instance.BarricadesUpgrade < 2)
+                        {
+                            tp = int.Parse(GetSection(section, 1));
+                            GameManager.instance.updateCount(GameManager.instance.coinCount, ref GameManager.instance.coin, -200);
+                            GameManager.instance.BarricadesUpgrade++;
+                            if(GameManager.instance.BarricadesUpgrade == 1)
+                            {
+                                Debug.Log("Adding Mini Barricade");
+                                GameManager.instance.Barricades.SetActive(true);
+                                GameManager.instance.Barricades.transform.Find("Mini Barricade").gameObject.SetActive(true);
+                                GameManager.instance.Barricades.transform.Find("Barricade").gameObject.SetActive(false);
+                            }
+                            else if (GameManager.instance.BarricadesUpgrade == 2)
+                            {
+                                Debug.Log("Adding Large Barricade");
+                                GameManager.instance.Barricades.transform.Find("Mini Barricade").gameObject.SetActive(false);
+                                GameManager.instance.Barricades.transform.Find("Barricade").gameObject.SetActive(true);
+                            }
+                        }
+                        else
+                            tp = int.Parse(GetSection(section, 2));
+
+                    }
+                    else if (tradeType == 5) //1 Guard Tower Upgrade for 250 coins
+                    {
+                        if (GameManager.instance.coin >= 250 && GameManager.instance.GuardTowerUpgrade < 1)
+                        {
+                            tp = int.Parse(GetSection(section, 1));
+                            GameManager.instance.updateCount(GameManager.instance.coinCount, ref GameManager.instance.coin, -250);
+                            GameManager.instance.GuardTowerUpgrade++;
+                            Debug.Log("Adding Guard Towers");
+                            GameManager.instance.GuardTowers.SetActive(true);
+                        }
+                        else
+                            tp = int.Parse(GetSection(section, 2));
+
+                    }
+                    else if (tradeType == 6) //1 Axe Upgrade for 300 coins
+                    {
+                        if (GameManager.instance.coin >= 300 && inventory.GetComponent<Inventory>().GetSlotCount(1) < 3)
+                        {
+                            tp = int.Parse(GetSection(section, 1));
+                            GameManager.instance.updateCount(GameManager.instance.coinCount, ref GameManager.instance.coin, -300);
+                            inventory.GetComponent<Inventory>().AddItem(1, 1);
+                        }
+                        else
+                            tp = int.Parse(GetSection(section, 2));
+
+                    }
+                    else if (tradeType == -1)
+                    {
+                        tp = int.Parse(GetSection(section, 1));
+                    }
+                    
                     loadDialogue();
                 }
             }
@@ -234,20 +356,20 @@ public class SetConversationTree : MonoBehaviour
         //Replce Text with appropriate calculations
         textToDisplay = textToDisplay.Replace("<chanceOfWinningWar>", getChanceOfWinning().ToString());
 
-        if (AdvanceQuestOnTextLoad[tp] != 0)
+        if (AdvanceQuestOnTextLoad.Count > tp && AdvanceQuestOnTextLoad[tp] != 0)
         {
-            Adventureog.advLogInstance.addProgress(AdvanceQuestOnTextLoad[tp], 1);
             if (!Adventureog.advLogInstance.Quest[AdvanceQuestOnTextLoad[tp] - 1].Active)
             {
                 Adventureog.advLogInstance.Quest[AdvanceQuestOnTextLoad[tp] - 1].activate();
             }
+            Adventureog.advLogInstance.addProgress(AdvanceQuestOnTextLoad[tp], 1);
         }
         if (dialogueType[tp] == 0 || dialogueType[tp] == 2)
         { 
             ChoicesCanvas.SetActive(false);
             DialogueTextObject.GetComponent<UnityEngine.UI.Text>().text = textToDisplay;
         }
-        else if (dialogueType[tp] == 1)
+        else if (dialogueType[tp] == 1 || dialogueType[tp] == 4)
         {
             ChoicesCanvas.SetActive(true);
             DialogueTextObject.GetComponent<UnityEngine.UI.Text>().text = GetSection(textToDisplay, 0);

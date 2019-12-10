@@ -46,13 +46,18 @@ public class Howler : MonoBehaviour
 
         else mySpriteRenderer.flipX = false;
 
+
+        
         //attack
         if (attackCd <= 0)
         {
-            
+            if(Vector2.Distance(transform.position, target.position) < projectilRange)
+            {
                 anim.SetTrigger("attack");
                 Instantiate(projectile, attackPos);
                 attackCd = attackTimer;
+            }
+                
          
         }
 
