@@ -11,10 +11,12 @@ public class TimeCycle : MonoBehaviour
     public GameObject SleepImg;
     private bool teleported;
     public GameObject sleepQuestion;
+    public GameObject[] trees;
 
     void Start()
     {
         INTIMERDONTCHANGE = timer;
+        trees = GameObject.FindGameObjectsWithTag("interObject");
     }
 
     // Update is called once per frame
@@ -70,6 +72,13 @@ public class TimeCycle : MonoBehaviour
         }
         SleepImg.SetActive(true);
         yield return new WaitForSeconds(0.5f);
+        foreach(GameObject utree in trees)
+        {
+            if(!utree.activeInHierarchy)
+            {
+                utree.SetActive(true);
+            }
+        }
         GameManager.instance.updateDays();
         INTIMERDONTCHANGE = timer;
         SleepImg.SetActive(false);
