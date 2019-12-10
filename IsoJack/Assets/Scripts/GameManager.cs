@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
 {
 
     public static GameManager instance = null;
-    public int wood;
+    public int wood ;
     public int coin;
     public int days;
     public int hp;

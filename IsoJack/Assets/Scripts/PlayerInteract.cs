@@ -9,7 +9,7 @@ public class PlayerInteract : MonoBehaviour
     // Start is called before the first frame update
     public InteractionObject currentInterObjScript = null;
     public Inventory inventory;
-    public float tree = 5;
+    public float tree;
     public Text treeamount;
 
     void Update()
@@ -45,8 +45,10 @@ public class PlayerInteract : MonoBehaviour
             if (other.gameObject == currentInterObj)
             {
                 currentInterObj = null;
-                tree += 5;
-                treeamount.text = tree.ToString();
+                GameManager.instance.wood += 5;
+                //tree += 5;
+                //treeamount.text = tree.ToString();
+                treeamount.text = GameManager.instance.wood.ToString();
             }
         }
     }
