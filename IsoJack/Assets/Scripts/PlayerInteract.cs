@@ -45,9 +45,8 @@ public class PlayerInteract : MonoBehaviour
             if (other.gameObject == currentInterObj)
             {
                 currentInterObj = null;
+              
                 GameManager.instance.wood += 5;
-                //tree += 5;
-                //treeamount.text = tree.ToString();
                 treeamount.text = GameManager.instance.wood.ToString();
             }
         }
