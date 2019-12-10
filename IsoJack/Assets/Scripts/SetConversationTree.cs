@@ -177,6 +177,7 @@ public class SetConversationTree : MonoBehaviour
                             tp = int.Parse(GetSection(section, 1));
                             GameManager.instance.updateCount(GameManager.instance.coinCount, ref GameManager.instance.coin, -50);
                             inventory.GetComponent<Inventory>().AddItem(2, 1);
+                            inventory.GetComponent<Inventory>().AddItem(3, 1);
                         }
                         else
                             tp = int.Parse(GetSection(section, 2));
