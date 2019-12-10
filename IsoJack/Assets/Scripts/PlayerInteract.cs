@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerInteract : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class PlayerInteract : MonoBehaviour
     // Start is called before the first frame update
     public InteractionObject currentInterObjScript = null;
     public Inventory inventory;
+    public float tree = 5;
+    public Text treeamount;
 
     void Update()
     {
@@ -42,6 +45,8 @@ public class PlayerInteract : MonoBehaviour
             if (other.gameObject == currentInterObj)
             {
                 currentInterObj = null;
+                tree += 5;
+                treeamount.text = tree.ToString();
             }
         }
     }
