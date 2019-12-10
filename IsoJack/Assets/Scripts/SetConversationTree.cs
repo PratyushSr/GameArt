@@ -182,24 +182,24 @@ public class SetConversationTree : MonoBehaviour
                             tp = int.Parse(GetSection(section, 2));
 
                     }
-                    else if (tradeType == 2) //50 Coins for 1 Raw Meat
+                    else if (tradeType == 2) //20 Coins for 1 Raw Meat
                     {
                         if (inventory.GetComponent<Inventory>().GetSlotCount(4) >= 1)
                         {
                             tp = int.Parse(GetSection(section, 1));
-                            GameManager.instance.updateCount(GameManager.instance.coinCount, ref GameManager.instance.coin, 50);
+                            GameManager.instance.updateCount(GameManager.instance.coinCount, ref GameManager.instance.coin, 20);
                             inventory.GetComponent<Inventory>().RemoveItem(4, 1);
                         }
                         else
                             tp = int.Parse(GetSection(section, 2));
 
                     }
-                    else if (tradeType == 3) //50 Coins for 1 Bone
+                    else if (tradeType == 3) //10 Coins for 1 Bone
                     {
                         if (inventory.GetComponent<Inventory>().GetSlotCount(5) >= 1)
                         {
                             tp = int.Parse(GetSection(section, 1));
-                            GameManager.instance.updateCount(GameManager.instance.coinCount, ref GameManager.instance.coin, 50);
+                            GameManager.instance.updateCount(GameManager.instance.coinCount, ref GameManager.instance.coin, 10);
                             inventory.GetComponent<Inventory>().RemoveItem(5, 1);
                         }
                         else
