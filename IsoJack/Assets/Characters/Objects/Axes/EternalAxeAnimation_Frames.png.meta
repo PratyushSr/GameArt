@@ -1,7 +1,22 @@
 fileFormatVersion: 2
 guid: 356899b2701328048a52b7c4fefb1731
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 9033054631131687042
+    second: EternalAxeAnimation_Frames_0
+  - first:
+      213: 420795327405314704
+    second: EternalAxeAnimation_Frames_2
+  - first:
+      213: -1035433172618274881
+    second: EternalAxeAnimation_Frames_3
+  - first:
+      213: 7934247305629176557
+    second: EternalAxeAnimation_Frames_5
+  - first:
+      213: -998563013012505544
+    second: EternalAxeAnimation_Frames_6
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +55,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,9 +85,126 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: EternalAxeAnimation_Frames_0
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 915
+        width: 199
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a22d90848ea49e41a7688d9957c197c
+      internalID: 9033054631131687042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EternalAxeAnimation_Frames_2
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 915
+        width: 437
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a44d909d95cb7a247b85d6cb79c55968
+      internalID: 420795327405314704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EternalAxeAnimation_Frames_3
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 694
+        width: 446
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c906b39fc8f7f114e9d2b792cdf08009
+      internalID: -1035433172618274881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EternalAxeAnimation_Frames_5
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 207
+        width: 342
+        height: 569
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 142021ca5e5f7fa46b877685199b151c
+      internalID: 7934247305629176557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EternalAxeAnimation_Frames_6
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 219
+        width: 309
+        height: 397
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a878d74ad5a7d64ebeecbf08118216f
+      internalID: -998563013012505544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
