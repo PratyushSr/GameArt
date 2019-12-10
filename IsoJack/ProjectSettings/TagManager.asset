@@ -8,6 +8,8 @@ TagManager:
   - Bear
   - Boar
   - axe
+  - betteraxe
+  - eternalaxe
   layers:
   - Default
   - TransparentFX
