@@ -42,6 +42,7 @@ public class GameManager : MonoBehaviour
     public GameObject[] hpBarArray;
     public Sprite[] hpIndicatorSprites;
     public GameObject HPFullText;
+    public AudioSource pokerChips;
 
     void Awake()
     {
@@ -195,10 +196,12 @@ public class GameManager : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.Alpha6))
         {
+            pokerChips.Play();
             if (GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().GetSlotCount(6) >= 1)
             {
                 DogToyOut = !DogToyOut;
                 Debug.Log("Toggled Dog Toy");
+                pokerChips.Play();
             }
         }
 
