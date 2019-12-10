@@ -1,0 +1,487 @@
+fileFormatVersion: 2
+guid: 2619fc3791c3f324e9f40e272516338a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6007492204484559592
+    second: Boar-Walk-Sprite-Sheet_0
+  - first:
+      213: -8161990271554310790
+    second: Boar-Walk-Sprite-Sheet_1
+  - first:
+      213: -5081850059290814878
+    second: Boar-Walk-Sprite-Sheet_2
+  - first:
+      213: 8714257361484813269
+    second: Boar-Walk-Sprite-Sheet_3
+  - first:
+      213: 58965936359738930
+    second: Boar-Walk-Sprite-Sheet_4
+  - first:
+      213: -4751358931199337005
+    second: Boar-Walk-Sprite-Sheet_5
+  - first:
+      213: -26585308034751907
+    second: Boar-Walk-Sprite-Sheet_6
+  - first:
+      213: -2819022481906468753
+    second: Boar-Walk-Sprite-Sheet_7
+  - first:
+      213: -2543581259487949767
+    second: Boar-Walk-Sprite-Sheet_8
+  - first:
+      213: -7076351733636827914
+    second: Boar-Walk-Sprite-Sheet_9
+  - first:
+      213: 8842221759742690125
+    second: Boar-Walk-Sprite-Sheet_10
+  - first:
+      213: 1871561266063954843
+    second: Boar-Walk-Sprite-Sheet_11
+  - first:
+      213: 5517344213962208590
+    second: Boar-Walk-Sprite-Sheet_12
+  - first:
+      213: 2421481504883372109
+    second: Boar-Walk-Sprite-Sheet_13
+  - first:
+      213: 7674467050013319530
+    second: Boar-Walk-Sprite-Sheet_14
+  - first:
+      213: 8892531615747042293
+    second: Boar-Walk-Sprite-Sheet_15
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Boar-Walk-Sprite-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 633
+        width: 151
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a8016503e2c38544b32f28099770676
+      internalID: -6007492204484559592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Walk-Sprite-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 633
+        width: 151
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebc7c289c89d6964887c12ae7a31cf23
+      internalID: -8161990271554310790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Walk-Sprite-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 632
+        width: 151
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5cab658d9a937c46a139655312f3e26
+      internalID: -5081850059290814878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Walk-Sprite-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 632
+        width: 151
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c740e15d10d71f449a9e02c1677fd0ed
+      internalID: 8714257361484813269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Walk-Sprite-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 433
+        width: 151
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69cb46b257f44af4fb0acacf502d5e3e
+      internalID: 58965936359738930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Walk-Sprite-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 433
+        width: 151
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a35d134981bfe5f49bc1b520f79d6790
+      internalID: -4751358931199337005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Walk-Sprite-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 432
+        width: 151
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbc974e614228634095f2813f9ae734f
+      internalID: -26585308034751907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Walk-Sprite-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 432
+        width: 151
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 594f44fefc5b833428f94e8286b2c90a
+      internalID: -2819022481906468753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Walk-Sprite-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 233
+        width: 151
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2686ab67878e5444da8078b513335766
+      internalID: -2543581259487949767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Walk-Sprite-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 233
+        width: 151
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 574b157ce6318174cb5e57991173582a
+      internalID: -7076351733636827914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Walk-Sprite-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 232
+        width: 151
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a97ef15a1fa370f478be9123564b4abc
+      internalID: 8842221759742690125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Walk-Sprite-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 232
+        width: 151
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54f1e82f7c3077e4986f1ab4f939dbb2
+      internalID: 1871561266063954843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Walk-Sprite-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 33
+        width: 151
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86f09ffbf1e208b469328c126080d7fb
+      internalID: 5517344213962208590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Walk-Sprite-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 33
+        width: 151
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e0e663a62ff5f34f8d226f2b8aeb88e
+      internalID: 2421481504883372109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Walk-Sprite-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 32
+        width: 151
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2032e4c61190c5d488c561af56104f6b
+      internalID: 7674467050013319530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Walk-Sprite-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 32
+        width: 151
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d65cd01d9cff5d44b687323d5143098
+      internalID: 8892531615747042293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
