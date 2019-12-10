@@ -19,13 +19,13 @@ public class Boar : MonoBehaviour
     public float attackRange;
     public float damage;
     public float chargeRange;
-
-
+    public float respawnTime;
+     
    // private float dazedTime;
 
     private SpriteRenderer mySpriteRenderer;
 
-
+    private float maxHealth;
     private Animator anim;
 
 
@@ -35,11 +35,23 @@ public class Boar : MonoBehaviour
         anim = GetComponent<Animator>();
         //dazedTime = 2;
         mySpriteRenderer = GetComponent<SpriteRenderer>();
-        
+
+        maxHealth = this.GetComponent<Enemy>().health;
+    }
+
+    IEnumerator Respawn()
+    {
+       
+        yield return new WaitForSeconds(respawnTime);
+        this.GetComponent<Enemy>().health = maxHealth;
+        transform.position = new Vector3(-58, 20, 0);
 
     }
 
-     IEnumerator Wait()
+
+
+
+    IEnumerator Wait()
      {
         anim.SetTrigger("attack");
         moveSpeed = 5;
@@ -94,7 +106,11 @@ public class Boar : MonoBehaviour
                 moveSpeed = 0;
             }
         
-        
+        if(this.GetComponent<Enemy>().health <= 0 )
+        {
+            StartCoroutine("Respawn");
+
+        }
     }
 
 

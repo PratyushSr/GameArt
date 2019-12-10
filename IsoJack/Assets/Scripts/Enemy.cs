@@ -62,7 +62,7 @@ public class Enemy : MonoBehaviour
             anim.SetTrigger("dead");
 
 
-            Destroy(gameObject, 5);
+           // Destroy(gameObject, 5);
 
         }
     }

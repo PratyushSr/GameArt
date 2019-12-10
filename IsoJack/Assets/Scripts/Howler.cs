@@ -19,7 +19,9 @@ public class Howler : MonoBehaviour
     public float projectilRange;
     public GameObject projectile;
 
-    
+
+    public float respawnTime;
+    private float maxHealth;
 
     private SpriteRenderer mySpriteRenderer;
 
@@ -32,12 +34,29 @@ public class Howler : MonoBehaviour
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         anim = GetComponent<Animator>();
         mySpriteRenderer = GetComponent<SpriteRenderer>();
+        maxHealth = this.GetComponent<Enemy>().health;
+    }
+
+
+
+    IEnumerator Respawn()
+    {
+
+        yield return new WaitForSeconds(respawnTime);
+        this.GetComponent<Enemy>().health = maxHealth;
+        transform.position = new Vector3(-10, 41, 0);
 
     }
 
     void Update()
     {
-        
+
+        if (this.GetComponent<Enemy>().health <= 0)
+        {
+            StartCoroutine("Respawn");
+
+        }
+
         if (target != null && target.position.x > transform.position.x)
         {
             mySpriteRenderer.flipX = true;

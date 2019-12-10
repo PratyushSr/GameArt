@@ -20,7 +20,9 @@ public class Bear : MonoBehaviour
     public LayerMask whatIsEnemies;
     public float attackRange;
     public float damage;
-    
+
+    public float respawnTime;
+    private float maxHealth;
 
     private float dazedTime;
 
@@ -35,11 +37,18 @@ public class Bear : MonoBehaviour
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         anim = GetComponent<Animator>();
         mySpriteRenderer = GetComponent<SpriteRenderer>();
-        
+        maxHealth = this.GetComponent<Enemy>().health;
     }
 
 
-    
+    IEnumerator Respawn()
+    {
+
+        yield return new WaitForSeconds(respawnTime);
+        this.GetComponent<Enemy>().health = maxHealth;
+        transform.position = new Vector3(9, 33, 0);
+
+    }
 
     void Update()
     {
@@ -96,6 +105,11 @@ public class Bear : MonoBehaviour
                 attackCd -= Time.deltaTime;
             }
 
+
+        }
+        if (this.GetComponent<Enemy>().health <= 0)
+        {
+            StartCoroutine("Respawn");
 
         }
     }
