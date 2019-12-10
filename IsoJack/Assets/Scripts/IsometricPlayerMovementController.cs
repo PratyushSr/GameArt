@@ -27,17 +27,23 @@ public class IsometricPlayerMovementController : MonoBehaviour
         {
             int x = GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().GetSlotCount(1);
             Debug.Log(x);
-            if(x==1)
+            if (x == 1)
+            {
                 animator.SetBool("attack", true);
-            else if(x==2)
+                animator.SetBool("attack2", false);
+                animator.SetBool("attack3", false);
+            }
+            else if (x == 2)
             {
                 animator.SetBool("attack2", true);
                 animator.SetBool("attack", false);
+                animator.SetBool("attack3", false);
             }
             else if (x == 3)
             {
                 animator.SetBool("attack2", false);
                 animator.SetBool("attack3", true);
+                animator.SetBool("attack", false);
             }
             isbusy = true;
             temptimer = timer;
@@ -71,16 +77,11 @@ public class IsometricPlayerMovementController : MonoBehaviour
             }
             else
             {
+                animator.SetBool("attack", false);
+                animator.SetBool("attack2", false);
+                animator.SetBool("attack3", false);
                 isbusy = false;
             }
         }
-    }
-
-    IEnumerator attack()
-    {
-        isbusy = false;
-        yield return new WaitForSeconds(1);
-        animator.SetBool("attack", false);
-        animator.SetBool("attack", false);
     }
 }
