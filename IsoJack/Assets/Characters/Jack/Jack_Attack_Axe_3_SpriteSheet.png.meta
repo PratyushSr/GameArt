@@ -5,7 +5,25 @@ guid: b61347c24f09429469cdbe57dd162dbe
 guid: 8c48fb45f9983aa45bc0262a40a71b3a
 >>>>>>> Stashed changes
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -6475052911360570923
+    second: Jack_Attack_Axe_3_SpriteSheet_0
+  - first:
+      213: 2042686552462039521
+    second: Jack_Attack_Axe_3_SpriteSheet_1
+  - first:
+      213: 7153693470976950296
+    second: Jack_Attack_Axe_3_SpriteSheet_2
+  - first:
+      213: -4686629963544926109
+    second: Jack_Attack_Axe_3_SpriteSheet_3
+  - first:
+      213: -744951363655469829
+    second: Jack_Attack_Axe_3_SpriteSheet_4
+  - first:
+      213: -5595791328168646375
+    second: Jack_Attack_Axe_3_SpriteSheet_5
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -44,7 +62,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -74,9 +92,147 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Jack_Attack_Axe_3_SpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 246
+        width: 138
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbdd1381f40812247a78a8547a96b2de
+      internalID: -6475052911360570923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jack_Attack_Axe_3_SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 248
+        width: 401
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adcca1e4f55ee8746822d9744b6fd2da
+      internalID: 2042686552462039521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jack_Attack_Axe_3_SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 248
+        width: 405
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fb295bbb5dcf824cb7f5e1c21e1d63c
+      internalID: 7153693470976950296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jack_Attack_Axe_3_SpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 249
+        width: 415
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 555728cf9bcd1b54980d83794a3d63e6
+      internalID: -4686629963544926109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jack_Attack_Axe_3_SpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 1823
+        y: 248
+        width: 425
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3836a4b1c5709e14d84c249a2f4379dc
+      internalID: -744951363655469829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jack_Attack_Axe_3_SpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 2254
+        y: 248
+        width: 439
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85177a6aff16a9744870786e5c38ebb5
+      internalID: -5595791328168646375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

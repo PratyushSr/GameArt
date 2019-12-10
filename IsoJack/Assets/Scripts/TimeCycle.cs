@@ -8,6 +8,9 @@ public class TimeCycle : MonoBehaviour
 
     public float timer = 720;
     public float INTIMERDONTCHANGE;
+    public GameObject SleepImg;
+    private bool teleported;
+
     void Start()
     {
         INTIMERDONTCHANGE = timer;
@@ -48,8 +51,20 @@ public class TimeCycle : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
-            GameManager.instance.updateDays();
-            INTIMERDONTCHANGE = timer;
+            StartCoroutine(Sleep());
         }
+    }
+
+    IEnumerator Sleep()
+    {
+        if (SleepImg == null)
+        {
+
+        }
+        SleepImg.SetActive(true);
+        yield return new WaitForSeconds(0.5f);
+        GameManager.instance.updateDays();
+        INTIMERDONTCHANGE = timer;
+        SleepImg.SetActive(false);
     }
 }
