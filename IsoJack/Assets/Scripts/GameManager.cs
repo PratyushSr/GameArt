@@ -93,13 +93,14 @@ public class GameManager : MonoBehaviour
         }
 
         //TEMP INV TESTING CODE
-        /*
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        
+        /*if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             Debug.Log("ADDED AXE");
             GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().AddItem(1, 1);
-        }
-        */if (Input.GetKeyDown(KeyCode.Alpha2))
+            Debug.Log("Item =" + GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().GetSlotCount(1));
+        }*/
+        if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             Debug.Log("ADDED FOOD");
             GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().AddItem(2, 1);

@@ -247,10 +247,10 @@ public class SetConversationTree : MonoBehaviour
                     }
                     else if (tradeType == 6) //1 Axe Upgrade for 300 coins
                     {
-                        if (GameManager.instance.coin >= 300 && inventory.GetComponent<Inventory>().GetSlotCount(1) < 3)
+                        if (GameManager.instance.coin >= 300 && inventory.GetComponent<Inventory>().GetSlotCount(1) <= 3)
                         {
                             tp = int.Parse(GetSection(section, 1));
-                            GameManager.instance.updateCount(GameManager.instance.coinCount, ref GameManager.instance.coin, -300);
+                            GameManager.instance.updateCount(GameManager.instance.coinCount, ref GameManager.instance.coin, -1);
                             inventory.GetComponent<Inventory>().AddItem(1, 1);
                         }
                         else
