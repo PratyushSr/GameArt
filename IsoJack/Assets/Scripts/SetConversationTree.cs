@@ -157,14 +157,14 @@ public class SetConversationTree : MonoBehaviour
                     string section = GetSection(ChoiceWarps[tp], choice-1).Replace(',', ';');
                     int tradeType = int.Parse(GetSection(section, 0));
                     Debug.Log("Trade Type: " + tradeType.ToString());
-                    if (tradeType == 0) //20 Coins for 1 Wood
+                    if (tradeType == 0) //100 Coins for 5 Wood
                     {
                         if (GameManager.instance.wood >= 1)
                         {
                             tp = int.Parse(GetSection(section, 1));
                             Debug.Log("This stuff def is running");
-                            GameManager.instance.updateCount(GameManager.instance.woodCount, ref GameManager.instance.wood, -1);
-                            GameManager.instance.updateCount(GameManager.instance.coinCount, ref GameManager.instance.coin, 20);
+                            GameManager.instance.updateCount(GameManager.instance.woodCount, ref GameManager.instance.wood, -5);
+                            GameManager.instance.updateCount(GameManager.instance.coinCount, ref GameManager.instance.coin, 100);
                         }
                         else
                             tp = int.Parse(GetSection(section, 2));
@@ -182,25 +182,25 @@ public class SetConversationTree : MonoBehaviour
                             tp = int.Parse(GetSection(section, 2));
 
                     }
-                    else if (tradeType == 2) //50 Coins for 1 Raw Meat
+                    else if (tradeType == 2) //20 Coins for 1 Raw Meat
                     {
-                        if (inventory.GetComponent<Inventory>().GetSlotCount(3) >= 1)
+                        if (inventory.GetComponent<Inventory>().GetSlotCount(4) >= 1)
                         {
                             tp = int.Parse(GetSection(section, 1));
-                            GameManager.instance.updateCount(GameManager.instance.coinCount, ref GameManager.instance.coin, 50);
-                            inventory.GetComponent<Inventory>().RemoveItem(3, 1);
+                            GameManager.instance.updateCount(GameManager.instance.coinCount, ref GameManager.instance.coin, 20);
+                            inventory.GetComponent<Inventory>().RemoveItem(4, 1);
                         }
                         else
                             tp = int.Parse(GetSection(section, 2));
 
                     }
-                    else if (tradeType == 3) //50 Coins for 1 Bone
+                    else if (tradeType == 3) //10 Coins for 1 Bone
                     {
-                        if (inventory.GetComponent<Inventory>().GetSlotCount(4) >= 1)
+                        if (inventory.GetComponent<Inventory>().GetSlotCount(5) >= 1)
                         {
                             tp = int.Parse(GetSection(section, 1));
-                            GameManager.instance.updateCount(GameManager.instance.coinCount, ref GameManager.instance.coin, 50);
-                            inventory.GetComponent<Inventory>().RemoveItem(4, 1);
+                            GameManager.instance.updateCount(GameManager.instance.coinCount, ref GameManager.instance.coin, 10);
+                            inventory.GetComponent<Inventory>().RemoveItem(5, 1);
                         }
                         else
                             tp = int.Parse(GetSection(section, 2));
@@ -247,10 +247,10 @@ public class SetConversationTree : MonoBehaviour
                     }
                     else if (tradeType == 6) //1 Axe Upgrade for 300 coins
                     {
-                        if (GameManager.instance.coin >= 300 && inventory.GetComponent<Inventory>().GetSlotCount(1) < 3)
+                        if (GameManager.instance.coin >= 300 && inventory.GetComponent<Inventory>().GetSlotCount(1) <= 3)
                         {
                             tp = int.Parse(GetSection(section, 1));
-                            GameManager.instance.updateCount(GameManager.instance.coinCount, ref GameManager.instance.coin, -300);
+                            GameManager.instance.updateCount(GameManager.instance.coinCount, ref GameManager.instance.coin, -1);
                             inventory.GetComponent<Inventory>().AddItem(1, 1);
                         }
                         else
@@ -259,7 +259,7 @@ public class SetConversationTree : MonoBehaviour
                     }
                     else if (tradeType == 7) //Gain Doggo Attractor
                     {
-                        inventory.GetComponent<Inventory>().AddItem(5, 1);
+                        inventory.GetComponent<Inventory>().AddItem(6, 1);
                         tp = int.Parse(GetSection(section, 1));
                     }
                     else if (tradeType == 8) //Give Food to Tailor
