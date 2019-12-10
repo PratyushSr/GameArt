@@ -22,7 +22,7 @@ public class ActivatePicture : MonoBehaviour
             pictureActive = false;
             pictureOverlay.SetActive(false);
         }
-        else if (!pictureActive && Input.GetKeyDown(KeyCode.Space) && Vector2.Distance(objectToTrack.transform.position, transform.position) < 5)
+        else if (!pictureActive && Input.GetKeyDown(KeyCode.Space) && Vector2.Distance(objectToTrack.transform.position, transform.position) < 2)
         {
             pictureActive = true;
             pictureOverlay.SetActive(true);
