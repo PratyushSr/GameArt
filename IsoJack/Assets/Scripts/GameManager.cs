@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour
     public GameObject Barricades;
     public int GuardTowerUpgrade;
     public int BarricadesUpgrade;
+    public bool DogToyOut;
 
 
     void Awake()
@@ -59,6 +60,8 @@ public class GameManager : MonoBehaviour
         Barricades.SetActive(false);
         GuardTowerUpgrade = 0;
         BarricadesUpgrade = 0;
+
+        DogToyOut = false;
 
 
     }
@@ -90,16 +93,17 @@ public class GameManager : MonoBehaviour
         }
 
         //TEMP INV TESTING CODE
+        /*
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             Debug.Log("ADDED AXE");
             GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().AddItem(1, 1);
         }
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        */if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             Debug.Log("ADDED FOOD");
             GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().AddItem(2, 1);
-        }
+        }/*
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             Debug.Log("ADDED RAW MEET");
@@ -141,6 +145,16 @@ public class GameManager : MonoBehaviour
             Debug.Log("REMOVED QUEST ITEM");
             GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().RemoveItem(5, 1);
         }
+        */
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            if (GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().GetSlotCount(5) >= 1)
+            {
+                DogToyOut = !DogToyOut;
+                Debug.Log("Toggled Dog Toy");
+            }
+        }
+
 
     }
 
