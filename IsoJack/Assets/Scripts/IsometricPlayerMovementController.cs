@@ -25,7 +25,13 @@ public class IsometricPlayerMovementController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            animator.SetBool("attack", true);
+            int x = GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().GetSlotCount(1);
+            if(x==1)
+                animator.SetBool("attack", true);
+            else if(x==2)
+                animator.SetBool("attack2",true);
+            else if (x == 3)
+                animator.SetBool("attack3", true);
             isbusy = true;
             temptimer = timer;
         }
