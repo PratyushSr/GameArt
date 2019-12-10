@@ -12,6 +12,8 @@ public class Enemy : MonoBehaviour
     public float stopDistance;
     private Transform target;
     public CharTalk talk;
+    [Tooltip("This is what it drops.... woo")]
+    public int DropType;
 
 
     //combat stuff
@@ -26,7 +28,7 @@ public class Enemy : MonoBehaviour
 
 
     private Animator anim;
-
+    private bool isDead = false;
 
     void Start()
     {
@@ -57,10 +59,30 @@ public class Enemy : MonoBehaviour
 
         if (health <= 0)
         {
-
+            Debug.Log("I AM DEAD! Not big souprise");
             moveSpeed = 0;
             anim.SetTrigger("dead");
 
+            if (!isDead)
+            {
+                isDead = true;
+
+                switch (DropType)
+                {
+                    case 1: //sabear = 3 raw meat and 1 bone
+                        GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().AddItem(4, 3);
+                        GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().AddItem(5, 1);
+                        break;
+                    case 2: //boar = 1 raw meat and 1 bone
+                        GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().AddItem(4, 1);
+                        GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().AddItem(5, 1);
+                        break;
+                    case 3: //howler = 2 raw meat and 1 bone
+                        GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().AddItem(4, 2);
+                        GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().AddItem(5, 1);
+                        break;
+                }
+            }
 
            // Destroy(gameObject, 5);
 
@@ -77,7 +99,7 @@ public class Enemy : MonoBehaviour
 
  
         
-            health -= damage;
+        health -= damage;
 
         //knockback
         Vector2 difference = transform.position - target.transform.position;

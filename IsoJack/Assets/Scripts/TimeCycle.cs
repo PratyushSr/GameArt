@@ -10,6 +10,7 @@ public class TimeCycle : MonoBehaviour
     public float INTIMERDONTCHANGE;
     public GameObject SleepImg;
     private bool teleported;
+    public GameObject sleepQuestion;
 
     void Start()
     {
@@ -51,12 +52,18 @@ public class TimeCycle : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
-            StartCoroutine(Sleep());
+            sleepQuestion.SetActive(true);
         }
+    }
+
+    public void goToSleep()
+    {
+        StartCoroutine(Sleep());
     }
 
     IEnumerator Sleep()
     {
+
         if (SleepImg == null)
         {
 

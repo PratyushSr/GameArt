@@ -27,6 +27,8 @@ public class Inventory : MonoBehaviour
             amountInSlot[i] = 0;
         }
         AddItem(1, 1);
+        AddItem(2, 5);
+        AddItem(3, 2);
     }
 
     public void AddItem(int slot, int amount)

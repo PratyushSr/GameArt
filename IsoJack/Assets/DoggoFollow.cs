@@ -6,21 +6,15 @@ public class DoggoFollow : MonoBehaviour
 {
     [Tooltip("You better put the doggos owner here! Doggo Demands it!")]
     public GameObject GiveMeMyOwner;
-    [Tooltip("I'm a good boi! This is when I stand still and await your return")]
-    public Sprite IStand;
-    [Tooltip("This is when I walk to you, my loyal friend")]
-    public Sprite IWalk;
 
     private bool whereMaLooking;
     private bool dogToy____OHBOYOHBOYOHBOY;
-    private bool meAnimationIsRunnin;
     // Start is called before the first frame update
     void Start()
     {
         GetComponent<EnemyFollow>().enabled = false;
         dogToy____OHBOYOHBOYOHBOY = false;
         whereMaLooking = false;
-        meAnimationIsRunnin = false;
     }
 
     // Update is called once per frame
@@ -37,16 +31,12 @@ public class DoggoFollow : MonoBehaviour
             GetComponent<EnemyFollow>().enabled = true;
         }
 
-        if (!meAnimationIsRunnin && GetComponent<EnemyFollow>().IsWalking)
+        if (!GetComponent<Animator>().GetBool("IsWalking") && GetComponent<EnemyFollow>().IsWalking)
         {
-            Debug.Log("HE BE Runnin");
-            meAnimationIsRunnin = true;
             GetComponent<Animator>().SetBool("IsWalking", true);
         }
-        else if (meAnimationIsRunnin && !GetComponent<EnemyFollow>().IsWalking)
+        else if (GetComponent<Animator>().GetBool("IsWalking") && !GetComponent<EnemyFollow>().IsWalking)
         {
-            Debug.Log("He be Standing");
-            meAnimationIsRunnin = false;
             GetComponent<Animator>().SetBool("IsWalking", false);
         }
 

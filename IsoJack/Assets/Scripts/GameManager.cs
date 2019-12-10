@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
 {
 
     public static GameManager instance = null;
+    public GameObject Player;
     public int wood ;
     public int coin;
     public int days;
@@ -23,6 +24,7 @@ public class GameManager : MonoBehaviour
     public Text meatCount;
     public Text daysRemain;
     public Text locationTxt;
+
     public static bool isPaused = false;
     public GameObject pauseMenuUI;
     public Animator locationAni;
@@ -37,6 +39,13 @@ public class GameManager : MonoBehaviour
     public int BarricadesUpgrade;
     public bool DogToyOut;
 
+    public Text hpText;
+    public GameObject[] hpBarArray;
+    public Sprite[] hpIndicatorSprites;
+    public GameObject HPFullText;
+    public AudioSource pokerChips;
+
+    private GameObject finalBoss;
 
     void Awake()
     {
@@ -53,6 +62,11 @@ public class GameManager : MonoBehaviour
         timeIndicator.sprite = timeOfDay[0];
         isDay = true;
         hp = 100;
+        hpText.text = hp.ToString();
+
+        //GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().AddItem(2, 1);
+        //GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().AddItem(3, 1);
+
 
         GuardTowers = GameObject.Find("IsoJack_Overworld/Buildings/AllGuardTowers");
         Barricades = GameObject.Find("IsoJack_Overworld/Buildings/Wall_Barricade");
@@ -62,6 +76,7 @@ public class GameManager : MonoBehaviour
         BarricadesUpgrade = 0;
 
         DogToyOut = false;
+        finalBoss = GameObject.Find("IsoJack_Overworld/NPCs/FinalBoss");
 
 
     }
@@ -77,10 +92,6 @@ public class GameManager : MonoBehaviour
                 Pause();
         }
 
-        if (Input.GetKeyDown(KeyCode.L))
-            locationPopIn();
-        if (Input.GetKeyDown(KeyCode.C))
-            changeIndicator();
         if(inConversation == true)
         {
             Time.timeScale = 0f;
@@ -92,17 +103,47 @@ public class GameManager : MonoBehaviour
             isPaused = false;
         }
 
+        if (Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Keypad2))
+        {
+            if (hp < 100 && GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().GetSlotCount(2) > 0) //+50 HP
+            {
+                GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().RemoveItem(2, 1);
+                updateHP(50);
+            }
+            else
+                StartCoroutine(triggerHPText());
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Keypad3))//+20 HP
+        {
+            if (hp < 100 && GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().GetSlotCount(3) > 0) //+50 HP
+            {
+                GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().RemoveItem(3, 1);
+                updateHP(20);
+            }
+            else
+                StartCoroutine(triggerHPText());
+
+        }
+
+        IEnumerator triggerHPText()
+        {
+            
+            HPFullText.SetActive(true);
+            yield return new WaitForSeconds(2f);
+            HPFullText.SetActive(false);
+        }
+
         //TEMP INV TESTING CODE
-        
+
         /*if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             Debug.Log("ADDED AXE");
             GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().AddItem(1, 1);
             Debug.Log("Item =" + GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().GetSlotCount(1));
-        }*/
+        }
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            Debug.Log("ADDED FOOD");
+            Debug.Log("ADDED FOODFOOD");
             GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().AddItem(2, 1);
         }
         if (Input.GetKeyDown(KeyCode.Alpha3))
@@ -120,7 +161,7 @@ public class GameManager : MonoBehaviour
             Debug.Log("ADDED BONES");
             GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().AddItem(5, 1);
         }
-        /*if (Input.GetKeyDown(KeyCode.Alpha6))
+        if (Input.GetKeyDown(KeyCode.Alpha6))
         {
             Debug.Log("ADDED QUEST ITEM");
             GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().AddItem(6, 1);
@@ -159,12 +200,32 @@ public class GameManager : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.Alpha6))
         {
+            pokerChips.Play();
             if (GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().GetSlotCount(6) >= 1)
             {
                 DogToyOut = !DogToyOut;
                 Debug.Log("Toggled Dog Toy");
+                pokerChips.Play();
             }
         }
+
+
+        if(days <= 0)
+        {
+            Debug.Log("Baby your time is up, trigger endcutscene here");
+            finalBoss.SetActive(true);
+            StartCoroutine(TeleportFinalBoss());
+        }
+
+    }
+
+    IEnumerator TeleportFinalBoss()
+    {
+        
+        Player.transform.position = new Vector2((float)26.07, (float)5.06);
+        yield return new WaitForSeconds(0.5f);
+        GameManager.instance.locationPopIn("Outskirts");
+        yield return new WaitForSeconds(1f);
 
 
     }
@@ -182,16 +243,12 @@ public class GameManager : MonoBehaviour
         daysRemain.text = days.ToString() + " Days Remain";
     }
 
-    public void locationPopIn()
-    {
-        locationTxt.text = "Iso Village"; 
-        locationAni.SetTrigger("Active");
-    }
-
+   
     public void locationPopIn(string location)
     {
         locationTxt.text = location;
-        locationAni.SetTrigger("Active");
+        //locationAni.SetTrigger("Active");
+        locationAni.Play("locationPopIn", -1, 0f);
     }
 
 
@@ -215,6 +272,110 @@ public class GameManager : MonoBehaviour
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         isPaused = true;
+    }
+
+    public void updateHP(int amount) //If the player is taking damage, amount should be negative!!
+    {
+        hp += amount;
+        if (hp <= 0)
+            hp = 0;
+        else if (hp >= 100)
+            hp = 100;
+        hpText.text = hp.ToString();
+        if (amount < 0)
+            depleateBar(hp);
+        else if (amount > 0)
+            incrementeBar(hp);
+    }
+
+
+
+    private void depleateBar(int amount)
+    {
+        int i = 100;
+        while (i >= amount)
+        {
+            if (amount < 10)
+            {
+                if (amount < 5)
+                    hpBarArray[0].SetActive(false);
+                else
+                    hpBarArray[0].GetComponent<Image>().sprite = hpIndicatorSprites[1];
+            }
+            if (amount < 20)
+                decrementeImage(1, amount, 15);
+            if (amount < 30)
+                decrementeImage(2, amount, 25);
+            if (amount < 40)
+                decrementeImage(3, amount, 35);
+            if (amount < 50)
+                decrementeImage(4, amount, 45);
+            if (amount < 60)
+                decrementeImage(5, amount, 55);
+            if (amount < 70)
+                decrementeImage(6, amount, 65);
+            if (amount < 80)
+                decrementeImage(7, amount, 75);
+            if (amount < 90)
+                decrementeImage(8, amount, 85);
+            if (amount < 100)
+                decrementeImage(9, amount, 95);
+            i -= 10;
+        }
+
+    }
+
+    private void incrementeBar(int amount)
+    {
+        for (int i = 0; i < 10; i++)
+        {
+            if (i == 0)
+            {
+                hpBarArray[0].SetActive(true);
+                if (amount < 10)
+                    hpBarArray[0].GetComponent<Image>().sprite = hpIndicatorSprites[1];
+                else
+                    hpBarArray[0].GetComponent<Image>().sprite = hpIndicatorSprites[0];
+            }
+            else
+                if ((i * 10) < amount)
+                incrementeImage(i, amount, ((i * 10) + 10));
+        }
+    }
+
+
+    private void decrementeImage(int index, int amount, int condi)
+    {
+
+        GameObject left = hpBarArray[index].transform.GetChild(0).gameObject;
+        GameObject right = hpBarArray[index].transform.GetChild(1).gameObject;
+
+        left.GetComponent<Image>().sprite = hpIndicatorSprites[2];
+        right.GetComponent<Image>().sprite = hpIndicatorSprites[2];
+
+        if (amount < condi)
+            hpBarArray[index].SetActive(false);
+        else
+        {
+            left.GetComponent<Image>().sprite = hpIndicatorSprites[1];
+            right.GetComponent<Image>().sprite = hpIndicatorSprites[1];
+        }
+    }
+
+
+    private void incrementeImage(int index, int amount, int condi)
+    {
+        hpBarArray[index].SetActive(true);
+        GameObject left = hpBarArray[index].transform.GetChild(0).gameObject;
+        GameObject right = hpBarArray[index].transform.GetChild(1).gameObject;
+        left.GetComponent<Image>().sprite = hpIndicatorSprites[0];
+        right.GetComponent<Image>().sprite = hpIndicatorSprites[0];
+        if (amount < condi)
+        {
+            left.GetComponent<Image>().sprite = hpIndicatorSprites[1];
+            right.GetComponent<Image>().sprite = hpIndicatorSprites[1];
+        }
+
     }
 
     public void LoadSettings()
@@ -256,7 +417,7 @@ public class GameManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene arg0, LoadSceneMode arg1)
     {
-        locationPopIn();
+        locationPopIn("Jack's House");
     }
 
     public void LoadMain()

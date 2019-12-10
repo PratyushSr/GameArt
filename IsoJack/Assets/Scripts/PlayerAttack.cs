@@ -11,15 +11,16 @@ public class PlayerAttack : MonoBehaviour
     public LayerMask whatIsEnemies;
     public float attackRange;
     public float damage;
+    public GameObject blackoutScreen;
 
-    public float health;
-    private float maxHealth;
+    //public float health;
+    private int maxHealth;
 
     
 
     private void Start()
     {
-        maxHealth = health;
+        maxHealth = GameManager.instance.hp;
         transform.position = new Vector3(-94, 30, 0);
         
 
@@ -50,15 +51,30 @@ public class PlayerAttack : MonoBehaviour
         {
             attackCd -= Time.deltaTime;
         }
-        if (health <= 0)
+        if (GameManager.instance.hp <= 0)
         {
-            health = maxHealth;
-            transform.position = new Vector3(-94, 30, 0);
+            GameManager.instance.updateHP(maxHealth);
+            //transform.position = new Vector3(-94, 30, 0);
+            StartCoroutine(move());
 
         }
 
     }
 
+    IEnumerator move()
+    {
+        if (blackoutScreen == null)
+        {
+            //donothing
+        }
+        blackoutScreen.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        transform.position = new Vector3(-94, 30, 0);
+        GameManager.instance.updateDays();
+        yield return new WaitForSeconds(3f);
+        blackoutScreen.SetActive(false);
+        GameManager.instance.locationPopIn("Jack's House");
+    }
 
 
 
@@ -72,9 +88,11 @@ public class PlayerAttack : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+        int dam = (int)damage * -1;
+        GameManager.instance.updateHP(dam);
+        //health -= damage;
+        Debug.Log("Player takes damage!!! HP is now " + GameManager.instance.hp.ToString());
 
-        health -= damage;
-        Debug.Log("Player takes damage!!!");
 
     }
 
