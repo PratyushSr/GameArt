@@ -184,11 +184,13 @@ public class SetConversationTree : MonoBehaviour
                     }
                     else if (tradeType == 2) //50 Coins for 1 Raw Meat
                     {
-                        if (inventory.GetComponent<Inventory>().GetSlotCount(3) >= 1) {
+                        if (inventory.GetComponent<Inventory>().GetSlotCount(3) >= 1)
+                        {
                             tp = int.Parse(GetSection(section, 1));
                             GameManager.instance.updateCount(GameManager.instance.coinCount, ref GameManager.instance.coin, 50);
                             inventory.GetComponent<Inventory>().RemoveItem(3, 1);
-                        } else
+                        }
+                        else
                             tp = int.Parse(GetSection(section, 2));
 
                     }
@@ -211,7 +213,7 @@ public class SetConversationTree : MonoBehaviour
                             tp = int.Parse(GetSection(section, 1));
                             GameManager.instance.updateCount(GameManager.instance.coinCount, ref GameManager.instance.coin, -200);
                             GameManager.instance.BarricadesUpgrade++;
-                            if(GameManager.instance.BarricadesUpgrade == 1)
+                            if (GameManager.instance.BarricadesUpgrade == 1)
                             {
                                 Debug.Log("Adding Mini Barricade");
                                 GameManager.instance.Barricades.SetActive(true);
@@ -254,6 +256,23 @@ public class SetConversationTree : MonoBehaviour
                         else
                             tp = int.Parse(GetSection(section, 2));
 
+                    }
+                    else if (tradeType == 7) //Gain Doggo Attractor
+                    {
+                        inventory.GetComponent<Inventory>().AddItem(5, 1);
+                        tp = int.Parse(GetSection(section, 1));
+                    }
+                    else if (tradeType == 8) //Give Food to Tailor
+                    {
+                        if (inventory.GetComponent<Inventory>().GetSlotCount(2) >= 1)
+                        {
+                            inventory.GetComponent<Inventory>().RemoveItem(2, 1);
+                            tp = int.Parse(GetSection(section, 1));
+                        }
+                        else
+                        {
+                            tp = int.Parse(GetSection(section, 2));
+                        }
                     }
                     else if (tradeType == -1)
                     {

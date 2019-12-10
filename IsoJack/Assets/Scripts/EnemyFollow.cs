@@ -11,7 +11,7 @@ public class EnemyFollow : MonoBehaviour
     public float moveSpeed;
     public float stopDistance;
     public bool IsWalking=false;
-    private Transform target;
+    public Transform target = null;
     public CharTalk talk;
 
    
