@@ -21,8 +21,7 @@ public class IsometricCharacterRenderer : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
-            animator.Play("Jack_Attack");
+
     }
 
     public void SetDirection(Vector2 direction){
@@ -48,7 +47,9 @@ public class IsometricCharacterRenderer : MonoBehaviour
 
         //tell the animator to play the requested state
         animator.Play(directionArray[lastDirection]);
+
     }
+
 
     //helper functions
 
@@ -76,7 +77,6 @@ public class IsometricCharacterRenderer : MonoBehaviour
         //round it, and we have the answer!
         return Mathf.FloorToInt(stepCount);
     }
-
 
 
 
