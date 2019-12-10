@@ -8,7 +8,8 @@ using UnityEngine.Audio;
 public class Settings : MonoBehaviour
 {
     public AudioMixer audioMixer;
-    public float brightness = 0.5f;
+    //public float brightness = 0.5f;
+    public Light brightness;
 
     public void SetMainVol(Slider slider)
     {
@@ -31,6 +32,7 @@ public class Settings : MonoBehaviour
     public void SetBrightness(Slider slider)
     {
         Debug.Log("Brightness set to: " + slider.value);
-        RenderSettings.ambientLight = new Color(slider.value, slider.value, slider.value, 1);
+        //RenderSettings.ambientLight = new Color(slider.value, slider.value, slider.value, 1);
+        brightness.intensity = slider.value;
     }
 }

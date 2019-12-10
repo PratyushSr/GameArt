@@ -1,0 +1,919 @@
+fileFormatVersion: 2
+guid: 032850607aa141b4c9c52d96852b4477
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 773134532293609487
+    second: Boar-Charge-Sprite_0
+  - first:
+      213: -5732826700465115277
+    second: Boar-Charge-Sprite_1
+  - first:
+      213: 4961234261241886413
+    second: Boar-Charge-Sprite_2
+  - first:
+      213: 8705414765190278059
+    second: Boar-Charge-Sprite_3
+  - first:
+      213: -5021639551796531665
+    second: Boar-Charge-Sprite_4
+  - first:
+      213: -434089382711673207
+    second: Boar-Charge-Sprite_5
+  - first:
+      213: 3866521759178550082
+    second: Boar-Charge-Sprite_6
+  - first:
+      213: -230362179740795677
+    second: Boar-Charge-Sprite_7
+  - first:
+      213: 2477524307011997983
+    second: Boar-Charge-Sprite_8
+  - first:
+      213: 820057282902032344
+    second: Boar-Charge-Sprite_9
+  - first:
+      213: -1321276977899315508
+    second: Boar-Charge-Sprite_10
+  - first:
+      213: 9002403539499029561
+    second: Boar-Charge-Sprite_11
+  - first:
+      213: 4472768715512982711
+    second: Boar-Charge-Sprite_12
+  - first:
+      213: -5372706547313991414
+    second: Boar-Charge-Sprite_13
+  - first:
+      213: -8815259401803833821
+    second: Boar-Charge-Sprite_14
+  - first:
+      213: 879309119226783796
+    second: Boar-Charge-Sprite_15
+  - first:
+      213: -8325373115188138657
+    second: Boar-Charge-Sprite_16
+  - first:
+      213: -3755558593801988829
+    second: Boar-Charge-Sprite_17
+  - first:
+      213: -2671729813445369854
+    second: Boar-Charge-Sprite_18
+  - first:
+      213: -9140082718254277277
+    second: Boar-Charge-Sprite_19
+  - first:
+      213: -462741402815404585
+    second: Boar-Charge-Sprite_20
+  - first:
+      213: -925646744408057993
+    second: Boar-Charge-Sprite_21
+  - first:
+      213: 4780475095622843066
+    second: Boar-Charge-Sprite_22
+  - first:
+      213: -5880790984947372975
+    second: Boar-Charge-Sprite_23
+  - first:
+      213: 6171192399876140515
+    second: Boar-Charge-Sprite_24
+  - first:
+      213: -7841419653532302772
+    second: Boar-Charge-Sprite_25
+  - first:
+      213: 8884340958211967824
+    second: Boar-Charge-Sprite_26
+  - first:
+      213: 8710147687068105760
+    second: Boar-Charge-Sprite_27
+  - first:
+      213: -1659221184083186704
+    second: Boar-Charge-Sprite_28
+  - first:
+      213: -959252297284953565
+    second: Boar-Charge-Sprite_29
+  - first:
+      213: -1958793646953542803
+    second: Boar-Charge-Sprite_30
+  - first:
+      213: 2683496814798275911
+    second: Boar-Charge-Sprite_31
+  - first:
+      213: -8335479613280122611
+    second: Boar-Charge-Sprite_32
+  - first:
+      213: -3458849714579773409
+    second: Boar-Charge-Sprite_33
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Boar-Charge-Sprite_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 833
+        width: 151
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 040e027c59557c242a38d1b34e716ae7
+      internalID: 773134532293609487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Charge-Sprite_1
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 833
+        width: 151
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4bd9024554e86f45bd744ccace05a9d
+      internalID: -5732826700465115277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Charge-Sprite_2
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 832
+        width: 151
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd5535b76525ede4fb44d091684b4f1c
+      internalID: 4961234261241886413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Charge-Sprite_3
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 832
+        width: 151
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea57cf80fb900624680cfba87d52f099
+      internalID: 8705414765190278059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Charge-Sprite_4
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 833
+        width: 176
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a563028db6e7dc47a7b1285c91d9be3
+      internalID: -5021639551796531665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Charge-Sprite_5
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 828
+        width: 171
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e64f694d199d5a74cb46ca37a6694523
+      internalID: -434089382711673207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Charge-Sprite_6
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 825
+        width: 170
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 272a8a603d56feb49ae8ff59c2fa146d
+      internalID: 3866521759178550082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Charge-Sprite_7
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 627
+        width: 172
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 641619ee2b75ca4429b8ae78574894a4
+      internalID: -230362179740795677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Charge-Sprite_8
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 621
+        width: 174
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a57231ed0feec59409d0ee5098ac0104
+      internalID: 2477524307011997983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Charge-Sprite_9
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 630
+        width: 169
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8b685fabfac2304a81b0dcad895b1b9
+      internalID: 820057282902032344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Charge-Sprite_10
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 627
+        width: 176
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fd643c10465d564289e1ec76e35ff34
+      internalID: -1321276977899315508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Charge-Sprite_11
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 627
+        width: 176
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22854628951d5e34f862d2f1e2c806b6
+      internalID: 9002403539499029561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Charge-Sprite_12
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 629
+        width: 175
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9401e1e28433df34c98c5eee936c8915
+      internalID: 4472768715512982711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Charge-Sprite_13
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 631
+        width: 173
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ac49e6517a827b4c83e03f65b2c1cb9
+      internalID: -5372706547313991414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Charge-Sprite_14
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 423
+        width: 176
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 311d74a7687a1c5498a4c7f7d928076d
+      internalID: -8815259401803833821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Charge-Sprite_15
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 427
+        width: 176
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 161159798e0929c42926a0d124af6774
+      internalID: 879309119226783796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Charge-Sprite_16
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 427
+        width: 178
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c1c15c9aa89184479c13c6835ba39a1
+      internalID: -8325373115188138657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Charge-Sprite_17
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 427
+        width: 178
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd58bed3a5b564e48b43498bae86bb80
+      internalID: -3755558593801988829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Charge-Sprite_18
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 427
+        width: 179
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 386b3739d79fff747a6b79e996f036cb
+      internalID: -2671729813445369854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Charge-Sprite_19
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 427
+        width: 179
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b94b56d32aee42d438abdd2fd1e4b14f
+      internalID: -9140082718254277277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Charge-Sprite_20
+      rect:
+        serializedVersion: 2
+        x: 1222
+        y: 427
+        width: 178
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3350a20256facce4f8bd8cdd2f7a91f8
+      internalID: -462741402815404585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Charge-Sprite_21
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 227
+        width: 179
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c550fcee463f8ab4dae1af1f75cd90e4
+      internalID: -925646744408057993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Charge-Sprite_22
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 227
+        width: 179
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a905e781af95ef48b06bd7b7dade29d
+      internalID: 4780475095622843066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Charge-Sprite_23
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 227
+        width: 179
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca74bba2162d15a4d94eaeefc885686d
+      internalID: -5880790984947372975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Charge-Sprite_24
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 227
+        width: 179
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9208a5d4f3562f647934673dd4dadee6
+      internalID: 6171192399876140515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Charge-Sprite_25
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 227
+        width: 179
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba57e6e0bc2f5874dafa7f3674fb1c19
+      internalID: -7841419653532302772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Charge-Sprite_26
+      rect:
+        serializedVersion: 2
+        x: 1021
+        y: 227
+        width: 179
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac5a5d4645aacf549a7806cca6fc9195
+      internalID: 8884340958211967824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Charge-Sprite_27
+      rect:
+        serializedVersion: 2
+        x: 1222
+        y: 227
+        width: 178
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f42ca64f03a2fb46a2200463c1cfbbf
+      internalID: 8710147687068105760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Charge-Sprite_28
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 27
+        width: 179
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcffbf94264218047b61c9ef9787cf4d
+      internalID: -1659221184083186704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Charge-Sprite_29
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 27
+        width: 179
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dc5e0e7996e8814e9c324670dc82316
+      internalID: -959252297284953565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Charge-Sprite_30
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 27
+        width: 179
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9031e40d900176147895e2071bb934a9
+      internalID: -1958793646953542803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Charge-Sprite_31
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 27
+        width: 179
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e41f9b5b1635c194c9d556300290bdb6
+      internalID: 2683496814798275911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Charge-Sprite_32
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 32
+        width: 153
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5f0be1d20e422e40ae1356cd0adf179
+      internalID: -8335479613280122611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar-Charge-Sprite_33
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 32
+        width: 153
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ddc7de653eaa6a4d87d226a3b241fcf
+      internalID: -3458849714579773409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
