@@ -15,10 +15,14 @@ public class PlayerAttack : MonoBehaviour
     public float health;
     private float maxHealth;
 
+    
+
     private void Start()
     {
         maxHealth = health;
         transform.position = new Vector3(-94, 30, 0);
+        
+
     }
 
     void Update()
@@ -28,7 +32,9 @@ public class PlayerAttack : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Q))
             {
-                Debug.Log("f is pressed");
+               
+                
+                Debug.Log("q is pressed");
                 Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
                 for (int i = 0; i < enemiesToDamage.Length; i++)
                 {
