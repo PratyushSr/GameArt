@@ -1,0 +1,535 @@
+fileFormatVersion: 2
+guid: 36c7b22d72a3387408c727aa712cbc36
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3475690690207808381
+    second: Howler-Attack-Sprite-Sheet_0
+  - first:
+      213: 7203811395477400059
+    second: Howler-Attack-Sprite-Sheet_1
+  - first:
+      213: 4827340349723844701
+    second: Howler-Attack-Sprite-Sheet_2
+  - first:
+      213: -8168624139751670264
+    second: Howler-Attack-Sprite-Sheet_3
+  - first:
+      213: 46173534828435667
+    second: Howler-Attack-Sprite-Sheet_4
+  - first:
+      213: -7092963943982645677
+    second: Howler-Attack-Sprite-Sheet_5
+  - first:
+      213: 878787826622388837
+    second: Howler-Attack-Sprite-Sheet_6
+  - first:
+      213: -4281106683028669544
+    second: Howler-Attack-Sprite-Sheet_7
+  - first:
+      213: 7472061687863393660
+    second: Howler-Attack-Sprite-Sheet_8
+  - first:
+      213: -6726250721967979162
+    second: Howler-Attack-Sprite-Sheet_9
+  - first:
+      213: -675019459714442628
+    second: Howler-Attack-Sprite-Sheet_10
+  - first:
+      213: 6571673619381832260
+    second: Howler-Attack-Sprite-Sheet_11
+  - first:
+      213: -6203361176490267596
+    second: Howler-Attack-Sprite-Sheet_12
+  - first:
+      213: 4414581185666246741
+    second: Howler-Attack-Sprite-Sheet_13
+  - first:
+      213: 8156780242964343357
+    second: Howler-Attack-Sprite-Sheet_14
+  - first:
+      213: -6098158820357633256
+    second: Howler-Attack-Sprite-Sheet_15
+  - first:
+      213: -8605814568604039131
+    second: Howler-Attack-Sprite-Sheet_16
+  - first:
+      213: -3331756319031560545
+    second: Howler-Attack-Sprite-Sheet_17
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Howler-Attack-Sprite-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 1203
+        width: 192
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26e9022c99a5a764898332d89a939762
+      internalID: -3475690690207808381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Attack-Sprite-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 1203
+        width: 196
+        height: 233
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4507f2844897ac94fa481cb01118f9bf
+      internalID: 7203811395477400059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Attack-Sprite-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 1203
+        width: 181
+        height: 272
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee7710e51a8af8a4bb325980ef6bc803
+      internalID: 4827340349723844701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Attack-Sprite-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 1203
+        width: 166
+        height: 303
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc07e78096ebb724882de17021767c99
+      internalID: -8168624139751670264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Attack-Sprite-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 1203
+        width: 201
+        height: 306
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2063b36d0f4298f4b81b6fc874dd0717
+      internalID: 46173534828435667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Attack-Sprite-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 803
+        width: 165
+        height: 342
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dba0dc9100d30a648a47b3ceb0c8ea58
+      internalID: -7092963943982645677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Attack-Sprite-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 803
+        width: 179
+        height: 362
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba71074b75fc01e41abca84417471f3f
+      internalID: 878787826622388837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Attack-Sprite-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 803
+        width: 217
+        height: 346
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30ab09536bce34e44a78cc19954962af
+      internalID: -4281106683028669544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Attack-Sprite-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 803
+        width: 216
+        height: 351
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7153a0395501fe441b7065c2a5d8d258
+      internalID: 7472061687863393660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Attack-Sprite-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 803
+        width: 230
+        height: 339
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afc0b983ee4afba4394272bfd6ec2939
+      internalID: -6726250721967979162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Attack-Sprite-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 403
+        width: 182
+        height: 331
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3322300dfd1f9024992c6f4b67c1496f
+      internalID: -675019459714442628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Attack-Sprite-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 403
+        width: 199
+        height: 344
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a104bd153e14eb46b6731b24986cd89
+      internalID: 6571673619381832260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Attack-Sprite-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 403
+        width: 165
+        height: 347
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e63dab14b810a4f48b562a8152f69f3d
+      internalID: -6203361176490267596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Attack-Sprite-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 403
+        width: 165
+        height: 357
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9decab57cb34e98428ad84768230c291
+      internalID: 4414581185666246741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Attack-Sprite-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 403
+        width: 165
+        height: 342
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42bcd4e9ca7eaab498bf0c327107c530
+      internalID: 8156780242964343357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Attack-Sprite-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 3
+        width: 165
+        height: 336
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7693d1aeb96140b46ba33b2e9a606afe
+      internalID: -6098158820357633256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Attack-Sprite-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 3
+        width: 220
+        height: 271
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eca325b63db88147abc6faf12fd9337
+      internalID: -8605814568604039131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Howler-Attack-Sprite-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 3
+        width: 220
+        height: 235
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ba79f304e948eb42a1b4a17b1fd4bbc
+      internalID: -3331756319031560545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
