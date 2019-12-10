@@ -37,6 +37,9 @@ public class GameManager : MonoBehaviour
     public int BarricadesUpgrade;
     public bool DogToyOut;
 
+    public Text hpText;
+    public GameObject[] hpBarArray;
+    public Sprite[] hpIndicatorSprites;
 
     void Awake()
     {
@@ -53,6 +56,7 @@ public class GameManager : MonoBehaviour
         timeIndicator.sprite = timeOfDay[0];
         isDay = true;
         hp = 100;
+        hpText.text = hp.ToString();
 
         GuardTowers = GameObject.Find("IsoJack_Overworld/Buildings/AllGuardTowers");
         Barricades = GameObject.Find("IsoJack_Overworld/Buildings/Wall_Barricade");
@@ -77,10 +81,6 @@ public class GameManager : MonoBehaviour
                 Pause();
         }
 
-        if (Input.GetKeyDown(KeyCode.L))
-            locationPopIn();
-        if (Input.GetKeyDown(KeyCode.C))
-            changeIndicator();
         if(inConversation == true)
         {
             Time.timeScale = 0f;
@@ -101,7 +101,7 @@ public class GameManager : MonoBehaviour
         }
         */if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            Debug.Log("ADDED FOOD");
+            Debug.Log("ADDED FOODFOOD");
             GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().AddItem(2, 1);
         }/*
         if (Input.GetKeyDown(KeyCode.Alpha3))
@@ -171,16 +171,12 @@ public class GameManager : MonoBehaviour
         daysRemain.text = days.ToString() + " Days Remain";
     }
 
-    public void locationPopIn()
-    {
-        locationTxt.text = "Iso Village"; 
-        locationAni.SetTrigger("Active");
-    }
-
+   
     public void locationPopIn(string location)
     {
         locationTxt.text = location;
-        locationAni.SetTrigger("Active");
+        //locationAni.SetTrigger("Active");
+        locationAni.Play("locationPopIn", -1, 0f);
     }
 
 
@@ -204,6 +200,110 @@ public class GameManager : MonoBehaviour
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         isPaused = true;
+    }
+
+    public void updateHP(int amount) //If the player is taking damage, amount should be negative!!
+    {
+        hp += amount;
+        if (hp <= 0)
+            hp = 0;
+        else if (hp >= 100)
+            hp = 100;
+        hpText.text = hp.ToString();
+        if (amount < 0)
+            depleateBar(hp);
+        else if (amount > 0)
+            incrementeBar(hp);
+    }
+
+
+
+    private void depleateBar(int amount)
+    {
+        int i = 100;
+        while (i >= amount)
+        {
+            if (amount < 10)
+            {
+                if (amount < 5)
+                    hpBarArray[0].SetActive(false);
+                else
+                    hpBarArray[0].GetComponent<Image>().sprite = hpIndicatorSprites[1];
+            }
+            if (amount < 20)
+                decrementeImage(1, amount, 15);
+            if (amount < 30)
+                decrementeImage(2, amount, 25);
+            if (amount < 40)
+                decrementeImage(3, amount, 35);
+            if (amount < 50)
+                decrementeImage(4, amount, 45);
+            if (amount < 60)
+                decrementeImage(5, amount, 55);
+            if (amount < 70)
+                decrementeImage(6, amount, 65);
+            if (amount < 80)
+                decrementeImage(7, amount, 75);
+            if (amount < 90)
+                decrementeImage(8, amount, 85);
+            if (amount < 100)
+                decrementeImage(9, amount, 95);
+            i -= 10;
+        }
+
+    }
+
+    private void incrementeBar(int amount)
+    {
+        for (int i = 0; i < 10; i++)
+        {
+            if (i == 0)
+            {
+                hpBarArray[0].SetActive(true);
+                if (amount < 10)
+                    hpBarArray[0].GetComponent<Image>().sprite = hpIndicatorSprites[1];
+                else
+                    hpBarArray[0].GetComponent<Image>().sprite = hpIndicatorSprites[0];
+            }
+            else
+                if ((i * 10) < amount)
+                incrementeImage(i, amount, ((i * 10) + 10));
+        }
+    }
+
+
+    private void decrementeImage(int index, int amount, int condi)
+    {
+
+        GameObject left = hpBarArray[index].transform.GetChild(0).gameObject;
+        GameObject right = hpBarArray[index].transform.GetChild(1).gameObject;
+
+        left.GetComponent<Image>().sprite = hpIndicatorSprites[2];
+        right.GetComponent<Image>().sprite = hpIndicatorSprites[2];
+
+        if (amount < condi)
+            hpBarArray[index].SetActive(false);
+        else
+        {
+            left.GetComponent<Image>().sprite = hpIndicatorSprites[1];
+            right.GetComponent<Image>().sprite = hpIndicatorSprites[1];
+        }
+    }
+
+
+    private void incrementeImage(int index, int amount, int condi)
+    {
+        hpBarArray[index].SetActive(true);
+        GameObject left = hpBarArray[index].transform.GetChild(0).gameObject;
+        GameObject right = hpBarArray[index].transform.GetChild(1).gameObject;
+        left.GetComponent<Image>().sprite = hpIndicatorSprites[0];
+        right.GetComponent<Image>().sprite = hpIndicatorSprites[0];
+        if (amount < condi)
+        {
+            left.GetComponent<Image>().sprite = hpIndicatorSprites[1];
+            right.GetComponent<Image>().sprite = hpIndicatorSprites[1];
+        }
+
     }
 
     public void LoadSettings()
@@ -245,7 +345,7 @@ public class GameManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene arg0, LoadSceneMode arg1)
     {
-        locationPopIn();
+        locationPopIn("Jack's House");
     }
 
     public void LoadMain()

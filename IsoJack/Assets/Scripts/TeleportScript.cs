@@ -39,5 +39,7 @@ public class TeleportScript : MonoBehaviour
         Player.transform.position = new Vector2(x,y);
         yield return new WaitForSeconds(0.5f);
         screens.SetActive(false);
+        yield return new WaitForSeconds(.3f);
+        GameManager.instance.locationPopIn("Iso Village");
     }
 }
