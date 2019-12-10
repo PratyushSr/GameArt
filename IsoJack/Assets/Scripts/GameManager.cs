@@ -104,32 +104,27 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("ADDED FOOD");
             GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().AddItem(2, 1);
-        }/*
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            Debug.Log("ADDED RAW MEET");
-            GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().AddItem(3, 1);
         }
-        if (Input.GetKeyDown(KeyCode.Alpha4))
-        {
-            Debug.Log("ADDED BONES");
-            GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().AddItem(4, 1);
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha5))
-        {
-            Debug.Log("ADDED QUEST ITEM");
-            GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().AddItem(5, 1);
-        }*/
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             Debug.Log("ADDED BEER");
             GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().AddItem(3, 1);
         }
-        if (Input.GetKeyDown(KeyCode.Alpha4))
+        if (Input.GetKeyDown(KeyCode.Alph4))
         {
-            Debug.Log("ADDED POUCH");
+            Debug.Log("ADDED RAW MEET");
+            GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().AddItem(4, 1);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            Debug.Log("ADDED BONES");
+            GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().AddItem(5, 1);
+        }
+        /*if (Input.GetKeyDown(KeyCode.Alpha6))
+        {
+            Debug.Log("ADDED QUEST ITEM");
             GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().AddItem(6, 1);
-        }/*
+        }
         //TEMP INV TESTING CODE
         if (Input.GetKeyDown(KeyCode.Alpha7))
         {
@@ -143,22 +138,22 @@ public class GameManager : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Alpha9))
         {
-            Debug.Log("REMOVED RAW MEET");
+            Debug.Log("REMOVED BEER");
             GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().RemoveItem(3, 1);
         }
         if (Input.GetKeyDown(KeyCode.Alpha0))
         {
-            Debug.Log("REMOVED BONES");
+            Debug.Log("REMOVED RAW MEET");
             GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().RemoveItem(4, 1);
         }
         if (Input.GetKeyDown(KeyCode.Minus))
         {
-            Debug.Log("REMOVED QUEST ITEM");
+            Debug.Log("REMOVED BONES");
             GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().RemoveItem(5, 1);
         }*/
         if (Input.GetKeyDown(KeyCode.Equals))
         {
-            Debug.Log("REMOVED BEER");
+            Debug.Log("REMOVED QUEST ITEM");
             GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().RemoveItem(6, 1);
         }
         
