@@ -7,12 +7,14 @@ public class DoggoFollow : MonoBehaviour
     [Tooltip("You better put the doggos owner here! Doggo Demands it!")]
     public GameObject GiveMeMyOwner;
 
+    private bool whereMaLooking;
     private bool dogToy____OHBOYOHBOYOHBOY;
     // Start is called before the first frame update
     void Start()
     {
         GetComponent<EnemyFollow>().enabled = false;
         dogToy____OHBOYOHBOYOHBOY = false;
+        whereMaLooking = false;
     }
 
     // Update is called once per frame
@@ -34,6 +36,19 @@ public class DoggoFollow : MonoBehaviour
             if (Adventureog.advLogInstance.Quest[6].subQuest < 4)
             {
                 Adventureog.advLogInstance.addProgress(7, 1);
+            }
+        }
+
+        if (GetComponent<EnemyFollow>().IsWalking)
+        {
+            if (!whereMaLooking && GetComponent<EnemyFollow>().target.position.x > transform.position.x)
+            {
+                whereMaLooking = true;
+                GetComponent<SpriteRenderer>().flipX = true;
+            }else if (whereMaLooking && GetComponent<EnemyFollow>().target.position.x < transform.position.x)
+            {
+                whereMaLooking = false;
+                GetComponent<SpriteRenderer>().flipX = false;
             }
         }
     }
