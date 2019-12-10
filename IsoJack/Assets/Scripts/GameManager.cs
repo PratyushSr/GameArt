@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
     public Text meatCount;
     public Text daysRemain;
     public Text locationTxt;
+
     public static bool isPaused = false;
     public GameObject pauseMenuUI;
     public Animator locationAni;
@@ -40,6 +41,7 @@ public class GameManager : MonoBehaviour
     public Text hpText;
     public GameObject[] hpBarArray;
     public Sprite[] hpIndicatorSprites;
+    public GameObject HPFullText;
 
     void Awake()
     {
@@ -57,6 +59,10 @@ public class GameManager : MonoBehaviour
         isDay = true;
         hp = 100;
         hpText.text = hp.ToString();
+
+        //GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().AddItem(2, 1);
+        //GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().AddItem(3, 1);
+
 
         GuardTowers = GameObject.Find("IsoJack_Overworld/Buildings/AllGuardTowers");
         Barricades = GameObject.Find("IsoJack_Overworld/Buildings/Wall_Barricade");
@@ -92,14 +98,44 @@ public class GameManager : MonoBehaviour
             isPaused = false;
         }
 
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            if (hp < 100 && GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().GetSlotCount(2) > 0) //+50 HP
+            {
+                GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().RemoveItem(2, 1);
+                updateHP(50);
+            }
+            else
+                StartCoroutine(triggerHPText());
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))//+20 HP
+        {
+            if (hp < 100 && GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().GetSlotCount(3) > 0) //+50 HP
+            {
+                GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().RemoveItem(3, 1);
+                updateHP(20);
+            }
+            else
+                StartCoroutine(triggerHPText());
+
+        }
+
+        IEnumerator triggerHPText()
+        {
+            
+            HPFullText.SetActive(true);
+            yield return new WaitForSeconds(0.5f);
+            HPFullText.SetActive(false);
+        }
+
         //TEMP INV TESTING CODE
-        
+
         /*if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             Debug.Log("ADDED AXE");
             GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().AddItem(1, 1);
             Debug.Log("Item =" + GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().GetSlotCount(1));
-        }*/
+        }
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             Debug.Log("ADDED FOODFOOD");
@@ -120,7 +156,7 @@ public class GameManager : MonoBehaviour
             Debug.Log("ADDED BONES");
             GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().AddItem(5, 1);
         }
-        /*if (Input.GetKeyDown(KeyCode.Alpha6))
+        if (Input.GetKeyDown(KeyCode.Alpha6))
         {
             Debug.Log("ADDED QUEST ITEM");
             GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().AddItem(6, 1);
