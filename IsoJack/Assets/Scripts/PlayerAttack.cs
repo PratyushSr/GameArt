@@ -12,6 +12,7 @@ public class PlayerAttack : MonoBehaviour
     public float attackRange;
     public float damage;
     public GameObject blackoutScreen;
+    public AudioSource beyblade;
 
     //public float health;
     private int maxHealth;
@@ -33,8 +34,8 @@ public class PlayerAttack : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Q))
             {
-               
-                
+
+                beyblade.Play();
                 Debug.Log("q is pressed");
                 attackCd = attackTimer;
                 Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
