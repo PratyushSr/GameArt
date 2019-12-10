@@ -40,6 +40,9 @@ public class TeleportScript : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         screens.SetActive(false);
         yield return new WaitForSeconds(.3f);
-        GameManager.instance.locationPopIn("Iso Village");
+        if ((x == -72 && y == 41))
+            GameManager.instance.locationPopIn("Tavern");
+        else
+            GameManager.instance.locationPopIn("Iso Village");
     }
 }

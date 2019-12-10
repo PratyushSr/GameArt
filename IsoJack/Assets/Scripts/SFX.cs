@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SFX : MonoBehaviour
 {
+    public AudioSource Click;
     public AudioSource BearGrowl;
     public AudioSource Boar;
     public AudioSource PigOink;
@@ -11,6 +12,11 @@ public class SFX : MonoBehaviour
     public AudioSource WolfGrowl;
     public AudioSource WolfHowl;
     public AudioSource WoodCut;
+
+    public void PlayClick()
+    {
+        Click.Play();
+    }
 
     public void PlayBear()
     {

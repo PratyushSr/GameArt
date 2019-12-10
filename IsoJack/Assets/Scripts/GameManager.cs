@@ -98,7 +98,7 @@ public class GameManager : MonoBehaviour
             isPaused = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        if (Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Keypad2))
         {
             if (hp < 100 && GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().GetSlotCount(2) > 0) //+50 HP
             {
@@ -108,7 +108,7 @@ public class GameManager : MonoBehaviour
             else
                 StartCoroutine(triggerHPText());
         }
-        if (Input.GetKeyDown(KeyCode.Alpha3))//+20 HP
+        if (Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Keypad3))//+20 HP
         {
             if (hp < 100 && GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().GetSlotCount(3) > 0) //+50 HP
             {
@@ -124,7 +124,7 @@ public class GameManager : MonoBehaviour
         {
             
             HPFullText.SetActive(true);
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(2f);
             HPFullText.SetActive(false);
         }
 
@@ -202,6 +202,11 @@ public class GameManager : MonoBehaviour
             }
         }
 
+
+        if(days <= 0)
+        {
+            Debug.Log("Baby your time is up, trigger endcutscene here");
+        }
 
     }
 
