@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
-    private float attackCd = 0;
+    private float attackCd = -1;
     public float attackTimer;
 
     public Transform attackPos;
@@ -35,25 +35,21 @@ public class PlayerAttack : MonoBehaviour
                
                 
                 Debug.Log("q is pressed");
+                attackCd = attackTimer;
                 Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
                 for (int i = 0; i < enemiesToDamage.Length; i++)
                 {
-
                     enemiesToDamage[i].GetComponent<Enemy>().EnemyTakeDamage(damage);
-
-             
                 }
 
             }
-            attackCd = attackTimer;
+            
 
         }
-
         else
         {
             attackCd -= Time.deltaTime;
         }
-
         if (health <= 0)
         {
             health = maxHealth;
