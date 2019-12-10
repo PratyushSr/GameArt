@@ -7,7 +7,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Forge_Master_NW
+  m_Name: Forge_Master_NW_Walk
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -33,7 +33,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Forge_Master_Idle
+  m_Name: Forge_Master_SE_Idle
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -59,7 +59,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Forge_Master_SE_walk
+  m_Name: Forge_Master_SE_Walk
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -203,28 +203,28 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 8858068233457879316}
-    m_Position: {x: 530, y: 90, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 7211565164481172242}
-    m_Position: {x: 590, y: 0, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: -3187843511654889325}
-    m_Position: {x: 190, y: 0, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 2099305831686354373}
     m_Position: {x: 280, y: 70, z: 0}
   - serializedVersion: 1
+    m_State: {fileID: 7211565164481172242}
+    m_Position: {x: 490, y: 70, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -3187843511654889325}
+    m_Position: {x: 490, y: 120, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 2099305831686354373}
+    m_Position: {x: 280, y: 120, z: 0}
+  - serializedVersion: 1
     m_State: {fileID: -130722715909243326}
-    m_Position: {x: 640, y: 250, z: 0}
+    m_Position: {x: 490, y: 220, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 518600228381008758}
     m_Position: {x: 280, y: 170, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8617566121433898038}
-    m_Position: {x: 210, y: 250, z: 0}
+    m_Position: {x: 490, y: 170, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -1783577260604558814}
-    m_Position: {x: 550, y: 160, z: 0}
+    m_Position: {x: 280, y: 220, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions:
@@ -243,7 +243,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Forge_Master_SW_walk
+  m_Name: Forge_Master_SW_Walk
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []

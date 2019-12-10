@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
 {
 
     public static GameManager instance = null;
+    public GameObject Player;
     public int wood ;
     public int coin;
     public int days;
@@ -42,6 +43,9 @@ public class GameManager : MonoBehaviour
     public GameObject[] hpBarArray;
     public Sprite[] hpIndicatorSprites;
     public GameObject HPFullText;
+    public AudioSource pokerChips;
+
+    private GameObject finalBoss;
 
     void Awake()
     {
@@ -72,6 +76,7 @@ public class GameManager : MonoBehaviour
         BarricadesUpgrade = 0;
 
         DogToyOut = false;
+        finalBoss = GameObject.Find("IsoJack_Overworld/NPCs/FinalBoss");
 
 
     }
@@ -195,10 +200,12 @@ public class GameManager : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.Alpha6))
         {
+            pokerChips.Play();
             if (GameObject.Find("HUDCanvas").transform.Find("Inventory").gameObject.GetComponent<Inventory>().GetSlotCount(6) >= 1)
             {
                 DogToyOut = !DogToyOut;
                 Debug.Log("Toggled Dog Toy");
+                pokerChips.Play();
             }
         }
 
@@ -206,7 +213,20 @@ public class GameManager : MonoBehaviour
         if(days <= 0)
         {
             Debug.Log("Baby your time is up, trigger endcutscene here");
+            finalBoss.SetActive(true);
+            StartCoroutine(TeleportFinalBoss());
         }
+
+    }
+
+    IEnumerator TeleportFinalBoss()
+    {
+        
+        Player.transform.position = new Vector2((float)26.07, (float)5.06);
+        yield return new WaitForSeconds(0.5f);
+        GameManager.instance.locationPopIn("Outskirts");
+        yield return new WaitForSeconds(1f);
+
 
     }
 
