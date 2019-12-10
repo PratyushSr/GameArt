@@ -27,7 +27,7 @@ public class Inventory : MonoBehaviour
             amountInSlot[i] = 0;
         }
         AddItem(1, 1);
-        AddItem(2, 5);
+        AddItem(2, 1);
         AddItem(3, 2);
     }
 
