@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour
     {
         if (instance == null) instance = this;
         else if (instance != this) Destroy(gameObject);
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
 
         woodCount.text = wood.ToString();
         coinCount.text = coin.ToString();
