@@ -1,7 +1,52 @@
 fileFormatVersion: 2
 guid: 685a8b148182c504da0f9c04c6dd3ae8
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 923808994721275512
+    second: Doggo-Walk-Sprite-Sheet_0
+  - first:
+      213: 4323077970824567258
+    second: Doggo-Walk-Sprite-Sheet_1
+  - first:
+      213: -8179363921911016699
+    second: Doggo-Walk-Sprite-Sheet_2
+  - first:
+      213: -4318046720160494131
+    second: Doggo-Walk-Sprite-Sheet_3
+  - first:
+      213: -4933480343783433268
+    second: Doggo-Walk-Sprite-Sheet_4
+  - first:
+      213: -2414601844729216199
+    second: Doggo-Walk-Sprite-Sheet_5
+  - first:
+      213: 6645746132384732683
+    second: Doggo-Walk-Sprite-Sheet_6
+  - first:
+      213: -5846184945651798902
+    second: Doggo-Walk-Sprite-Sheet_7
+  - first:
+      213: 676753188985774600
+    second: Doggo-Walk-Sprite-Sheet_8
+  - first:
+      213: -4633975723499178682
+    second: Doggo-Walk-Sprite-Sheet_9
+  - first:
+      213: 6730510012634397512
+    second: Doggo-Walk-Sprite-Sheet_10
+  - first:
+      213: -4727599151959615945
+    second: Doggo-Walk-Sprite-Sheet_11
+  - first:
+      213: 8650442596335218723
+    second: Doggo-Walk-Sprite-Sheet_12
+  - first:
+      213: 7912740162725527745
+    second: Doggo-Walk-Sprite-Sheet_13
+  - first:
+      213: -3102505937834001143
+    second: Doggo-Walk-Sprite-Sheet_14
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +85,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,9 +115,336 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Doggo-Walk-Sprite-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 639
+        width: 120
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6a4a4770dfdd24429cdd79dcf03f89a
+      internalID: 923808994721275512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Doggo-Walk-Sprite-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 646
+        width: 114
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d498cf1aaff9b9a4c80bf465bd39394d
+      internalID: 4323077970824567258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Doggo-Walk-Sprite-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 646
+        width: 114
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f1ff6a7a040aeb4f9d5f36f3753433f
+      internalID: -8179363921911016699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Doggo-Walk-Sprite-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 646
+        width: 114
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12f35c59fe1364a4abcbfdec7f728887
+      internalID: -4318046720160494131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Doggo-Walk-Sprite-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 439
+        width: 120
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fe52dab310bb1341851cc7d55d06fa2
+      internalID: -4933480343783433268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Doggo-Walk-Sprite-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 439
+        width: 114
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68e76e67e900a2841a74172a66232ac3
+      internalID: -2414601844729216199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Doggo-Walk-Sprite-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 446
+        width: 110
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c14ab6d9fda4d084da6667f8a0b8e426
+      internalID: 6645746132384732683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Doggo-Walk-Sprite-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 435
+        width: 114
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bff9425934f2cca468be3fa9a924a639
+      internalID: -5846184945651798902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Doggo-Walk-Sprite-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 235
+        width: 120
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83f13ee0c86cbcd47ac18afd5c1b162e
+      internalID: 676753188985774600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Doggo-Walk-Sprite-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 239
+        width: 112
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a468f39069490f242b1890d471567dc6
+      internalID: -4633975723499178682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Doggo-Walk-Sprite-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 239
+        width: 111
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40a3d8fd3b86dcd46a0967d7300665ff
+      internalID: 6730510012634397512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Doggo-Walk-Sprite-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 246
+        width: 112
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bfbbe0f516776641ae895e24da4f2f1
+      internalID: -4727599151959615945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Doggo-Walk-Sprite-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 35
+        width: 120
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdba171d64f0b4a4882431a046409c51
+      internalID: 8650442596335218723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Doggo-Walk-Sprite-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 35
+        width: 114
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5a5579f242d0464893225ab61ee4f9e
+      internalID: 7912740162725527745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Doggo-Walk-Sprite-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 39
+        width: 110
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e5d00da4a1d26d48957af24f7d0b8e9
+      internalID: -3102505937834001143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

@@ -1,7 +1,37 @@
 fileFormatVersion: 2
 guid: 6b8686f75b1b697469efa9909b73447c
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -3750027428205189283
+    second: Doggo-Idle-Sprite-Sheet_0
+  - first:
+      213: -7022843053810151901
+    second: Doggo-Idle-Sprite-Sheet_1
+  - first:
+      213: 4630178656323652311
+    second: Doggo-Idle-Sprite-Sheet_2
+  - first:
+      213: 5980320516350246171
+    second: Doggo-Idle-Sprite-Sheet_3
+  - first:
+      213: -1109930824360388416
+    second: Doggo-Idle-Sprite-Sheet_4
+  - first:
+      213: -5597245959953481191
+    second: Doggo-Idle-Sprite-Sheet_5
+  - first:
+      213: -9062795603802625322
+    second: Doggo-Idle-Sprite-Sheet_6
+  - first:
+      213: 5300684858395131453
+    second: Doggo-Idle-Sprite-Sheet_7
+  - first:
+      213: -3461614052118935613
+    second: Doggo-Idle-Sprite-Sheet_8
+  - first:
+      213: 19163398568426845
+    second: Doggo-Idle-Sprite-Sheet_9
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +70,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,9 +100,231 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Doggo-Idle-Sprite-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 439
+        width: 120
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca9748320b566e54ea9ef3f818297d6e
+      internalID: -3750027428205189283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Doggo-Idle-Sprite-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 439
+        width: 114
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56cb0da976653714d97a135f1ffc55bf
+      internalID: -7022843053810151901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Doggo-Idle-Sprite-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 439
+        width: 111
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a8e266453427bc46baeac60e184ab0b
+      internalID: 4630178656323652311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Doggo-Idle-Sprite-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 439
+        width: 116
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19c324185be382040b30690b073765fc
+      internalID: 5980320516350246171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Doggo-Idle-Sprite-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 239
+        width: 111
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32d56c14dfc420c489c77b69432cff77
+      internalID: -1109930824360388416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Doggo-Idle-Sprite-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 239
+        width: 114
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbd20b8f2b06f8540a18a72ebdd621f7
+      internalID: -5597245959953481191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Doggo-Idle-Sprite-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 239
+        width: 111
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e01093c371923d4f8df21a693487ee4
+      internalID: -9062795603802625322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Doggo-Idle-Sprite-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 239
+        width: 116
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80f7357325c17e149980b1a983ea825d
+      internalID: 5300684858395131453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Doggo-Idle-Sprite-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 39
+        width: 111
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7397ed0d89a9c2641ad8ce6058eabc1f
+      internalID: -3461614052118935613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Doggo-Idle-Sprite-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 39
+        width: 114
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 735fd041d8d4a4a4e987090d776ae315
+      internalID: 19163398568426845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
