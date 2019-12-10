@@ -1,0 +1,487 @@
+fileFormatVersion: 2
+guid: e85d5da4850db9c44b5962c37b490a2e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1815600028638645897
+    second: Pig-Idle-Sprite_0
+  - first:
+      213: -2174339031768481125
+    second: Pig-Idle-Sprite_1
+  - first:
+      213: -6163992349231070966
+    second: Pig-Idle-Sprite_2
+  - first:
+      213: 1592380131142795199
+    second: Pig-Idle-Sprite_3
+  - first:
+      213: 1515557120294343579
+    second: Pig-Idle-Sprite_4
+  - first:
+      213: 1395707776771136928
+    second: Pig-Idle-Sprite_5
+  - first:
+      213: -2244378850463409400
+    second: Pig-Idle-Sprite_6
+  - first:
+      213: 4858935664254032096
+    second: Pig-Idle-Sprite_7
+  - first:
+      213: 6791741231706219986
+    second: Pig-Idle-Sprite_8
+  - first:
+      213: 3520196332304264417
+    second: Pig-Idle-Sprite_9
+  - first:
+      213: -8225807071517147021
+    second: Pig-Idle-Sprite_10
+  - first:
+      213: -2162967471046546187
+    second: Pig-Idle-Sprite_11
+  - first:
+      213: 6736715165444409113
+    second: Pig-Idle-Sprite_12
+  - first:
+      213: 1276226018037586266
+    second: Pig-Idle-Sprite_13
+  - first:
+      213: -7302362210050636518
+    second: Pig-Idle-Sprite_14
+  - first:
+      213: -8085446377281250135
+    second: Pig-Idle-Sprite_15
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pig-Idle-Sprite_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 634
+        width: 153
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1f073c50a5fbf94585334d743a1d32a
+      internalID: 1815600028638645897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pig-Idle-Sprite_1
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 634
+        width: 153
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25042487892246d4d803ef25a67e9d9f
+      internalID: -2174339031768481125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pig-Idle-Sprite_2
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 634
+        width: 153
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7be87f5fe296c2a4096c61cc7a4543c8
+      internalID: -6163992349231070966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pig-Idle-Sprite_3
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 634
+        width: 153
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ecced3d679ad604ba3ca36f6213c5ea
+      internalID: 1592380131142795199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pig-Idle-Sprite_4
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 434
+        width: 153
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ae57588179aed14b8911e559cf46290
+      internalID: 1515557120294343579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pig-Idle-Sprite_5
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 434
+        width: 153
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ebf732f9b8950f49ba801f7bbfeaa07
+      internalID: 1395707776771136928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pig-Idle-Sprite_6
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 434
+        width: 153
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da03aa1fe68c7ca4ba55ae92b1cc0ef4
+      internalID: -2244378850463409400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pig-Idle-Sprite_7
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 434
+        width: 153
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57255e7089078484caa7987c0d9d1902
+      internalID: 4858935664254032096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pig-Idle-Sprite_8
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 233
+        width: 153
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c458995c2dd5a1b4c81f5896f9200581
+      internalID: 6791741231706219986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pig-Idle-Sprite_9
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 233
+        width: 153
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ea1f2ca2e2dcee48b9404ea6abe7d7e
+      internalID: 3520196332304264417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pig-Idle-Sprite_10
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 233
+        width: 153
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41fdd83e90f13b54280e74ea33d760a4
+      internalID: -8225807071517147021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pig-Idle-Sprite_11
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 233
+        width: 153
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 446458de41f593543942432aafe530a5
+      internalID: -2162967471046546187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pig-Idle-Sprite_12
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 33
+        width: 153
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e64f8b6bec9c0d74bb478d18f7c993eb
+      internalID: 6736715165444409113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pig-Idle-Sprite_13
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 33
+        width: 153
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24b7be4623c117b46811dea1aaf80c5d
+      internalID: 1276226018037586266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pig-Idle-Sprite_14
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 33
+        width: 153
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be49d12a8615f2441adba3a19339a0a0
+      internalID: -7302362210050636518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pig-Idle-Sprite_15
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 33
+        width: 153
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2900f41ce0eacca4694b34c0d14cfaeb
+      internalID: -8085446377281250135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
